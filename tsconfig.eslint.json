@@ -2,7 +2,8 @@
   "extends": "./tsconfig",
   "include": [
     "src/**/*.ts",
-    "spec/**/*.ts"
+    "spec/**/*.ts",
+    "wdio.conf.ts"
   ],
   "exclude": [
     "node_modules"

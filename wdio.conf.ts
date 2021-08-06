@@ -1,10 +1,11 @@
-import { resolve } from 'path';
 import { ConsoleReporter } from '@serenity-js/console-reporter';
-import { SerenityBDDReporter } from '@serenity-js/serenity-bdd';
 import { ArtifactArchiver } from '@serenity-js/core';
-import { Actors } from './src';
+import { SerenityBDDReporter } from '@serenity-js/serenity-bdd';
 import { Photographer, TakePhotosOfInteractions } from '@serenity-js/webdriverio';
-import * as isCI from 'is-ci';
+import isCI = require('is-ci');
+import { resolve } from 'path';  // eslint-disable-line unicorn/import-style
+
+import { Actors } from './src';
 
 export const config = {
 
