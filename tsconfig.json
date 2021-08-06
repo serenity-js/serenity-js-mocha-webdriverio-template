@@ -8,8 +8,7 @@
     "experimentalDecorators": true,
     "sourceMap": true,
     "declaration": true,
-    "outDir": "./lib",
-    "rootDir": "./src",
+    "rootDir": "./spec",
     "types": [
       "node",
       "webdriverio/async"
@@ -17,7 +16,7 @@
   },
 
   "include": [
-    "src/**/*.ts",
+    "spec/**/*.ts",
   ],
 
   "exclude": [
