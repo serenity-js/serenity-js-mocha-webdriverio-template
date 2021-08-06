@@ -5,7 +5,7 @@ import { Photographer, TakePhotosOfInteractions } from '@serenity-js/webdriverio
 import isCI = require('is-ci');
 import { resolve } from 'path';  // eslint-disable-line unicorn/import-style
 
-import { Actors } from './src';
+import { Actors } from './spec/serenity';
 
 export const config = {
 
@@ -58,10 +58,11 @@ export const config = {
         browserName: 'chrome',
         'goog:chromeOptions': {
             args: [
+                // '--headless',
                 '--disable-infobars',
                 '--no-sandbox',
                 '--disable-gpu',
-                '--window-size=1024x768',
+                '--window-size=1024,768',
             ].concat(isCI ? ['--headless'] : [])    // run in headless mode on the CI server,
         }
     }],
