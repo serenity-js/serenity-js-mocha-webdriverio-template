@@ -7,7 +7,7 @@ describe('serenity-js.org website', () => {
 
     const acceptCookiesButton = Target.the('accept cookies button').located(by.css('.cookieinfo-close'))
 
-    it(`tells people what they're reading @wip`, () =>
+    it(`tells people what they're reading`, () =>
         actorCalled('Alice').attemptsTo(
             Navigate.to('https://serenity-js.org'),
             Click.on(acceptCookiesButton),
