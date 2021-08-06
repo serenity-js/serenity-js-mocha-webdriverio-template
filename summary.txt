@@ -1,0 +1,10 @@
+Serenity report generated 06-08-2021 00:40
+1 test scenarios 
+
+Passed:             1
+Failed:             0
+Failed with errors: 0
+Compromised:        0
+Pending:            0
+Ignored:            0
+Skipped:            0
