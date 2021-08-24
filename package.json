@@ -33,7 +33,7 @@
     "node": "^12 || ^14 || ^16",
     "npm": "^6 || ^7"
   },
-  "dependencies": {
+  "devDependencies": {
     "@serenity-js/assertions": "^2.31.0",
     "@serenity-js/console-reporter": "^2.31.0",
     "@serenity-js/core": "^2.31.0",
