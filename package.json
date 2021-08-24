@@ -28,7 +28,7 @@
   "bugs": {
     "url": "https://github.com/serenity-js/serenity-js-mocha-webdriverio-template/issues"
   },
-  "homepage": "http://serenity-js.org",
+  "homepage": "https://serenity-js.org",
   "engines": {
     "node": "^12 || ^14 || ^16",
     "npm": "^6 || ^7"
