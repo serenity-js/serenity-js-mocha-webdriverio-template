@@ -53,7 +53,7 @@
     "@wdio/spec-reporter": "^7.16.11",
     "chromedriver": "^95.0.0",
     "eslint": "^8.6.0",
-    "eslint-plugin-import": "^2.25.3",
+    "eslint-plugin-import": "^2.25.4",
     "eslint-plugin-simple-import-sort": "^7.0.0",
     "eslint-plugin-unicorn": "^40.0.0",
     "eslint-plugin-unused-imports": "^2.0.0",
