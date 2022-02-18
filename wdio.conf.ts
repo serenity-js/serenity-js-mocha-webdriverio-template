@@ -41,7 +41,7 @@ export const config: WebdriverIOConfig = {
     autoCompileOpts: {
         autoCompile: true,
         tsNodeOpts: {
-            transpileOnly: true,
+            transpileOnly: false,
             project: resolve(__dirname, './tsconfig.json'),
         },
     },
