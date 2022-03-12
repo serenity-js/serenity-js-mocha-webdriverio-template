@@ -52,7 +52,7 @@
     "@wdio/mocha-framework": "^7.17.3",
     "@wdio/spec-reporter": "^7.17.3",
     "chromedriver": "^98.0.1",
-    "eslint": "^8.10.0",
+    "eslint": "^8.11.0",
     "eslint-plugin-import": "^2.25.4",
     "eslint-plugin-simple-import-sort": "^7.0.0",
     "eslint-plugin-unicorn": "^41.0.0",
