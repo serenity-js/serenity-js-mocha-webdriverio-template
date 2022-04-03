@@ -1,7 +1,8 @@
 import { ConsoleReporter } from '@serenity-js/console-reporter';
 import { ArtifactArchiver } from '@serenity-js/core';
 import { SerenityBDDReporter } from '@serenity-js/serenity-bdd';
-import { Photographer, TakePhotosOfInteractions, WebdriverIOConfig } from '@serenity-js/webdriverio';
+import { WebdriverIOConfig } from '@serenity-js/webdriverio';
+import { Photographer, TakePhotosOfInteractions} from '@serenity-js/web';
 import isCI = require('is-ci');
 import { resolve } from 'path';  // eslint-disable-line unicorn/import-style
 

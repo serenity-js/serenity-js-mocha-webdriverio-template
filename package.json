@@ -1,6 +1,6 @@
 {
   "name": "serenity-js-mocha-webdriverio-template",
-  "version": "2.0.0",
+  "version": "3.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -30,19 +30,19 @@
   },
   "homepage": "https://serenity-js.org",
   "engines": {
-    "node": "^12 || ^14 || ^16"
+    "node": "^14 || ^16"
   },
   "devDependencies": {
-    "@serenity-js/assertions": "^2.33.5",
-    "@serenity-js/console-reporter": "^2.33.5",
-    "@serenity-js/core": "^2.33.5",
-    "@serenity-js/mocha": "^2.33.5",
-    "@serenity-js/rest": "^2.33.5",
-    "@serenity-js/serenity-bdd": "^2.33.5",
-    "@serenity-js/webdriverio": "^2.33.5",
+    "@serenity-js/assertions": "^3.0.0-rc",
+    "@serenity-js/console-reporter": "^3.0.0-rc",
+    "@serenity-js/core": "^3.0.0-rc",
+    "@serenity-js/mocha": "^3.0.0-rc",
+    "@serenity-js/rest": "^3.0.0-rc",
+    "@serenity-js/serenity-bdd": "^3.0.0-rc",
+    "@serenity-js/webdriverio": "^3.0.0-rc",
     "@types/is-ci": "^3.0.0",
     "@types/mocha": "^9.1.0",
-    "@types/node": "^16.11.27",
+    "@types/node": "^17.0.24",
     "@typescript-eslint/eslint-plugin": "^5.19.0",
     "@typescript-eslint/parser": "^5.19.0",
     "@wdio/cli": "^7.19.5",
