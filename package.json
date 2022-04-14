@@ -43,7 +43,7 @@
     "@serenity-js/webdriverio": "^2.33.5",
     "@types/is-ci": "^3.0.0",
     "@types/mocha": "^9.1.0",
-    "@types/node": "^16.11.26",
+    "@types/node": "^16.11.27",
     "@typescript-eslint/eslint-plugin": "^5.19.0",
     "@typescript-eslint/parser": "^5.19.0",
     "@wdio/cli": "^7.19.5",
