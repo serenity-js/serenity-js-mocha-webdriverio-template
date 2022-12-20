@@ -1,0 +1,5 @@
+{
+  "files.autoSave": "onFocusChange",
+  "workbench.startupEditor": "readme",
+  "workbench.tree.indent": 12
+}
