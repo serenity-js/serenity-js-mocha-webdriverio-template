@@ -8,7 +8,7 @@
     "experimentalDecorators": true,
     "sourceMap": true,
     "declaration": true,
-    "rootDir": "./spec",
+    "rootDir": "./src",
     "types": [
       "node",
       "webdriverio/async"
