@@ -15,13 +15,6 @@
       "automerge": true
     },
     {
-      "packagePatterns": [
-        "^ts-node$",
-        "^typescript$"
-      ],
-      "groupName": "TypeScript"
-    },
-    {
       "matchUpdateTypes": ["minor", "patch"],
       "matchCurrentVersion": "!/^0/",
       "automerge": true
