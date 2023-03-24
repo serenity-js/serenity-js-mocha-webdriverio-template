@@ -1,6 +1,6 @@
 import { Ensure, includes } from '@serenity-js/assertions';
 import { actorCalled } from '@serenity-js/core';
-import { By, Navigate, Page, PageElement } from '@serenity-js/web';
+import { Navigate, Page } from '@serenity-js/web';
 import { describe, it } from 'mocha';
 
 describe('serenity-js.org website', () => {
