@@ -109,49 +109,28 @@
 
 
 
-
     <script class="code" type="text/javascript">$(document).ready(function () {
 
-            $('.scenario-result-table').DataTable({
-                "order": [[0, "asc",], [3, "asc",]],
-                "pageLength": 10,
-                "language": {
-                    searchPlaceholder: "Filter",
-                    search: ""
-                },
-                columnDefs: [
-                    {type: 'time-elapsed-dhms', targets: 4}
-                ]
-            });
 
-            // Results table
-            $('#test-results-table').DataTable({
-                "order": [[0, "asc",], [3, "asc",]],
-                "pageLength": 10,
-                "lengthMenu": [[10, 25, 50, 100, 200, -1], [10, 25, 50, 100, 200, "All"]]
-            });
+        $('.scenario-result-table').DataTable({
 
-            $('#evidence-table').DataTable({
-                searching: false,
-                paging: false,
-                info: false
-            });
-
-            $(".feature-coverage-table").DataTable({
-                searching: false,
-                paging: false,
-                info: false
-            });
-
-            $(".feature-coverage-table-with-pagination").DataTable({
-                order: [[0, "asc",]],
-                pageLength: 10,
-                language: {
-                    searchPlaceholder: "Filter",
-                    search: ""
-                }
-            });
+            "order": [[0, "asc",], [3, "asc",]],
+            "pageLength": 25,
+            "language": {
+                searchPlaceholder: "Filter",
+                search: ""
+            }
         });
+
+        // Results table
+        $('#test-results-table').DataTable({
+            "order": [[0, "asc",], [3, "asc",]],
+            "pageLength": 100,
+            "lengthMenu": [[25, 50, 100, 200, -1], [25, 50, 100, 200, "All"]]
+        });
+
+    })
+    ;
     </script>
 </head>
 
@@ -174,10 +153,9 @@
     <div id="contenttop">
         <div class="middlebg">
         <span class="breadcrumbs"><a href="index.html">Home</a>
-                    > Browser 
-                > <span class="truncate-60">
-                Chrome 111.0.5563.110
-            </span>
+                > Browser 
+                > <span
+                    class="truncate-60">Chrome 111.0.5563.64 (Passing Tests)</span>
         </span>
         </div>
         <div class="rightbg"></div>
@@ -194,7 +172,7 @@
             <a href="capabilities.html"><i class="bi bi-journal-text"></i> Requirements</a>
         </li>
     </ul>
-    <span class="date-and-time"><a href="build-info.html"><i class="bi bi-info-circle"></i></a> Report generated 29-03-2023 23:32:45</span>
+    <span class="date-and-time"><a href="build-info.html"><i class="bi bi-info-circle"></i></a> Report generated 30-03-2023 03:08:04</span>
     <br style="clear:left"/>
 </div>
     <div class="clr"></div>
@@ -203,16 +181,23 @@
         <div class="middlb">
             <div class="table">
 
-                <h2><i class='bi bi-tags'></i> Browser: Chrome 111.0.5563.110</h2>
+                <h2><i class='bi bi-tags'></i> Browser: Chrome 111.0.5563.64 (Passing Tests)</h2>
                 <table class='overview'>
                     <tr>
                         <td width="375px" valign="top">
                             <div class="test-count-summary">
-                                <div class="test-count-title">
-                                    1 test scenarios 
+                                <div>
+
+                                1 test
+                                    across 1 scenario
+
                                      |
-                                        <a href="b84f92ff120255b542b54c4709a23093545d359bac14f6f05abbed8c28ed0661.csv" title="Download CSV"> <i class="bi bi-cloud-arrow-down"
-                                                                                        title="Download CSV"></i></a>
+                                        <a href="566139682ca9c925a901a1a59999fd5734881e11cb63b181a2437d3ff14dd431.csv" title="Download CSV"> <i class="bi bi-cloud-arrow-down" title="Download CSV"></i></a>
+
+                                    <p class="report-info"><i class="bi bi-info-circle"></i> Note that results include
+                                        data-driven scenarios containing test ,
+                                        which may also contain results other than test .</p>
+
 
 
                                 </div>
@@ -221,8 +206,7 @@
                             <div>
                                 <ul class="nav nav-tabs">
                                     <li class="active">
-                                        <a data-toggle="tab" href="#summary"><i class="bi bi-house-door"></i>
-                                            Summary</a>
+                                        <a data-toggle="tab" href="#summary"><i class="bi bi-house-door"></i> Summary</a>
                                     </li>
                                     <li>
                                         <a data-toggle="tab" href="#tests"><i class="bi bi-speedometer"></i> Test
@@ -230,47 +214,12 @@
                                     </li>
                                 </ul>
 
-
                                 <div class="card border">
                                     <div class="tab-content" id="pills-tabContent">
                                         <div id="summary" class="tab-pane fade in active">
                                             <div class="container-fluid">
-                                                <div class="dashboard-charts row">
-                                                    <div class="col-lg-4 col-md-6 col-sm-12">
-                                                        <!-- PIE CHART -->
-                                                        <h4><i class="bi bi-pie-chart"></i> Overview</h4>
-                                                            <div class="chart-container">
-                                                                <canvas id="resultChart" height="200px"></canvas>
-                                                            </div>
-                                                    </div>
-                                                    <div class="col-lg-4 col-md-6 col-sm-12">
-                                                        <h4><i class="bi bi-check-square"></i> Test Outcomes</h4>
-                                                        <!-- Severity bar chart -->
-                                                        <div class="chart-container">
-                                                            <canvas id="severityChart" height="200px"></canvas>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-lg-4 col-md-6 col-sm-12">
-                                                        <h4><i class="bi bi-graph-up"></i> Test Performance</h4>
-
-                                                        <!-- Duration bar chart -->
-                                                        <div class="chart-container">
-                                                            <canvas id="durationChart" height="200px"></canvas>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="container-fluid">
                                                 <div class="row">
-                                                        <div class="col-lg-8 col-md-8 col-sm-12">
-                                                            <!-- High level coverage bar chart -->
-                                                            <div class="chart-container">
-                                                                <h3><i class="bi bi-reception-3"></i> Functional Coverage Overview</h3>
-                                                                <h4>Features</h4>
-                                                                <canvas id="coverageChart"></canvas>
-                                                            </div>
-                                                        </div>
-                                                    <div class="col-lg-4 col-md-4 col-sm-8">
+                                                    <div class="col-sm-4">
                                                         <div>
                                                             <h3><i class="bi bi-speedometer2"></i> Key Statistics</h3>
                                                             <div>
@@ -278,22 +227,19 @@
                                                                     <tbody>
                                                                     <tr scope="row">
                                                                         <td>
-                                                                            <i class="bi bi-flag-fill"></i> Tests
-                                                                            Started
+                                                                            <i class="bi bi-flag-fill"></i> Tests Started
                                                                         </td>
-                                                                        <td>Mar 29, 2023 23:32:41</td>
+                                                                        <td>Mar 30, 2023 03:08:00</td>
                                                                     </tr>
                                                                     <tr scope="row">
                                                                         <td>
-                                                                            <i class="bi bi-stop-circle"></i> Tests
-                                                                            Finished
+                                                                            <i class="bi bi-stop-circle"></i> Tests Finished
                                                                         </td>
-                                                                        <td>Mar 29, 2023 23:32:42</td>
+                                                                        <td>Mar 30, 2023 03:08:01</td>
                                                                     </tr>
                                                                     <tr scope="row">
                                                                         <td>
-                                                                            <i class="bi bi-stopwatch"></i> Total
-                                                                            Duration
+                                                                            <i class="bi bi-stopwatch"></i> Total Duration
                                                                         </td>
                                                                         <td>1s</td>
                                                                     </tr>
@@ -305,22 +251,19 @@
                                                                     </tr>
                                                                     <tr scope="row">
                                                                         <td>
-                                                                            <i class="bi bi-skip-start"></i> Slowest
-                                                                            Test
+                                                                            <i class="bi bi-skip-start"></i> Slowest Test
                                                                         </td>
                                                                         <td>1s</td>
                                                                     </tr>
                                                                     <tr scope="row">
                                                                         <td>
-                                                                            <i class="bi bi-stopwatch"></i> Average
-                                                                            Execution Time
+                                                                            <i class="bi bi-stopwatch"></i> Average Execution Time
                                                                         </td>
                                                                         <td>1s</td>
                                                                     </tr>
                                                                     <tr scope="row">
                                                                         <td>
-                                                                            <i class="bi bi-stopwatch-fill"></i> Total
-                                                                            Execution Time
+                                                                            <i class="bi bi-stopwatch-fill"></i> Total Execution Time
                                                                         </td>
                                                                         <td>1s</td>
                                                                     </tr>
@@ -329,57 +272,125 @@
                                                             </div>
                                                         </div>
                                                     </div>
-                                                </div>
-                                            </div>
-                                            <div class="container-fluid">
-                                                    <div class="row">
-                                                        <div class="col-sm-11">
-                                                            <h3>Functional Coverage Details</h3>
-
-
-                                                                    <h4>Features</h4>
-
-                                                                    <table class="table feature-coverage-table"
-                                                                           id="Feature">
-                                                                        <thead>
-                                                                        <tr>
-                                                                            <th>Feature</th>
-                                                                            <th style="width:1em;">Scenarios</th>
-                                                                            <th style="width:1em;">% Pass</th>
-                                                                            <th style="width:1em;">Result</th>
-                                                                            <th>Coverage</th>
-                                                                        </tr>
-                                                                        </thead>
-                                                                        <tbody>
-                                                                            <tr>
-                                                                                <td>
-                                                                                        <a href="b3eb943a8eaeea3950563a9a1461a49e9f5e112dde35e98b729cd6e1c708473e.html">serenity-js.org website</a>
-                                                                                </td>
-                                                                                <td>1</td>
-                                                                                <td>100%</td>
-                                                                                <td>
-                                                                                        <a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a>
-                                                                                </td>
-                                                                                <td>
-                                                                                    <div class="progress">
-                                                                                            <div class="progress-bar"
-                                                                                                 role="progressbar"
-                                                                                                 style="width: 100%; background-color: #b0cf73"
-                                                                                                 aria-valuenow="1"
-                                                                                                 title="100% success"
-                                                                                                 aria-valuemin="0"
-                                                                                                 aria-valuemax="100">
-                                                                                            </div>
-                                                                                    </div>
-                                                                                </td>
-                                                                            </tr>
-                                                                        </tbody>
-                                                                    </table>
+                                                    <div class="col-sm-4">
+                                                        <h4><i class="bi bi-check-square"></i> Test Outcomes</h4>
+                                                        <!-- Severity bar chart -->
+                                                        <div class="chart-container" style="position: relative; width:30vw">
+                                                            <canvas id="severityChart" width="300" height="300"></canvas>
                                                         </div>
                                                     </div>
 
+                                                    <div class="col-sm-4">
+                                                        <h4><i class="bi bi-graph-up"></i> Test Performance</h4>
+
+                                                        <!-- Duration bar chart -->
+                                                        <div class="chart-container" style="position: relative; width:30vw">
+                                                            <canvas id="durationChart" width="300" height="300"></canvas>
+                                                        </div>
+                                                    </div>
+                                                </div>
                                             </div>
                                             <div class="container-fluid">
+                                                <div class="row">
+                                                        <div class="col-sm-12">
+                                                            <!-- High level coverage bar chart -->
+                                                            <div class="chart-container" style="position: relative; width:60vw">
+                                                                <h3><i class="bi bi-reception-3"></i> Functional Coverage Overview</h3>
+                                                                <h4>Features</h4>
+                                                                <canvas id="coverageChart"></canvas>
+                                                            </div>
+                                                        </div>
+                                                </div>
+                                                    <div class="row">
+                                                        <div class="col-sm-12">
+                                                            <h3>Tags</h3>
+
+                                                                <div class="card">
+                                                                    <div class="card-body">
+                                                                            <h5 class="card-title">Browser</h5>
+                                                                        <div>
+                                                                                <a href="9e2438e60afaa8c8d66709aa8a6f8170b4e3d2d9bccd8c05b6a34d1cca90b556.html">
+                                                                                    <span class="badge" style="background-color:#b0cf73; margin:1em;padding:4px;">
+                                                                                        <i class="bi bi-tag"></i> Chrome 111.0.5563.64&nbsp;&nbsp;&nbsp;1
+                                                                                    </span>
+                                                                                </a>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="card">
+                                                                    <div class="card-body">
+                                                                            <h5 class="card-title">Feature</h5>
+                                                                        <div>
+                                                                                <a href="b3eb943a8eaeea3950563a9a1461a49e9f5e112dde35e98b729cd6e1c708473e.html">
+                                                                                    <span class="badge" style="background-color:#b0cf73; margin:1em;padding:4px;">
+                                                                                        <i class="bi bi-tag"></i> Serenity-Js.Org Website&nbsp;&nbsp;&nbsp;1
+                                                                                    </span>
+                                                                                </a>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="card">
+                                                                    <div class="card-body">
+                                                                            <h5 class="card-title">Platform</h5>
+                                                                        <div>
+                                                                                <a href="8a486b82ce9f41d097d83414b28a10d776a067ff0dce8985e02f7903e365b228.html">
+                                                                                    <span class="badge" style="background-color:#b0cf73; margin:1em;padding:4px;">
+                                                                                        <i class="bi bi-tag"></i> Linux&nbsp;&nbsp;&nbsp;1
+                                                                                    </span>
+                                                                                </a>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                        </div>
+                                                    </div>
+                                            </div>
+                                        </div>
+                                        <div id="tests" class="tab-pane fade in">
+                                            <div class="container-fluid">
+                                                <div class="row">
+                                                    <div class="col-sm-12">
+                                                        <h3><i class="bi bi-gear"></i> Automated Tests</h3>
+
+                                            <table class="scenario-result-table table" id="scenario-results">
+                                                <thead>
+                                                <tr>
+                                                    <th>Feature</th>
+                                                    <th class="test-name-column">Scenario</th>
+                                                    <th>Steps</th>
+                                                    <th>Started</th>
+                                                    <th>Duration</th>
+                                                    <th>Result</th>
+                                                </tr>
+                                                </thead>
+                                                <tbody>
+                                                <tr class="scenario-result SUCCESS">
+                                                    <td>
+                                                            <a href="b3eb943a8eaeea3950563a9a1461a49e9f5e112dde35e98b729cd6e1c708473e.html">serenity-js.org website</a>
+                                                    </td>
+                                                    <td>
+                                                        <a href="4ff3c1079da0cee7246d7b1ae6c5c52480c3b7db41e47feb3c1ebad0de5363c4.html"><span class='context-icon'><i class='fa fa-chrome' aria-hidden='true'></i> <i class='fa fa-linux' aria-hidden='true'></i></span>tells people what they're reading</a>
+                                                    </td>
+                                                    <td>2</td>
+                                                    <td>03:08:00</td>
+                                                    <td>1s 102ms</td>
+                                                    <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span
+                                                            style="display:none">SUCCESS</span></td>
+                                                </tr>
+                                                </tbody>
+                                            </table>
+
+                                                    </div>
+                                                </div>
+
+                                                <div class="row">
+                                                    <div class="col-sm-12">
+                                                        <h3><i class="bi bi-hand-index-thumb"></i> Manual Tests</h3>
+
+                                                No manual tests were recorded
+
+                                                    </div>
+                                                </div>
+                                            </div>
         <div class="row">
             <div class="col-sm-12">
                 <h3>Tags</h3>
@@ -387,9 +398,9 @@
                         <div class="card-body">
                                 <h5 class="card-title">Browser</h5>
                             <div>
-                                    <a href="b84f92ff120255b542b54c4709a23093545d359bac14f6f05abbed8c28ed0661.html">
+                                    <a href="9e2438e60afaa8c8d66709aa8a6f8170b4e3d2d9bccd8c05b6a34d1cca90b556.html">
                                     <span class="tag-badge badge" style="background-color:#b0cf73; margin:1em;padding:4px;">
-                                        <i class="bi bi-tag-fill"></i> Chrome 111.0.5563.110&nbsp;&nbsp;&nbsp;1
+                                        <i class="bi bi-tag-fill"></i> Chrome 111.0.5563.64&nbsp;&nbsp;&nbsp;1
                                     </span>
                                     </a>
                             </div>
@@ -421,62 +432,12 @@
                     </div>
             </div>
         </div>
-                                            </div>
                                         </div>
-                                        <div id="tests" class="tab-pane fade">
-                                            <div class="container-fluid">
-                                                <div class="row">
-                                                    <div class="col-sm-12">
-                                                        <h3><i class="bi bi-gear"></i> Automated Tests</h3>
-
-                                                            <table class="scenario-result-table table"
-                                                                   id="scenario-results">
-                                                                <thead>
-                                                                <tr>
-                                                                    <th>Feature</th>
-                                                                    <th class="test-name-column">Scenario</th>
-                                                                    <th>Steps</th>
-                                                                    <th>Started</th>
-                                                                    <th>Duration</th>
-                                                                    <th>Result</th>
-                                                                </tr>
-                                                                </thead>
-                                                                <tbody>
-                                                                    <tr class="scenario-result SUCCESS">
-                                                                        <td>
-                                                                                <a href="b3eb943a8eaeea3950563a9a1461a49e9f5e112dde35e98b729cd6e1c708473e.html">serenity-js.org website</a>
-                                                                        </td>
-                                                                        <td>
-                                                                            <a href="572e8b9d39718f2a076c030beb95b59431f08b4fc120c2e63fe8260b469541c6.html"><span class='context-icon'><i class='fa fa-chrome' aria-hidden='true'></i> <i class='fa fa-linux' aria-hidden='true'></i></span>tells people what they're reading</a>
-                                                                        </td>
-                                                                        <td>2</td>
-                                                                        <td>23:32:41</td>
-                                                                        <td>1s 216ms</td>
-                                                                        <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span
-                                                                                    style="display:none">SUCCESS</span>
-                                                                        </td>
-                                                                    </tr>
-                                                                </tbody>
-                                                            </table>
-
-                                                    </div>
-                                                </div>
-
-                                                <div class="row">
-                                                    <div class="col-sm-12">
-                                                        <h3><i class="bi bi-hand-index-thumb"></i> Manual Tests</h3>
-
-                                                            No manual tests were recorded
-
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-
                                     </div>
                                 </div>
                             </div>
                         </td>
+
                     </tr>
                 </table>
             </div>
@@ -505,14 +466,14 @@
 
         // Options define for display value on top of bars
         const outcomeDetailsReports = [
-            { title: 'Passing Scenarios', link: "94bc2c6f3339f3cefbf7ccecda8f2176ab78d40a94673a3652da718dcc58162f.html" },
-            { title: 'Pending Scenarios', link: "395bb1aa7bcbcbf680dae517d9ae2fc1eafc117b6709c1556f645ad62ad02656.html" },
-            { title: 'Ignored Scenarios', link: "522f8492bd84f24cd9d3c618e194551264b30a0402dfaa7b442950f68a7d9ce6.html" },
-            { title: 'Skipped Scenarios', link: "120ec58f7dc4e7fb10604ee577a152452014626d8759327baf5cb0591290bb49.html" },
-            { title: 'Aborted Scenarios',  link: "4cf1a463828f482f976aff0923b4f5aaaae6a6ed48cea0a7e0b204b66cb19973.html"},
-            { title: 'Failed Scenarios', link: "470d3a3e67d257e8d803b38652d2c6e2b72d8f052a63c2d6c25be54a750a40c8.html"  },
-            { title: 'Broken Scenarios', link: "350780a42045d368bf790077bae9e849508120986ae4fde65c5101a4b81c9818.html"    },
-            { title: 'Compromised Scenarios',  link: "288e3c36124323bb916dc8686855d0ccc450a1e350cf0a4eb432a47eea0adad5.html" },
+            { title: 'Passing Scenarios', link: "2b88617465f6888420e97ca32da2d3f145e59eb36c8ddd79cde0e47fc3ca0b47.html" },
+            { title: 'Pending Scenarios', link: "e4fcbdb64810b43099e45eba1e7d3a816a9d11087224b7915a9eecbcbac97fa5.html" },
+            { title: 'Ignored Scenarios', link: "11841a41858627bba44423ec5b71b95b161f193d93a61949567c7a99ef5392f9.html" },
+            { title: 'Skipped Scenarios', link: "55f691e0bd5480dec6c84688bd0a815ca23c74b14f108de3727618fd6b25578d.html" },
+            { title: 'Aborted Scenarios',  link: "91de077a74d4ed02e867dc25b6cf9a683efcb7978754570656fc89698f1c42d8.html"},
+            { title: 'Failed Scenarios', link: "2b730244943fcd47e3c97d69848e5cb328f18574354d9c8152b1e49ed6c89a5b.html"  },
+            { title: 'Broken Scenarios', link: "ea709d81cb4df97f6af10fc8250196f3d66dde675c567b2670ad7b8a170cbe19.html"    },
+            { title: 'Compromised Scenarios',  link: "25d5ab31facf2d2a0db666a63a65ee0bf3c96f357f90e168b1c9a939141f673e.html" },
         ]
         const outcomeData = {
             labels: ['Passing', 'Pending', 'Ignored', 'Skipped', 'Aborted', 'Failed', 'Broken', 'Compromised'],
@@ -604,14 +565,14 @@
         // Options define for display value on top of bars
 
         const severityDetailsReports = [
-            { title: 'Passing Scenarios', link: "94bc2c6f3339f3cefbf7ccecda8f2176ab78d40a94673a3652da718dcc58162f.html" },
-            { title: 'Pending Scenarios', link: "395bb1aa7bcbcbf680dae517d9ae2fc1eafc117b6709c1556f645ad62ad02656.html" },
-            { title: 'Ignored Scenarios', link: "522f8492bd84f24cd9d3c618e194551264b30a0402dfaa7b442950f68a7d9ce6.html" },
-            { title: 'Skipped Scenarios', link: "120ec58f7dc4e7fb10604ee577a152452014626d8759327baf5cb0591290bb49.html" },
-            { title: 'Aborted Scenarios',  link: "4cf1a463828f482f976aff0923b4f5aaaae6a6ed48cea0a7e0b204b66cb19973.html"},
-            { title: 'Failed Scenarios', link: "470d3a3e67d257e8d803b38652d2c6e2b72d8f052a63c2d6c25be54a750a40c8.html"  },
-            { title: 'Broken Scenarios', link: "350780a42045d368bf790077bae9e849508120986ae4fde65c5101a4b81c9818.html"    },
-            { title: 'Compromised Scenarios',  link: "288e3c36124323bb916dc8686855d0ccc450a1e350cf0a4eb432a47eea0adad5.html" },
+            { title: 'Passing Scenarios', link: "2b88617465f6888420e97ca32da2d3f145e59eb36c8ddd79cde0e47fc3ca0b47.html" },
+            { title: 'Pending Scenarios', link: "e4fcbdb64810b43099e45eba1e7d3a816a9d11087224b7915a9eecbcbac97fa5.html" },
+            { title: 'Ignored Scenarios', link: "11841a41858627bba44423ec5b71b95b161f193d93a61949567c7a99ef5392f9.html" },
+            { title: 'Skipped Scenarios', link: "55f691e0bd5480dec6c84688bd0a815ca23c74b14f108de3727618fd6b25578d.html" },
+            { title: 'Aborted Scenarios',  link: "91de077a74d4ed02e867dc25b6cf9a683efcb7978754570656fc89698f1c42d8.html"},
+            { title: 'Failed Scenarios', link: "2b730244943fcd47e3c97d69848e5cb328f18574354d9c8152b1e49ed6c89a5b.html"  },
+            { title: 'Broken Scenarios', link: "ea709d81cb4df97f6af10fc8250196f3d66dde675c567b2670ad7b8a170cbe19.html"    },
+            { title: 'Compromised Scenarios',  link: "25d5ab31facf2d2a0db666a63a65ee0bf3c96f357f90e168b1c9a939141f673e.html" },
         ]
         const severityData = {
             labels: ['Passing', 'Pending', 'Ignored', 'Skipped', 'Aborted', 'Failed', 'Broken', 'Compromised'],
@@ -682,14 +643,14 @@
 
         // Options define for display value on top of bars
         const durationDetailsReports = [
-                {title: "Under 1 second", link: "51f7f8e9f417f2b2bcf272d3f4c0de0702c99e709f6ab432a9e53e01677f051e.html"},
-                {title: "1 to 10 seconds", link: "21a77ca4cc5f20523d00077451edcf533d8fb024da27bc36655d09eb56fd4d3f.html"},
-                {title: "10 to 30 seconds", link: "0ca4f283e3081fbf5eb974523db849302185851be9b2ca67a9caed604dd416f5.html"},
-                {title: "30 to 60 seconds", link: "91259faec5bc9cf5525388141e798a51772161fda4863f072ede0375672b6915.html"},
-                {title: "1 to 2 minutes", link: "4e0e8a15f269e190492bdfdcc80b5852a741b1b3d96e4e39471d49b1228845a2.html"},
-                {title: "2 to 5 minutes", link: "00dddad19155f5eee261942c08ff54a35874db728a1e9980f60b9a4d36f77b6f.html"},
-                {title: "5 to 10 minutes", link: "b33941b69a9d2dfb91faaed0f48a771a0573a7c392742c5c2457ade28386715b.html"},
-                {title: "10 minutes or over", link: "173c9397022bfcbdae67ee65e77720f36e9c716391946df7de84da018a831459.html"},
+                {title: "Under 1 second", link: "f40eda7d42150e41a498946bc658dff9c8c67844208de15cb6e387ed3000c751.html"},
+                {title: "1 to 10 seconds", link: "e40b6627819f2e257b19cae92e86db30aca908e05b96722be6af5ab0310a0d0b.html"},
+                {title: "10 to 30 seconds", link: "06ed530ea76d3339ca60c56d1d8c8d4ef6929866fabe7a1940bfd524b036dc9a.html"},
+                {title: "30 to 60 seconds", link: "78d4bdd2e8cd6da1a43c4f81399e1bc7bd431ee9dfa9de594973cbcf5f30f799.html"},
+                {title: "1 to 2 minutes", link: "a4383c7c75ab69fb2cb79745f6397d477ed61dd7492c3ada3c836ef7b14b2c3d.html"},
+                {title: "2 to 5 minutes", link: "647c634a49aa2159a6d61fe6d8a44b181b69c68237d08a53d89ae4293ba11653.html"},
+                {title: "5 to 10 minutes", link: "8b7b304cc264b74426c8f82474c18ed9efb42fe364cd4bde72855a18557556a1.html"},
+                {title: "10 minutes or over", link: "b1bad88e0d5a4fb7437e8fca1f989fae59c30c410046c75b7c9f1ad9013ee8da.html"},
         ]
         // The Severity bar chart
         const durationChartCtx = document.getElementById('durationChart');
