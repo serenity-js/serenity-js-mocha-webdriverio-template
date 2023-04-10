@@ -52,8 +52,8 @@
   "devDependencies": {
     "@types/mocha": "^10.0.1",
     "@types/node": "^16.18.23",
-    "@typescript-eslint/eslint-plugin": "^5.57.1",
-    "@typescript-eslint/parser": "^5.57.1",
+    "@typescript-eslint/eslint-plugin": "^5.58.0",
+    "@typescript-eslint/parser": "^5.58.0",
     "chromedriver": "^111.0.0",
     "eslint": "^8.38.0",
     "eslint-plugin-import": "^2.27.5",
