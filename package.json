@@ -4,11 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "postinstall": "serenity-bdd update",
     "clean": "rimraf target",
-    "test": "failsafe clean test:execute test:report",
+    "test": "failsafe clean test:update-serenity test:execute test:report",
+    "test:update-serenity": "serenity-bdd update --ignoreSSL --artifact='net.serenity-bdd:serenity-cli:jar:3.6.23'",
     "test:execute": "wdio wdio.conf.ts",
-    "test:report": "serenity-bdd run --features ./features",
+    "test:report": "serenity-bdd run --artifact='net.serenity-bdd:serenity-cli:jar:3.6.23' --shortFilenames false --log debug",
     "start": "mkdirp target/site/serenity && npx http-server -p 8080 target/site/serenity -s -o",
     "lint": "eslint --ext ts --config .eslintrc.js .",
     "lint:fix": "npm run lint -- --fix"
