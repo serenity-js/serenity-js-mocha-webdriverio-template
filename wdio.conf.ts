@@ -37,7 +37,7 @@ export const config: WebdriverIOConfig = {
     },
 
     headless: true,
-    automationProtocol: 'webdriver',
+    automationProtocol: 'devtools',
     outputDir: 'target/logs',
     services: [
         [ 'chromedriver', { } ]
