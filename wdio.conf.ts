@@ -90,6 +90,8 @@ export const config: WebdriverIOConfig = {
         // maxInstances: 5,
         //
         browserName: 'chrome',
+
+        // See https://webdriver.io/blog/2023/07/31/driver-management
         browserVersion: 'stable',
 
         acceptInsecureCerts: true,
