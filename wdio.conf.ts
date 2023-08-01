@@ -37,11 +37,7 @@ export const config: WebdriverIOConfig = {
     },
 
     headless: true,
-    automationProtocol: 'devtools',
     outputDir: 'target/logs',
-    services: [
-        [ 'chromedriver', { } ]
-    ],
 
     // ==================
     // Specify Test Files
@@ -94,6 +90,10 @@ export const config: WebdriverIOConfig = {
         // maxInstances: 5,
         //
         browserName: 'chrome',
+
+        // See https://webdriver.io/blog/2023/07/31/driver-management
+        browserVersion: 'stable',
+
         acceptInsecureCerts: true,
         // If outputDir is provided WebdriverIO can capture driver session logs
         // it is possible to configure which logTypes to include/exclude.

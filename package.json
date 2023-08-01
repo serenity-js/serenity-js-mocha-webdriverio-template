@@ -46,7 +46,6 @@
     "@wdio/local-runner": "^8.14.1",
     "@wdio/spec-reporter": "^8.14.0",
     "mocha": "^10.2.0",
-    "wdio-chromedriver-service": "^8.1.1",
     "webdriverio": "^8.14.1"
   },
   "devDependencies": {
@@ -54,7 +53,6 @@
     "@types/node": "^18.17.1",
     "@typescript-eslint/eslint-plugin": "^6.2.1",
     "@typescript-eslint/parser": "^6.2.1",
-    "chromedriver": "^115.0.0",
     "eslint": "^8.46.0",
     "eslint-plugin-import": "^2.28.0",
     "eslint-plugin-simple-import-sort": "^10.0.0",
