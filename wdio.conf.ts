@@ -12,7 +12,7 @@ export const config: WebdriverIOConfig = {
 
     serenity: {
         // Use Mocha.js test runner adapter
-        // see: https://serenity-js.org/modules/cucumber/
+        // see: https://serenity-js.org/modules/mocha/
         runner: 'mocha',
 
         // Configure reporting services
