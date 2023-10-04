@@ -1,14 +1,26 @@
-import { Ensure, includes } from '@serenity-js/assertions';
+import { Ensure, equals } from '@serenity-js/assertions';
 import { actorCalled } from '@serenity-js/core';
-import { Navigate, Page } from '@serenity-js/web';
 import { describe, it } from 'mocha';
 
-describe('serenity-js.org website', () => {
+import { GitHubStatus } from '../src/github';
+import { Homepage } from '../src/serenity';
 
-    it(`tells people what they're reading`, () =>
-        actorCalled('Alice').attemptsTo(
-            Navigate.to('https://serenity-js.org'),
-            
-            Ensure.that(Page.current().title(), includes('Serenity/JS')),
-        ));
+describe('Serenity/JS Website', () => {
+
+    it(`tells people what the framework can help them do`, async () => {
+
+        await actorCalled('Alice').attemptsTo(
+
+            // You can use API interactions to ensure services are up and running before performing any UI checks,
+            // or to manage test data
+            GitHubStatus.ensureAllSystemsOperational(),
+
+            Homepage.open(),
+
+            Ensure.that(
+                Homepage.heroBannerHeadingText(),
+                equals('Enable collaborative test automation at any scale!')
+            ),
+        )
+    });
 });
