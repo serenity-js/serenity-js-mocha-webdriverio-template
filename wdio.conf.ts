@@ -1,4 +1,4 @@
-import {WebdriverIOConfig} from '@serenity-js/webdriverio';
+import type { WebdriverIOConfig } from '@serenity-js/webdriverio';
 
 // Run tests in headless mode on CI and non-headless otherwise
 // Set to true/false to override
