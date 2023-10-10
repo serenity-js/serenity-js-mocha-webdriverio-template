@@ -1,5 +1,9 @@
 import {WebdriverIOConfig} from '@serenity-js/webdriverio';
 
+// Run tests in headless mode on CI and non-headless otherwise
+// Set to true/false to override
+const headless = Boolean(process.env.CI);
+
 export const config: WebdriverIOConfig = {
 
     // =========================
@@ -26,7 +30,7 @@ export const config: WebdriverIOConfig = {
         ]
     },
 
-    headless: true,
+    headless,
     // You can output the logs to a file to avoid cluttering the console
     // outputDir: 'target/logs',
 
@@ -45,7 +49,7 @@ export const config: WebdriverIOConfig = {
     // then the current working directory is where your `package.json` resides, so `wdio`
     // will be called from there.
     specs: [
-        './spec/**/*.spec.ts',
+        './test/specs/**/*.ts'
     ],
     // Patterns to exclude.
     exclude: [
@@ -98,10 +102,9 @@ export const config: WebdriverIOConfig = {
                 '--allow-file-access',
                 '--disable-infobars',
                 '--ignore-certificate-errors',
-                '--headless',
                 '--disable-gpu',
                 '--window-size=1024x768',
-            ]
+            ].concat(headless ? ['--headless'] : []),
         }
     }],
     //

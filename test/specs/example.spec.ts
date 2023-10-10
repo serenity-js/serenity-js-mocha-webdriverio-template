@@ -1,10 +1,9 @@
-import { Ensure, equals } from '@serenity-js/assertions';
-import { actorCalled } from '@serenity-js/core';
-import { By, Navigate, PageElement, Text } from '@serenity-js/web';
-import { describe, it } from 'mocha';
+import { Ensure, equals } from '@serenity-js/assertions'
+import { actorCalled } from '@serenity-js/core'
+import { By, Navigate, PageElement, Text } from '@serenity-js/web'
 
-import { GitHubStatus } from '../src/github';
-import { Homepage } from '../src/serenity';
+import { GitHubStatus } from '../serenity/github-api/GitHubStatus'
+import { TodoList } from '../serenity/todo-list-app/TodoList'
 
 /**
  * Serenity/JS Screenplay Pattern test scenarios use one or more actors to represent people and external systems
@@ -40,7 +39,7 @@ describe('Serenity/JS Website', () => {
                 equals('Start automating 🚀')
             ),
         )
-    });
+    })
 
     /**
      * This is a more advanced example of a Serenity/JS Screenplay Pattern test scenario.
@@ -51,28 +50,37 @@ describe('Serenity/JS Website', () => {
      *
      * In this scenario, rather than list all the interactions in the test itself, we use:
      * - API Actions Class Pattern to group tasks concerning interacting with the GitHubStatus API
-     * - Page Objects Pattern to group tasks and questions concerning interacting with the Serenity/JS Homepage
+     * - Screenplay Pattern flavour of Page Objects to group tasks and questions concerning interacting with the Serenity/JS Todo List app
      *
      * Note that apart from strongly encouraging the Screenplay Pattern,
      * Serenity/JS doesn't require you to organise your code in any particular way.
      * This gives you the freedom to choose patterns and abstractions that work best for you, your team,
      * and reflect the domain of your system under test.
      */
-    it(`tells people what the framework can help them do`, async () => {
+    it(`offers examples to help you practice test automation`, async () => {
 
         // You can use API interactions to manage test data, or to ensure services are up and running before performing any UI checks.
-        // Since Serenity/JS website is deployed to GitHub Pages, before interacting with the website we ensure that GitHub is up and running.
+        // Since Serenity/JS demo website is deployed to GitHub Pages,
+        // before interacting with the website we ensure that GitHub itself is up and running.
         await actorCalled('Apisitt').attemptsTo(
             GitHubStatus.ensureAllSystemsOperational(),
-        );
+        )
 
         // Once we know the system is up and running, Wendy can proceed with the web-based scenario.
         await actorCalled('Wendy').attemptsTo(
-            Homepage.open(),
+            TodoList.createListContaining([
+                `Buy dog food`,
+                `Feed the dog`,
+                `Book a vet's appointment`,
+            ]),
+            TodoList.markAsCompleted([
+                `Buy dog food`,
+                `Feed the dog`,
+            ]),
             Ensure.that(
-                Homepage.heroBannerHeadingText(),
-                equals('Enable collaborative test automation at any scale!')
+                TodoList.outstandingItemsCount(),
+                equals(1)
             ),
-        );
-    });
-});
+        )
+    })
+})
