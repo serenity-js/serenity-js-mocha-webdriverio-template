@@ -23,7 +23,7 @@ export const config: WebdriverIOConfig = {
         // see: https://serenity-js.org/handbook/reporting/
         crew: [
             '@serenity-js/console-reporter',
-            '@serenity-js/serenity-bdd',
+            [ '@serenity-js/serenity-bdd',          { specDirectory: 'test/specs'             } ],
             [ '@serenity-js/web:Photographer',      { strategy: 'TakePhotosOfInteractions'    } ],
             // [ '@serenity-js/web:Photographer',   { strategy: 'TakePhotosOfFailures'        } ],
             [ '@serenity-js/core:ArtifactArchiver', { outputDirectory: 'target/site/serenity' } ],

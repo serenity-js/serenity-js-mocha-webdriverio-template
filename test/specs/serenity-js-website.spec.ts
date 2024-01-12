@@ -1,3 +1,5 @@
+import 'mocha'
+
 import { Ensure, equals } from '@serenity-js/assertions'
 import { actorCalled } from '@serenity-js/core'
 import { By, Navigate, PageElement, Text } from '@serenity-js/web'
@@ -23,7 +25,7 @@ import { TodoList } from '../serenity/todo-list-app/TodoList'
  * - Serenity/JS REST module - https://serenity-js.org/api/rest/
  * - Serenity/JS assertions module - https://serenity-js.org/api/assertions/
  */
-describe('Serenity/JS Website', () => {
+describe('serenity-js website', () => {
 
     /**
      * This is the most basic example of a Serenity/JS Screenplay Pattern test scenario.

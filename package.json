@@ -8,7 +8,7 @@
     "clean": "rimraf target",
     "test": "failsafe clean test:execute test:report",
     "test:execute": "wdio wdio.conf.ts",
-    "test:report": "serenity-bdd run --features ./features",
+    "test:report": "serenity-bdd run --features ./test/specs",
     "start": "mkdirp target/site/serenity && npx http-server -p 8080 target/site/serenity -s -o",
     "lint": "eslint --ext ts --config .eslintrc.js .",
     "lint:fix": "npm run lint -- --fix"
