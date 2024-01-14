@@ -59,7 +59,10 @@ module.exports = {
                 'kebabCase': true,      // packages
                 'pascalCase': true,     // classes
                 'camelCase': true,      // functions
-            }
+            },
+            'ignore': [
+                '.spec.ts',             // spec files
+            ]
         }],
 
         'unicorn/no-array-for-each': 'off',
