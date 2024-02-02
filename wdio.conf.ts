@@ -178,6 +178,9 @@ export const config: WebdriverIOConfig = {
     mochaOpts: {
         ui: 'bdd',
         timeout: 60000,
+        reporterOptions: {
+            specDirectory: 'test/specs'
+        },
     },
 
     //
