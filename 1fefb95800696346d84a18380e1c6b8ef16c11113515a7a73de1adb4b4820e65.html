@@ -115,7 +115,11 @@
                     search: ""
                 },
                 columnDefs: [
-                    {type: 'time-elapsed-dhms', targets: 5}
+                    {
+                        targets: 4,
+                        visible: false
+                    },
+                    {type: 'time-elapsed-dhms', targets: 6}
                 ]
             })
             $("#manual-scenario-results").DataTable({
@@ -124,6 +128,12 @@
                     searchPlaceholder: "Filter",
                     search: ""
                 },
+                columnDefs: [
+                    {
+                        targets: 4,
+                        visible: false
+                    },
+                ]
             })
 
             // Results table
@@ -142,7 +152,17 @@
             $(".feature-coverage-table").DataTable({
                 searching: true,
                 paging: false,
-                info: false
+                info: false,
+                language: {
+                    searchPlaceholder: "Filter",
+                    search: ""
+                },
+                columnDefs: [
+                    {
+                        targets: 2,
+                        visible: false
+                    },
+                ]
             });
 
             $(".feature-coverage-table-with-pagination").DataTable({
@@ -152,7 +172,13 @@
                 language: {
                     searchPlaceholder: "Filter",
                     search: ""
-                }
+                },
+                columnDefs: [
+                    {
+                        targets: 2,
+                        visible: false
+                    },
+                ]
             });
         });
     </script>
@@ -200,7 +226,7 @@
             <a href="576946480b52ad056d6f5bddf874399c83582ecf90963cc074a14c70580e7d9f.html"><i class="bi bi-chat-text"></i> Features</a>
         </li>
     </ul>
-    <span class="date-and-time"><a href="build-info.html"><i class="bi bi-info-circle"></i></a> Report generated 26-08-2024 15:57:08</span>
+    <span class="date-and-time"><a href="build-info.html"><i class="bi bi-info-circle"></i></a> Report generated 27-08-2024 18:44:14</span>
     <br style="clear:left"/>
 </div>
     <div class="clr"></div>
@@ -300,7 +326,7 @@
                     <td>
                         <i class="bi bi-flag-fill"></i> Tests Started
                     </td>
-                    <td>Aug 26, 2024 15:56:58</td>
+                    <td>Aug 27, 2024 18:44:01</td>
                 </tr>
                 <tr scope="row">
                     <td>
@@ -358,12 +384,12 @@
 
                                                                     <h4>Features</h4>
 
-                                                                    <table class="table feature-coverage-table"
-                                                                           id="Feature">
+                                                                    <table class="table feature-coverage-table" id="Feature" style="width:100%">
                                                                         <thead>
                                                                         <tr>
                                                                             <th>Feature</th>
                                                                             <th style="width:1em;">Scenarios</th>
+                                                                            <th style="width:1em;">StepsText</th>
                                                                             <th style="width:1em;">Test&nbsp;Cases</th>
                                                                             <th style="width:1em;">%&nbsp;Pass</th>
                                                                             <th style="width:1em;">Result</th>
@@ -376,6 +402,42 @@
                                                                                             <a href="53d308d5ab58dae57c6ce1533c9fb72279b3e233716f70a5053e9879bd2877d1.html"> serenity-js website</a>
                                                                                     </td>
                                                                                     <td>2</td>
+                                                                                    <td>Alice navigates to "https://serenity-js.org"
+Alice ensures that the text of page element located by id ('cta-start-automating') does equal "Start automating 🚀"
+Apisitt ensures all GitHub systems are operational
+Apisitt sends a GET request to 'https://www.githubstatus.com/api/v2/status.json'
+Apisitt ensures that the status of the last response does equal 200
+Apisitt ensures that GitHub Status does equal "All Systems Operational"
+Wendy starts with a list containing 3 items
+Wendy creates an empty todo list
+Wendy navigates to "https://todo-app.serenity-js.org/"
+Wendy ensures that website title does equal "Serenity/JS TodoApp"
+Wendy waits until "What needs to be done?" input box does become visible
+Wendy empties local storage if needed
+Wendy checks whether <<persisted items>>.length does have value greater than 0
+Wendy records an item called 'Buy dog food'
+Wendy enters "Buy dog food" into "What needs to be done?" input box
+Wendy presses key Enter in "What needs to be done?" input box
+Wendy waits until the text of displayed items does contain "Buy dog food"
+Wendy records an item called 'Feed the dog'
+Wendy enters "Feed the dog" into "What needs to be done?" input box
+Wendy presses key Enter in "What needs to be done?" input box
+Wendy waits until the text of displayed items does contain "Feed the dog"
+Wendy records an item called "Book a vet's appointment"
+Wendy enters "Book a vet's appointment" into "What needs to be done?" input box
+Wendy presses key Enter in "What needs to be done?" input box
+Wendy waits until the text of displayed items does contain "Book a vet's appointment"
+Wendy marks the following items as completed: [ 'Buy dog food', 'Feed the dog' ]
+Wendy marks an item called 'Buy dog food' as completed
+Wendy checks whether CSS classes of an item called 'Buy dog food' does not contain "completed"
+Wendy toggles the completion status of an item called 'Buy dog food'
+Wendy clicks on toggle button of an item called 'Buy dog food'
+Wendy marks an item called 'Feed the dog' as completed
+Wendy checks whether CSS classes of an item called 'Feed the dog' does not contain "completed"
+Wendy toggles the completion status of an item called 'Feed the dog'
+Wendy clicks on toggle button of an item called 'Feed the dog'
+Wendy ensures that number of items left does equal 1
+</td>
                                                                                     <td>2</td>
                                                                                     <td>100%</td>
                                                                                     <td>
@@ -489,7 +551,7 @@
                     <td>
                         <i class="bi bi-flag-fill"></i> Tests Started
                     </td>
-                    <td>Aug 26, 2024 15:56:58</td>
+                    <td>Aug 27, 2024 18:44:01</td>
                     <td>
                         <i class="bi bi-stopwatch"></i> Average
                         Execution Time
@@ -515,14 +577,14 @@
 
                                                         <h3><i class="bi bi-gear"></i> Automated Scenarios</h3>
 
-                                                            <table class="scenario-result-table table"
-                                                                   id="scenario-results">
+                                                            <table class="scenario-result-table table" id="scenario-results" style="width:100%">
                                                                 <thead>
                                                                 <tr>
                                                                     <th>feature</th>
                                                                     <th class="test-name-column">Scenario</th>
                                                                     <th>Context</th>
                                                                     <th>Steps</th>
+                                                                    <th>StepsText</th>
                                                                     <th>Started</th>
                                                                     <th>Total Duration</th>
                                                                     <th>Result</th>
@@ -539,8 +601,11 @@
                                                                         <td><span class='context-icon'><i class='bi bi-browser-chrome' title='Chrome'></i> <i class='bi bi-ubuntu' title='Linux'></i></span><span style="display:none">Chrome,linux</span>
                                                                         </td>
                                                                         <td>2</td>
-                                                                        <td data-order="1724687818">15:56:58</td>
-                                                                        <td>1s 290ms</td>
+                                                                        <td>Alice navigates to "https://serenity-js.org"
+Alice ensures that the text of page element located by id ('cta-start-automating') does equal "Start automating 🚀"
+</td>
+                                                                        <td data-order="1724784241">18:44:01</td>
+                                                                        <td>1s 562ms</td>
                                                                         <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span
                                                                                     style="display:none">SUCCESS</span>
                                                                         </td>
@@ -555,8 +620,13 @@
                                                                         <td><span class='context-icon'><i class='bi bi-browser-chrome' title='Chrome'></i> <i class='bi bi-ubuntu' title='Linux'></i></span><span style="display:none">Chrome,linux</span>
                                                                         </td>
                                                                         <td>4</td>
-                                                                        <td data-order="1724687820">15:57:00</td>
-                                                                        <td>2s 811ms</td>
+                                                                        <td>Apisitt ensures all GitHub systems are operational
+Wendy starts with a list containing 3 items
+Wendy marks the following items as completed: [ 'Buy dog food', 'Feed the dog' ]
+Wendy ensures that number of items left does equal 1
+</td>
+                                                                        <td data-order="1724784242">18:44:02</td>
+                                                                        <td>2s 798ms</td>
                                                                         <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span
                                                                                     style="display:none">SUCCESS</span>
                                                                         </td>
@@ -636,7 +706,7 @@
 <div class="container-fluid">
     <div class="row">
         <div class="col-sm-12">
-            <span class="version">Serenity BDD version 4.1.6</span>
+            <span class="version">Serenity BDD version 4.1.20</span>
         </div>
     </div>
 </div>
