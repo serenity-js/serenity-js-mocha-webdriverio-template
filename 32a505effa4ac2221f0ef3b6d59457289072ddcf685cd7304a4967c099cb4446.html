@@ -105,21 +105,17 @@
 
 
 
-
     <script class="code" type="text/javascript">$(document).ready(function () {
 
+
             $("#scenario-results").DataTable({
-                "order": [[0, "asc",], [1, "asc",], [2, "asc",]],
+                "order": [[0, "asc",], [3, "asc",]],
                 "language": {
                     searchPlaceholder: "Filter",
                     search: ""
                 },
                 columnDefs: [
-                    {
-                        targets: 4,
-                        visible: false
-                    },
-                    {type: 'time-elapsed-dhms', targets: 6}
+                    {type: 'time-elapsed-dhms', targets: 4}
                 ]
             })
             $("#manual-scenario-results").DataTable({
@@ -128,59 +124,17 @@
                     searchPlaceholder: "Filter",
                     search: ""
                 },
-                columnDefs: [
-                    {
-                        targets: 4,
-                        visible: false
-                    },
-                ]
             })
 
-            // Results table
-            $('#test-results-table').DataTable({
-                "order": [[0, "asc",], [3, "asc",]],
-                "pageLength": 10,
-                "lengthMenu": [[10, 25, 50, 100, 200, -1], [10, 25, 50, 100, 200, "All"]]
-            });
-
-            $('#evidence-table').DataTable({
-                searching: false,
-                paging: false,
-                info: false
-            });
-
-            $(".feature-coverage-table").DataTable({
-                searching: true,
-                paging: false,
-                info: false,
-                language: {
-                    searchPlaceholder: "Filter",
-                    search: ""
-                },
-                columnDefs: [
-                    {
-                        targets: 2,
-                        visible: false
-                    },
-                ]
-            });
-
-            $(".feature-coverage-table-with-pagination").DataTable({
-                searching: true,
-                order: [[0, "asc",]],
-                pageLength: 10,
-                language: {
-                    searchPlaceholder: "Filter",
-                    search: ""
-                },
-                columnDefs: [
-                    {
-                        targets: 2,
-                        visible: false
-                    },
-                ]
-            });
+        // Results table
+        $('#test-results-table').DataTable({
+            "order": [[0, "asc",], [3, "asc",]],
+            "pageLength": 100,
+            "lengthMenu": [[25, 50, 100, 200, -1], [25, 50, 100, 200, "All"]]
         });
+
+    })
+    ;
     </script>
 </head>
 
@@ -199,14 +153,10 @@
 
 <div class="middlecontent">
 
-
     <div id="contenttop">
         <div class="middlebg">
         <span class="breadcrumbs"><a href="index.html">Home</a>
-                    > Browser 
-                > <span class="truncate-60">
-                Chrome 130.0.6723.58
-            </span>
+                > Browser 
         </span>
         </div>
         <div class="rightbg"></div>
@@ -226,7 +176,7 @@
             <a href="576946480b52ad056d6f5bddf874399c83582ecf90963cc074a14c70580e7d9f.html"><i class="bi bi-chat-text"></i> Features</a>
         </li>
     </ul>
-    <span class="date-and-time"><a href="build-info.html"><i class="bi bi-info-circle"></i></a> Report generated 22-10-2024 08:00:22</span>
+    <span class="date-and-time"><a href="build-info.html"><i class="bi bi-info-circle"></i></a> Report generated 23-10-2024 12:44:03</span>
     <br style="clear:left"/>
 </div>
     <div class="clr"></div>
@@ -235,17 +185,22 @@
         <div class="middlb">
             <div class="table">
 
-                <h2><i class='bi bi-tags'></i> Browser: Chrome 130.0.6723.58</h2>
+                <h2>Test Results: All Tests</h2>
                 <table class='overview'>
                     <tr>
                         <td width="375px" valign="top">
                             <div class="test-count-summary">
-                                <div class="test-count-title">
+                                <div>
+
                                     2 tests
 
                                      |
-                                        <a href="85e736d08c08ac8d2fd22c3fdbbf8411f3ca7b6510a8067d2aa27eaafe9698c7.csv" title="Download CSV"> <i class="bi bi-cloud-arrow-down"
-                                                                                        title="Download CSV"></i></a>
+                                        <a href="55d9daec026a1e253c7a2e0ab0a4a6446cbfe6c1edaa1820865f8f27a463d14c.csv" title="Download CSV"> <i class="bi bi-cloud-arrow-down" title="Download CSV"></i></a>
+
+                                    <p class="report-info"><i class="bi bi-info-circle"></i> Note that results include
+                                        data-driven scenarios containing tests ,
+                                        which may also contain results other than tests .</p>
+
 
 
                                 </div>
@@ -254,8 +209,7 @@
                             <div>
                                 <ul class="nav nav-tabs">
                                     <li class="active">
-                                        <a data-toggle="tab" href="#summary"><i class="bi bi-house-door"></i>
-                                            Summary</a>
+                                        <a data-toggle="tab" href="#summary"><i class="bi bi-house-door"></i> Summary</a>
                                     </li>
                                     <li>
                                         <a data-toggle="tab" href="#tests"><i class="bi bi-speedometer"></i> Test
@@ -263,48 +217,12 @@
                                     </li>
                                 </ul>
 
-
                                 <div class="card border">
                                     <div class="tab-content" id="pills-tabContent">
                                         <div id="summary" class="tab-pane fade in active">
                                             <div class="container-fluid">
-                                                <div class="dashboard-charts row">
-                                                    <div class="col-lg-4 col-md-6 col-sm-9">
-                                                        <!-- PIE CHART -->
-                                                        <h4><i class="bi bi-pie-chart"></i> Overview</h4>
-                                                            <div class="chart-container">
-                                                                <canvas id="resultChart" height="200px"></canvas>
-                                                            </div>
-                                                    </div>
-                                                    <div class="col-lg-4 col-md-6 col-sm-9">
-                                                        <h4><i class="bi bi-check-square"></i> Test Outcomes</h4>
-                                                        <!-- Severity bar chart -->
-                                                        <div class="chart-container">
-                                                            <canvas id="severityChart" height="200px"></canvas>
-                                                        </div>
-                                                    </div>
-                                                        <div class="col-lg-4 col-md-6 col-sm-9">
-                                                            <h4><i class="bi bi-graph-up"></i> Test Performance</h4>
-
-                                                            <!-- Duration bar chart -->
-                                                            <div class="chart-container">
-                                                                <canvas id="durationChart" height="200px"></canvas>
-                                                            </div>
-                                                        </div>
-                                                </div>
-                                            </div>
-                                            <div class="container-fluid">
                                                 <div class="row">
-                                                        <div class="col-lg-8 col-md-8 col-sm-9">
-                                                            <!-- High level coverage bar chart -->
-                                                            <div class="chart-container">
-                                                                <h3><i class="bi bi-reception-3"></i> Functional
-                                                                    Coverage Overview</h3>
-                                                                <h4>Features</h4>
-                                                                <canvas id="coverageChart"></canvas>
-                                                            </div>
-                                                        </div>
-                                                    <div class="col-lg-4 col-md-4 col-sm-6">
+                                                    <div class="col-sm-4">
     <div>
         <h3><i class="bi bi-speedometer2"></i> Key Statistics</h3>
         <div>
@@ -326,7 +244,7 @@
                     <td>
                         <i class="bi bi-flag-fill"></i> Tests Started
                     </td>
-                    <td>Oct 22, 2024 08:00:11</td>
+                    <td>Oct 23, 2024 12:43:52</td>
                 </tr>
                 <tr scope="row">
                     <td>
@@ -374,8 +292,79 @@
         </div>
     </div>
                                                     </div>
+                                                    <div class="col-sm-4">
+                                                        <h4><i class="bi bi-check-square"></i> Test Outcomes</h4>
+                                                        <!-- Severity bar chart -->
+                                                        <div class="chart-container" style="position: relative; width:30vw">
+                                                            <canvas id="severityChart" width="300" height="300"></canvas>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="col-sm-4">
+                                                        <h4><i class="bi bi-graph-up"></i> Test Performance</h4>
+
+                                                        <!-- Duration bar chart -->
+                                                        <div class="chart-container" style="position: relative; width:30vw">
+                                                            <canvas id="durationChart" width="300" height="300"></canvas>
+                                                        </div>
+                                                    </div>
                                                 </div>
                                             </div>
+                                            <div class="container-fluid">
+                                                <div class="row">
+                                                        <div class="col-sm-12">
+                                                            <!-- High level coverage bar chart -->
+                                                            <div class="chart-container" style="position: relative; width:60vw">
+                                                                <h3><i class="bi bi-reception-3"></i> Functional Coverage Overview</h3>
+                                                                <h4>Features</h4>
+                                                                <canvas id="coverageChart"></canvas>
+                                                            </div>
+                                                        </div>
+                                                </div>
+                                                    <div class="row">
+                                                        <div class="col-sm-12">
+                                                            <h3>Tags</h3>
+
+                                                                <div class="card">
+                                                                    <div class="card-body">
+                                                                            <h5 class="card-title">Browser</h5>
+                                                                        <div>
+                                                                                <a href="e21946739d37fc035d754d42ec44c9b0aead2d7b409cfac71d12e81ba847b899.html">
+                                                                                    <span class="badge" style="background-color:#b0cf73; margin:1em;padding:4px;">
+                                                                                        <i class="bi bi-tag"></i> Chrome 130.0.6723.69&nbsp;&nbsp;&nbsp;2
+                                                                                    </span>
+                                                                                </a>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="card">
+                                                                    <div class="card-body">
+                                                                            <h5 class="card-title">Feature</h5>
+                                                                        <div>
+                                                                                <a href="53d308d5ab58dae57c6ce1533c9fb72279b3e233716f70a5053e9879bd2877d1.html">
+                                                                                    <span class="badge" style="background-color:#b0cf73; margin:1em;padding:4px;">
+                                                                                        <i class="bi bi-tag"></i> Serenity-Js Website&nbsp;&nbsp;&nbsp;2
+                                                                                    </span>
+                                                                                </a>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="card">
+                                                                    <div class="card-body">
+                                                                            <h5 class="card-title">Platform</h5>
+                                                                        <div>
+                                                                                <a href="8a486b82ce9f41d097d83414b28a10d776a067ff0dce8985e02f7903e365b228.html">
+                                                                                    <span class="badge" style="background-color:#b0cf73; margin:1em;padding:4px;">
+                                                                                        <i class="bi bi-tag"></i> Linux&nbsp;&nbsp;&nbsp;2
+                                                                                    </span>
+                                                                                </a>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                        </div>
+                                                    </div>
+                                            </div>
+
                                             <div class="container-fluid">
                                                     <div class="row">
                                                         <div class="col-sm-11">
@@ -384,13 +373,12 @@
 
                                                                     <h4>Features</h4>
 
-                                                                    <table class="table feature-coverage-table" id="Feature" style="width:100%">
+                                                                    <table class="table feature-coverage-table" id="Feature">
                                                                         <thead>
                                                                         <tr>
                                                                             <th>Feature</th>
-                                                                            <th style="width:1em;">Scenarios</th>
-                                                                            <th style="width:1em;">StepsText</th>
                                                                             <th style="width:1em;">Test&nbsp;Cases</th>
+                                                                            <th style="width:1em;">Scenarios</th>
                                                                             <th style="width:1em;">%&nbsp;Pass</th>
                                                                             <th style="width:1em;">Result</th>
                                                                             <th>Coverage</th>
@@ -399,45 +387,9 @@
                                                                         <tbody>
                                                                                 <tr>
                                                                                     <td>
-                                                                                            <a href="53d308d5ab58dae57c6ce1533c9fb72279b3e233716f70a5053e9879bd2877d1.html"> serenity-js website</a>
+                                                                                            <a href="53d308d5ab58dae57c6ce1533c9fb72279b3e233716f70a5053e9879bd2877d1.html" > serenity-js website</a>
                                                                                     </td>
                                                                                     <td>2</td>
-                                                                                    <td>Alice navigates to "https://serenity-js.org"
-Alice ensures that the text of page element located by id ('cta-start-automating') does equal "Start automating 🚀"
-Apisitt ensures all GitHub systems are operational
-Apisitt sends a GET request to 'https://www.githubstatus.com/api/v2/status.json'
-Apisitt ensures that the status of the last response does equal 200
-Apisitt ensures that GitHub Status does equal "All Systems Operational"
-Wendy starts with a list containing 3 items
-Wendy creates an empty todo list
-Wendy navigates to "https://todo-app.serenity-js.org/"
-Wendy ensures that website title does equal "Serenity/JS TodoApp"
-Wendy waits until "What needs to be done?" input box does become visible
-Wendy empties local storage if needed
-Wendy checks whether <<persisted items>>.length does have value greater than 0
-Wendy records an item called 'Buy dog food'
-Wendy enters "Buy dog food" into "What needs to be done?" input box
-Wendy presses key Enter in "What needs to be done?" input box
-Wendy waits until the text of displayed items does contain "Buy dog food"
-Wendy records an item called 'Feed the dog'
-Wendy enters "Feed the dog" into "What needs to be done?" input box
-Wendy presses key Enter in "What needs to be done?" input box
-Wendy waits until the text of displayed items does contain "Feed the dog"
-Wendy records an item called "Book a vet's appointment"
-Wendy enters "Book a vet's appointment" into "What needs to be done?" input box
-Wendy presses key Enter in "What needs to be done?" input box
-Wendy waits until the text of displayed items does contain "Book a vet's appointment"
-Wendy marks the following items as completed: [ 'Buy dog food', 'Feed the dog' ]
-Wendy marks an item called 'Buy dog food' as completed
-Wendy checks whether CSS classes of an item called 'Buy dog food' does not contain "completed"
-Wendy toggles the completion status of an item called 'Buy dog food'
-Wendy clicks on toggle button of an item called 'Buy dog food'
-Wendy marks an item called 'Feed the dog' as completed
-Wendy checks whether CSS classes of an item called 'Feed the dog' does not contain "completed"
-Wendy toggles the completion status of an item called 'Feed the dog'
-Wendy clicks on toggle button of an item called 'Feed the dog'
-Wendy ensures that number of items left does equal 1
-</td>
                                                                                     <td>2</td>
                                                                                     <td>100%</td>
                                                                                     <td>
@@ -470,9 +422,9 @@ Wendy ensures that number of items left does equal 1
                         <div class="card-body">
                                 <h5 class="card-title">Browser</h5>
                             <div>
-                                    <a href="85e736d08c08ac8d2fd22c3fdbbf8411f3ca7b6510a8067d2aa27eaafe9698c7.html">
+                                    <a href="e21946739d37fc035d754d42ec44c9b0aead2d7b409cfac71d12e81ba847b899.html">
                                     <span class="tag-badge badge" style="background-color:#b0cf73; margin:1em;padding:4px;">
-                                        <i class="bi bi-tag-fill"></i> Chrome 130.0.6723.58&nbsp;&nbsp;&nbsp;2
+                                        <i class="bi bi-tag-fill"></i> Chrome 130.0.6723.69&nbsp;&nbsp;&nbsp;2
                                     </span>
                                     </a>
                             </div>
@@ -506,133 +458,50 @@ Wendy ensures that number of items left does equal 1
         </div>
                                             </div>
                                         </div>
-                                        <div id="tests" class="tab-pane fade">
+                                        <div id="tests" class="tab-pane fade in">
                                             <div class="container-fluid">
                                                 <div class="row">
                                                     <div class="col-sm-12">
-    <div>
-        <h3><i class="bi bi-speedometer2"></i> Key Statistics</h3>
-        <div>
-            <table class="table table-striped table-hover">
-                <tbody>
-                <tr scope="row">
-                    <td>
-                        <i class="bi bi-card-checklist"></i> Number of Scenarios
-                    </td>
-                    <td>2</td>
-                    <td>
-                        <i class="bi bi-stopwatch"></i> Total
-                        Duration
-                    </td>
-                    <td>0ms</td>
-                </tr>
-                <tr scope="row">
-                    <td>
-                        <i class="bi bi-caret-right"></i> Total Number of Test Cases
-                    </td>
-                    <td>2</td>
-                    <td>
-                        <i class="bi bi-trophy"></i> Fastest Test
-                    </td>
-                    <td>1s</td>
-                </tr>
-                <tr scope="row">
-                    <td>
-                        <i class="bi bi-person"></i> Number of Manual Test Cases
-                    </td>
-                    <td>0</td>
-                    <td>
-                        <i class="bi bi-skip-start"></i> Slowest
-                        Test
-                    </td>
-                    <td>2s</td>
-                </tr>
-                <tr scope="row">
-                    <td>
-                        <i class="bi bi-flag-fill"></i> Tests Started
-                    </td>
-                    <td>Oct 22, 2024 08:00:11</td>
-                    <td>
-                        <i class="bi bi-stopwatch"></i> Average
-                        Execution Time
-                    </td>
-                    <td>2s</td>
-                </tr>
-                <tr scope="row">
-                    <td>
-                        <i class="bi bi-stop-circle"></i> Tests
-                        Finished
-                    </td>
-                    <td></td>
-                    <td>
-                        <i class="bi bi-stopwatch-fill"></i> Total
-                        Execution Time
-                    </td>
-                    <td>4s</td>
-                </tr>
-                </tbody>
-            </table>
-        </div>
-    </div>
+                                                        <h3><i class="bi bi-gear"></i> Automated Tests</h3>
 
-                                                        <h3><i class="bi bi-gear"></i> Automated Scenarios</h3>
-
-                                                            <table class="scenario-result-table table" id="scenario-results" style="width:100%">
-                                                                <thead>
-                                                                <tr>
-                                                                    <th>feature</th>
-                                                                    <th class="test-name-column">Scenario</th>
-                                                                    <th>Context</th>
-                                                                    <th>Steps</th>
-                                                                    <th>StepsText</th>
-                                                                    <th>Started</th>
-                                                                    <th>Total Duration</th>
-                                                                    <th>Result</th>
-                                                                </tr>
-                                                                </thead>
-                                                                <tbody>
-                                                                    <tr class="scenario-result SUCCESS">
-                                                                        <td>
-                                                                                <a href="#">serenity-js website</a>
-                                                                        </td>
-                                                                        <td data-order="offers a web testing tutorial">
-                                                                                    <a href="1c0f8c4d9b7f9c155c06daa56361b0ab0e555ef655afff1a43db65f9e3d4a9e3.html">offers a web testing tutorial</a>
-                                                                        </td>
-                                                                        <td><span class='context-icon'><i class='bi bi-browser-chrome' title='Chrome'></i> <i class='bi bi-ubuntu' title='Linux'></i></span><span style="display:none">Chrome,linux</span>
-                                                                        </td>
-                                                                        <td>2</td>
-                                                                        <td>Alice navigates to "https://serenity-js.org"
-Alice ensures that the text of page element located by id ('cta-start-automating') does equal "Start automating 🚀"
-</td>
-                                                                        <td data-order="1729584011">08:00:11</td>
-                                                                        <td>1s 404ms</td>
-                                                                        <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span
-                                                                                    style="display:none">SUCCESS</span>
-                                                                        </td>
-                                                                    </tr>
-                                                                    <tr class="scenario-result SUCCESS">
-                                                                        <td>
-                                                                                <a href="#">serenity-js website</a>
-                                                                        </td>
-                                                                        <td data-order="offers examples to help you practice test automation">
-                                                                                    <a href="3ceee2b1834237b0bade0a8c011a337ba570fe62918af4f8ecaee0e4b42f3f5e.html">offers examples to help you practice test automation</a>
-                                                                        </td>
-                                                                        <td><span class='context-icon'><i class='bi bi-browser-chrome' title='Chrome'></i> <i class='bi bi-ubuntu' title='Linux'></i></span><span style="display:none">Chrome,linux</span>
-                                                                        </td>
-                                                                        <td>4</td>
-                                                                        <td>Apisitt ensures all GitHub systems are operational
-Wendy starts with a list containing 3 items
-Wendy marks the following items as completed: [ 'Buy dog food', 'Feed the dog' ]
-Wendy ensures that number of items left does equal 1
-</td>
-                                                                        <td data-order="1729584012">08:00:12</td>
-                                                                        <td>2s 870ms</td>
-                                                                        <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span
-                                                                                    style="display:none">SUCCESS</span>
-                                                                        </td>
-                                                                    </tr>
-                                                                </tbody>
-                                                            </table>
+                                            <table class="scenario-result-table table" id="scenario-results">
+                                                <thead>
+                                                <tr>
+                                                    <th>feature</th>
+                                                    <th class="test-name-column">Scenario</th>
+                                                    <th>Steps</th>
+                                                    <th>Started</th>
+                                                    <th>Total Duration</th>
+                                                    <th>Result</th>
+                                                </tr>
+                                                </thead>
+                                                <tbody>
+                                                        <tr class="scenario-result SUCCESS">
+                                                            <td>
+                                                                    <a href="#">serenity-js website</a>
+                                                            </td>
+                                                            <td><a href="d8d5dfc00630e22ed1045176ae8194c4599e12270fad1128eaa30b0ab530742c.html">offers a web testing tutorial</a>
+                                                            </td>
+                                                            <td>2</td>
+                                                            <td>12:43:52</td>
+                                                            <td>1s 522ms</td>
+                                                            <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span style="display:none">SUCCESS</span>
+                                                            </td>
+                                                        </tr>
+                                                        <tr class="scenario-result SUCCESS">
+                                                            <td>
+                                                                    <a href="#">serenity-js website</a>
+                                                            </td>
+                                                            <td><a href="f4149a5e51133510323a8c50d091c3df99eabbfa58e22430675c220afc667264.html">offers examples to help you practice test automation</a>
+                                                            </td>
+                                                            <td>4</td>
+                                                            <td>12:43:54</td>
+                                                            <td>2s 808ms</td>
+                                                            <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span style="display:none">SUCCESS</span>
+                                                            </td>
+                                                        </tr>
+                                                </tbody>
+                                            </table>
 
                                                     </div>
                                                 </div>
@@ -641,7 +510,7 @@ Wendy ensures that number of items left does equal 1
                                                     <div class="col-sm-12">
                                                         <h3><i class="bi bi-hand-index-thumb"></i> Manual Tests</h3>
 
-                                                            No manual tests were recorded
+                                                No manual tests were recorded
 
                                                     </div>
                                                 </div>
@@ -654,9 +523,9 @@ Wendy ensures that number of items left does equal 1
                         <div class="card-body">
                                 <h5 class="card-title">Browser</h5>
                             <div>
-                                    <a href="85e736d08c08ac8d2fd22c3fdbbf8411f3ca7b6510a8067d2aa27eaafe9698c7.html">
+                                    <a href="e21946739d37fc035d754d42ec44c9b0aead2d7b409cfac71d12e81ba847b899.html">
                                     <span class="tag-badge badge" style="background-color:#b0cf73; margin:1em;padding:4px;">
-                                        <i class="bi bi-tag-fill"></i> Chrome 130.0.6723.58&nbsp;&nbsp;&nbsp;2
+                                        <i class="bi bi-tag-fill"></i> Chrome 130.0.6723.69&nbsp;&nbsp;&nbsp;2
                                     </span>
                                     </a>
                             </div>
@@ -690,11 +559,11 @@ Wendy ensures that number of items left does equal 1
         </div>
                                             </div>
                                         </div>
-
                                     </div>
                                 </div>
                             </div>
                         </td>
+
                     </tr>
                 </table>
             </div>
@@ -720,21 +589,21 @@ Wendy ensures that number of items left does equal 1
 
         // Options define for display value on top of bars
         const outcomeDetailsReports = [
-            { title: 'Passing Test Cases', link: "dc0092301441c50bdc9940bedc6d420a9fb2806b16c1a66e652f04e747eba2d5.html" },
-            { title: 'Pending Test Cases', link: "766eea7a7de7067728a2b849fabec3f2706cb0bb916945842859da41e6584262.html" },
-            { title: 'Ignored Test Cases', link: "dd52e3a98bafba38e29e0fae74f0896bed6b3b701d95bea6826bc3f3fbbf3c17.html" },
-            { title: 'Skipped Test Cases', link: "83081dcd8436198ab01874ff764c67a510bf61fe97cb838a475fb2bc1cb58e3a.html" },
-            { title: 'Aborted Test Cases',  link: "5e378ef8590a14e1d5a61f330adf6515a3c7833748b1643e7272e31bc61803f6.html"},
-            { title: 'Failed Test Cases', link: "44f8a1d6673fe90e73e071a1b206d90edbd8dcbd4eca96ed2ebfd0e36e4e7822.html"  },
-            { title: 'Broken Test Cases', link: "5daa757d1ed05007f06c0fe907dd39b2a867fbcc601839636bacef9003b1a1bd.html"    },
-            { title: 'Compromised Test Cases',  link: "3c912b3ef302eca5c356ae8d231ef8e1426bcf093292dd0ab5af50a8cb83af8a.html" },
+            { title: 'Passing Test Cases', link: "32a505effa4ac2221f0ef3b6d59457289072ddcf685cd7304a4967c099cb4446.html" },
+            { title: 'Pending Test Cases', link: "0cd7ceb653bfd3ede404a2701003661e750ad00c939fd3b48a3e332fa3703963.html" },
+            { title: 'Ignored Test Cases', link: "ff077e72e4ac524eceb4fc11063dbf467c0c4fb7bc5f4e60aa4e9013a46ab989.html" },
+            { title: 'Skipped Test Cases', link: "12a1d7c3ed7cf4ba271759e3f0cad94e0186e5513d0deb391aba50d660e6a2c1.html" },
+            { title: 'Aborted Test Cases',  link: "0ff570428bb5b3c85a37fe6ba09eabc4f81be342bd5cbb89b474df4b3f802af5.html"},
+            { title: 'Failed Test Cases', link: "3b5903efc7d3ce712c3716f2c07267e5f3c099b3af25eafbcc4d5a9de3742bd1.html"  },
+            { title: 'Broken Test Cases', link: "0cbf4de22dbd8ae1fe311d0edc8f05f30d6ac5055d0acb316b263d9259dcbc77.html"    },
+            { title: 'Compromised Test Cases',  link: "bc6874b5649aef4f6b3706fb72ce3eecf61ba9155c2e023ffcc5187905f43af5.html" },
         ]
         const outcomeData = {
             labels: ['Passing Test Cases', 'Pending Test Cases', 'Ignored Test Cases', 'Skipped Test Cases', 'Aborted Test Cases', 'Failed Test Cases', 'Broken Test Cases', 'Compromised Test Cases','Undefined Test Cases'],
             datasets: [{
                 label: 'Test Results',
                 fill: false,
-                data: [2,0,0,0,0,0,0,0],
+                data: [{meta: 'Passing tests', value: 2}, {meta: 'Pending tests', value: 0}, {meta: 'Ignored tests', value: 0}, {meta: 'Skipped tests', value: 0}, {meta: 'Aborted tests', value: 0}, {meta: 'Failing tests', value: 0}, {meta: 'Broken tests', value: 0}, {meta: 'Compromised tests', value: 0}],
                 backgroundColor: ['rgba(153,204,51,0.5)','rgba(165, 199, 238, 0.5)','rgba(168, 168, 168, 0.5)','rgba(238, 224, 152, 0.75)','rgba(255, 153, 102, 0.5)','rgba(255, 22, 49, 0.5)','rgba(255, 97, 8, 0.5)','rgba(255, 104, 255, 0.5)','rgba(83, 50, 168, 0.5)'],
                 borderColor: ['rgba(153,204,51,1)','rgba(165, 199, 238, 1)','rgba(168, 168, 168, 1)','rgba(238, 224, 152, 1)','rgba(255, 153, 102, 1)','rgba(255, 22, 49, 1)','rgba(255, 97, 8, 1)','rgba(255, 104, 255, 1)','rgba(83, 50, 168, 1)'],
                 borderWidth: 1,
@@ -816,14 +685,14 @@ Wendy ensures that number of items left does equal 1
         // Options define for display value on top of bars
 
         const severityDetailsReports = [
-            { title: 'Passing Scenarios', link: "dc0092301441c50bdc9940bedc6d420a9fb2806b16c1a66e652f04e747eba2d5.html" },
-            { title: 'Pending Scenarios', link: "766eea7a7de7067728a2b849fabec3f2706cb0bb916945842859da41e6584262.html" },
-            { title: 'Ignored Scenarios', link: "dd52e3a98bafba38e29e0fae74f0896bed6b3b701d95bea6826bc3f3fbbf3c17.html" },
-            { title: 'Skipped Scenarios', link: "83081dcd8436198ab01874ff764c67a510bf61fe97cb838a475fb2bc1cb58e3a.html" },
-            { title: 'Aborted Scenarios',  link: "5e378ef8590a14e1d5a61f330adf6515a3c7833748b1643e7272e31bc61803f6.html"},
-            { title: 'Failed Scenarios', link: "44f8a1d6673fe90e73e071a1b206d90edbd8dcbd4eca96ed2ebfd0e36e4e7822.html"  },
-            { title: 'Broken Scenarios', link: "5daa757d1ed05007f06c0fe907dd39b2a867fbcc601839636bacef9003b1a1bd.html"    },
-            { title: 'Compromised Scenarios',  link: "3c912b3ef302eca5c356ae8d231ef8e1426bcf093292dd0ab5af50a8cb83af8a.html" },
+            { title: 'Passing Scenarios', link: "32a505effa4ac2221f0ef3b6d59457289072ddcf685cd7304a4967c099cb4446.html" },
+            { title: 'Pending Scenarios', link: "0cd7ceb653bfd3ede404a2701003661e750ad00c939fd3b48a3e332fa3703963.html" },
+            { title: 'Ignored Scenarios', link: "ff077e72e4ac524eceb4fc11063dbf467c0c4fb7bc5f4e60aa4e9013a46ab989.html" },
+            { title: 'Skipped Scenarios', link: "12a1d7c3ed7cf4ba271759e3f0cad94e0186e5513d0deb391aba50d660e6a2c1.html" },
+            { title: 'Aborted Scenarios',  link: "0ff570428bb5b3c85a37fe6ba09eabc4f81be342bd5cbb89b474df4b3f802af5.html"},
+            { title: 'Failed Scenarios', link: "3b5903efc7d3ce712c3716f2c07267e5f3c099b3af25eafbcc4d5a9de3742bd1.html"  },
+            { title: 'Broken Scenarios', link: "0cbf4de22dbd8ae1fe311d0edc8f05f30d6ac5055d0acb316b263d9259dcbc77.html"    },
+            { title: 'Compromised Scenarios',  link: "bc6874b5649aef4f6b3706fb72ce3eecf61ba9155c2e023ffcc5187905f43af5.html" },
         ]
         const severityData = {
             labels: ['Passing', 'Pending', 'Ignored', 'Skipped', 'Aborted', 'Failed', 'Broken', 'Compromised'],
@@ -894,14 +763,14 @@ Wendy ensures that number of items left does equal 1
 
         // Options define for display value on top of bars
         const durationDetailsReports = [
-                {title: "Under 1 second", link: "7b2921153087b22ed1827aafb8b483f9446ffbbe88050e2dd08d236ea9906503.html"},
-                {title: "1 to 10 seconds", link: "06d6a699cbb7a98aed2b85cbbce67c03977ead09dc7a8e77452487683f253a66.html"},
-                {title: "10 to 30 seconds", link: "1955929593a30e4bab06c63ad5a3a91b33f44fc3dee656107a054f28d3c677f3.html"},
-                {title: "30 to 60 seconds", link: "19a30b82537ccdbfe61da26803ddba5d9bdf445c8bf1628a3528d0b9ee15ae56.html"},
-                {title: "1 to 2 minutes", link: "ae0f0ffae5bdd4509dfbf6b70872ff337faea064556031f99b2636c0bf7e05eb.html"},
-                {title: "2 to 5 minutes", link: "71d74ba1fc200dfe47a28e1a1357c87ec4b21696b0fb1e665719fcf0fd4402cb.html"},
-                {title: "5 to 10 minutes", link: "aa3ae80d23650f2931f8bd73b7e5ec576d10df6b98df03911a0280a06560db64.html"},
-                {title: "10 minutes or over", link: "9510a90549157a2d3f30f929ff8c9666cf1c68260c402da012b56d8cdddd64e5.html"},
+                {title: "Under 1 second", link: "27eda292d636b3228ce4f24e34872b3bdec0407b48d713820a13de24f7a7cc13.html"},
+                {title: "1 to 10 seconds", link: "93b4d769305e0e563bc773162c37e36caf5c6f4fffb7c8d7e19d17b24c50956c.html"},
+                {title: "10 to 30 seconds", link: "a39e7a7194266bd29008e7a095946bccc6342b1067547f00b6f4e316c0e110af.html"},
+                {title: "30 to 60 seconds", link: "132aaab6ec022ae17e16db0d0071a93afeabe35046254e63a55a8bb714da9a6d.html"},
+                {title: "1 to 2 minutes", link: "d043c1f42e09b7dc8d40f348b15cabe4888126c8479bdda4475f5f49e2eb0cf0.html"},
+                {title: "2 to 5 minutes", link: "a5d8f0c80338231a40715979cf9358f43b0db1b5a1b4baa3bc73813b91834d4c.html"},
+                {title: "5 to 10 minutes", link: "41236814d107da7cda6bc8d7625f26da06b2966bda8ec37c971bfec0ec42b717.html"},
+                {title: "10 minutes or over", link: "d86d0be48f88cc658c98362e55dbbb0332ef43b511a88f9a085ec9c32930cc63.html"},
         ]
         // The Severity bar chart
         const durationChartCtx = document.getElementById('durationChart');
