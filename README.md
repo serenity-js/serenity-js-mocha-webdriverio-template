@@ -29,9 +29,8 @@ You can also launch it in a virtual Gitpod workspace without having to install a
 ### Installation
 
 To use this project, you'll need:
-- Node.js, a Long-Term Support (LTS) release version 16 or later - [download](https://nodejs.org/en/)
+- Node.js, a Long-Term Support (LTS) release version 18.12 or later - [download](https://nodejs.org/en/)
 - Java Runtime Environment (JRE) or a Java Development Kit (JDK) version 11 or later - [download](https://adoptopenjdk.net/)
-- Chrome web browser - [download](https://www.google.co.uk/chrome/)
 
 Follow the [installation instructions](https://serenity-js.org/handbook/about/installation/) to help you verify your setup.
 
@@ -55,10 +54,6 @@ strict-ssl=false
 registry=https://artifactory.mycompany.com/artifactory/
 ```
 
-If you encounter issues downloading the Serenity BDD CLI jar, please follow the [detailed instructions in the Serenity/JS Handbook](https://serenity-js.org/api/serenity-bdd/#downloading-the-serenity-bdd-reporting-cli).
-
-Similar instructions are available for the [`chromedriver` module](https://www.npmjs.com/package/chromedriver).
-
 ### Execution
 
 The project provides several [NPM scripts](https://docs.npmjs.com/cli/v6/using-npm/scripts) defined in [`package.json`](package.json):
@@ -73,21 +68,27 @@ npm start               # starts a mini HTTP server and serves the test reports
                         # at http://localhost:8080
 ```
 
-## Your feedback matters!
+## 💡️ Learn Serenity/JS
 
-Do you find Serenity/JS useful? [Give it a star](https://github.com/serenity-js/serenity-js)! &#9733;
+- [Serenity/JS WebdriverIO integration guide](https://serenity-js.org/handbook/test-runners/webdriverio/) - Integrate Serenity/JS with your WebdriverIO test suite, enable Serenity BDD reports, and start using the Screenplay Pattern
+- [Serenity/JS Handbook](https://serenity-js.org/handbook/) - Write high-quality automated acceptance tests with Serenity/JS
+- [Serenity/JS API documentation](https://serenity-js.org/api/) - Explore Serenity/JS modules and features
+- [Serenity/JS Project Templates](https://serenity-js.org/handbook/getting-started/project-templates/) - Kickstart your projects with best practices built right in
 
-Found a bug? Need a feature? Raise [an issue](https://github.com/serenity-js/serenity-js/issues?state=open)
-or submit a pull request.
+## 👋 Join the Serenity/JS Community
 
-Have feedback? Let me know on Twitter: [@JanMolak](https://twitter.com/JanMolak)
+- [Serenity/JS Community chat channel](https://matrix.to/#/#serenity-js:gitter.im) - Meet Serenity/JS developers and maintainers
+- [Serenity/JS Forum](https://github.com/orgs/serenity-js/discussions/categories/how-to) - Find answers to your Serenity/JS questions
+- [Contribute to Serenity/JS](https://serenity-js.org/community/contributing/) - Learn how to propose features, report bugs, and contribute to the Serenity/JS codebase
 
-If you'd like to chat with fellow users of Serenity/JS, join us on [Serenity/JS Community Chat](https://gitter.im/serenity-js/Lobby).
+## 📣 Stay up to date
 
-New tutorials and videos are coming soon, follow us on [LinkedIn](https://www.linkedin.com/company/serenity-js) and subscribe to [Serenity/JS YouTube channel](https://www.youtube.com/channel/UC0RdeVPyjtJopVHvlLrXd1Q) to get notified when they're available!
+- [Serenity/JS on YouTube](https://www.youtube.com/@serenity-js) - Subscribe for tutorials, demos, conference talks, and more
+- [Serenity/JS on LinkedIn](https://www.linkedin.com/company/serenity-js) - Follow for release and community event announcements
+- [Serenity/JS on GitHub](https://github.com/serenity-js/serenity-js) - Star Serenity/JS to help others discover the framework!
 
-And if Serenity/JS has made your life a little bit easier, please [support its ongoing development](https://github.com/sponsors/serenity-js).
+## 💛 Support Serenity/JS
 
-[![LinkedIn Follow](https://img.shields.io/badge/Follow%20Serenity%2FJS-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/company/serenity-js)
-[![YouTube Follow](https://img.shields.io/badge/Watch%20@serenity&#8212;JS-FA120F?style=for-the-badge&logo=youtube&logoColor=white)](https://www.youtube.com/@serenity-js)
-[![GitHub Sponsors](https://img.shields.io/badge/Support%20@serenity%2FJS-703EC8?style=for-the-badge&logo=github&logoColor=white)](https://github.com/sponsors/serenity-js)
+Support our mission to make test automation collaborative and easier to scale. Become a Serenity/JS GitHub Sponsor today!
+
+[![GitHub Sponsors](https://img.shields.io/badge/Sponsor%20@serenity%2FJS-703EC8?style=for-the-badge&logo=github&logoColor=white)](https://github.com/sponsors/serenity-js)

@@ -30,7 +30,6 @@ export const config: WebdriverIOConfig = {
         ]
     },
 
-    headless,
     // You can output the logs to a file to avoid cluttering the console
     // outputDir: 'target/logs',
 
