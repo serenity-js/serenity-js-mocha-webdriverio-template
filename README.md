@@ -1,71 +1,89 @@
 # Serenity/JS Mocha WebdriverIO Template
 
-[![Build Status](https://github.com/serenity-js/serenity-js-mocha-webdriverio-template/workflows/build/badge.svg)](https://github.com/serenity-js/serenity-js-mocha-webdriverio-template/actions)
-[![Serenity/JS on GitHub](https://img.shields.io/badge/github-serenity--js-yellow?logo=github)](https://github.com/serenity-js/serenity-js)
-[![Serenity/JS on StackOverflow](https://img.shields.io/badge/stackoverflow-serenity--js-important?logo=stackoverflow)](https://stackoverflow.com/questions/tagged/serenity-js)
-[![Contribute with Gitpod](https://img.shields.io/badge/Contribute%20with-Gitpod-908a85?logo=gitpod)](https://gitpod.io/from-referrer/)
-
 [![Follow Serenity/JS on LinkedIn](https://img.shields.io/badge/Follow-Serenity%2FJS%20-0077B5?logo=linkedin)](https://www.linkedin.com/company/serenity-js)
 [![Watch Serenity/JS on YouTube](https://img.shields.io/badge/Watch-@serenity--js-E62117?logo=youtube)](https://www.youtube.com/@serenity-js)
 [![Join Serenity/JS Community Chat](https://img.shields.io/badge/Chat-Serenity%2FJS%20Community-FBD30B?logo=matrix)](https://matrix.to/#/#serenity-js:gitter.im)
+[![GitHub stars](https://img.shields.io/github/stars/serenity-js/serenity-js?label=Serenity%2FJS&logo=github&style=badge)](https://github.com/serenity-js/serenity-js)
 [![Support Serenity/JS on GitHub](https://img.shields.io/badge/Support-@serenity--js-703EC8?logo=github)](https://github.com/sponsors/serenity-js)
 
-Use this [template repository](https://help.github.com/en/articles/creating-a-repository-from-a-template)
-to get started with acceptance testing your web applications using [Serenity/JS](https://serenity-js.org),
-[Mocha](https://mochajs.org/) and [WebdriverIO](https://webdriver.io/).
+[![Build Status](https://github.com/serenity-js/serenity-js-mocha-webdriverio-template/workflows/build/badge.svg)](https://github.com/serenity-js/serenity-js-mocha-webdriverio-template/actions)
+[![Contribute with Gitpod](https://img.shields.io/badge/Contribute%20with-Gitpod-908a85?logo=gitpod)](https://gitpod.io/from-referrer/)
 
-Learn more:
-- [Serenity BDD reports for this project](https://serenity-js.github.io/serenity-js-mocha-webdriverio-template/)
-- [Serenity/JS website, tutorials, and API docs](https://serenity-js.org/)
 
-## Usage
+Kickstart your web application acceptance testing with [Serenity/JS](https://serenity-js.org), [Mocha](https://mochajs.org/),
+and [WebdriverIO](https://webdriver.io/) using this template repository.
 
-This repository is a GitHub template. You can use it to [create a new GitHub repository](https://help.github.com/en/articles/creating-a-repository-from-a-template), [clone it to your computer](https://docs.github.com/en/free-pro-team@latest/github/creating-cloning-and-archiving-repositories/cloning-a-repository).
+Learn more about Serenity/JS:
+[Serenity/JS and WebdriverIO guide](https://serenity-js.org/handbook/test-runners/webdriverio/)
 
-You can also launch it in a virtual Gitpod workspace without having to install anything on your machine:
+## 🚀 Quick Start
+
+### 1. Create a Project
+
+This repository is a GitHub template. Use it to [create a new GitHub repository](https://help.github.com/en/articles/creating-a-repository-from-a-template)
+for your project.
+
+If you prefer to work in a virtual environment, you can launch this repository in a [Gitpod](https://gitpod.io/from-referrer/) workspace.
 
 [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/from-referrer/)
 
-### Installation
+### 2. Set Up Your Environment
 
-To use this project, you'll need:
-- Node.js, a Long-Term Support (LTS) release version 18.12 or later - [download](https://nodejs.org/en/)
-- Java Runtime Environment (JRE) or a Java Development Kit (JDK) version 11 or later - [download](https://adoptopenjdk.net/)
+Install the required tools:
 
-Follow the [installation instructions](https://serenity-js.org/handbook/about/installation/) to help you verify your setup.
+- [Node.js](https://nodejs.org/en/) (LTS version 18.12 or later)
 
-Once you have the code on your computer, use your computer terminal to run the following command in the directory where you've cloned the project:
+- [Java](https://adoptopenjdk.net/) (JRE or JDK version 11 or later)
+
+Follow the [installation guide](https://serenity-js.org/handbook/getting-started/installation/) to verify your setup.
+
+### 3. Install Dependencies
+
+[Clone](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository) the project and run:
+
 ```
 npm ci
 ```
 
-Running [`npm ci`](https://docs.npmjs.com/cli/v6/commands/npm-ci) downloads the [Node modules](https://docs.npmjs.com/about-packages-and-modules) this project depends on, as well as the latest version of [`chromedriver`](https://www.npmjs.com/package/chromedriver) and the [Serenity BDD CLI](https://github.com/serenity-bdd/serenity-cli) reporter jar. 
+This installs dependencies, including the [Serenity BDD CLI](https://serenity-js.org/handbook/reporting/serenity-bdd-reporter/).
 
-### Corporate networks
+### 4. Run Tests
 
-If your network administrators require you to use proxy servers or an internal artifact registry (Artifactory, Nexus, etc.), your development environment might require some additional configuration.
+Use the predefined [NPM scripts](https://docs.npmjs.com/cli/v10/using-npm/scripts) defined in [`package.json`](package.json) to run your tests
+and related tasks:
 
-The easiest way to do it is to create an [`.npmrc` file](https://docs.npmjs.com/cli/v6/configuring-npm/npmrc) in your home directory: 
+```
+npm test                # Run tests and generate reports
+npm start               # Serve test reports at http://localhost:8080
+
+npm run lint            # Run code linter
+npm run lint:fix        # Try to automatically fix linting issues
+npm run clean           # Remove test reports from any previous test run
+```
+
+### 5. Write your tests
+
+Test scenarios are located in the [`./test/specs`](/test/specs) directory.
+Modify the examples or write your own scenarios using the [Serenity/JS Screenplay Pattern](https://serenity-js.org/handbook/design/screenplay-pattern/).
+
+## 🌟 Features
+
+- **All automation tools ready to go**: Start testing immediately with WebdriverIO, Serenity/JS and Mocha already integrated and configured.
+- **Serenity BDD Reports**: Serenity BDD reporter pre-configured with reports available at `./target/site/serenity`
+    - **Published Reports**: Reports for this repository are published to GitHub Pages and available at https://serenity-js.github.io/serenity-js-mocha-webdriverio-template/.
+- **Screenplay Pattern**: Out-of-the-box integration with the Serenity/JS actors and Screenplay Pattern APIs
+- **GitHub Actions**: Continuous Integration setup included
+- **VS Code**: Pre-configured for a seamless developer experience
+
+### 🔧 Configuration for Corporate Networks
+
+If you're behind a proxy or use an internal registry, configure an [`.npmrc` file](https://docs.npmjs.com/cli/v6/configuring-npm/npmrc) in your home directory:
 
 ```
 proxy=http://user:password@host.mycompany.com:8080/
 https-proxy=http://user:password@host.mycompany.com:8080/
 strict-ssl=false
 registry=https://artifactory.mycompany.com/artifactory/
-```
-
-### Execution
-
-The project provides several [NPM scripts](https://docs.npmjs.com/cli/v6/using-npm/scripts) defined in [`package.json`](package.json):
-
-```
-npm run lint            # runs code linter
-npm run lint:fix        # attempts to automatically fix linting issues
-npm run clean           # removes reports from any previous test run
-npm test                # executes the example test suite
-                        # and generates the report under ./target/site/serenity
-npm start               # starts a mini HTTP server and serves the test reports
-                        # at http://localhost:8080
 ```
 
 ## 💡️ Learn Serenity/JS
