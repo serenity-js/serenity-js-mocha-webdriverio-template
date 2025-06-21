@@ -26,6 +26,8 @@ jobs:
           java-version: '17'
       - name: Setup Node Modules
         uses: bahmutov/npm-install@v1
+      - name: Install Google Chrome
+        run: sudo apt-get install google-chrome-stable
       - run: npm run lint
       - run: npm test
         env:
