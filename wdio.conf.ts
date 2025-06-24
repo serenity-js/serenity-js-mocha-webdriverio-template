@@ -101,6 +101,8 @@ export const config: WebdriverIOConfig = {
         'goog:chromeOptions': {
             args: [
                 'disable-web-security',
+                'allow-file-access-from-files',
+                'allow-file-access',
                 // https://github.com/webdriverio/webdriverio/issues/14168
                 'no-sandbox',
                 'headless',
