@@ -81,33 +81,42 @@ export const config: WebdriverIOConfig = {
     //
     capabilities: [{
 
-        // maxInstances can get overwritten per capability. So if you have an in-house Selenium
-        // grid with only 5 firefox instances available you can make sure that not more than
-        // 5 instances get started at a time.
-        // maxInstances: 5,
+        // // maxInstances can get overwritten per capability. So if you have an in-house Selenium
+        // // grid with only 5 firefox instances available you can make sure that not more than
+        // // 5 instances get started at a time.
+        // // maxInstances: 5,
+        // //
+        // browserName: 'chrome',
         //
+        // // See https://webdriver.io/blog/2023/07/31/driver-management
+        // browserVersion: 'stable',
+        //
+        // acceptInsecureCerts: true,
+        // // If outputDir is provided WebdriverIO can capture driver session logs
+        // // it is possible to configure which logTypes to include/exclude.
+        // // excludeDriverLogs: ['*'], // pass '*' to exclude all driver session logs
+        // // excludeDriverLogs: ['bugreport', 'server'],
+        //
+        // 'goog:chromeOptions': {
+        //     args: [
+        //         'disable-web-security',
+        //         'allow-file-access-from-files',
+        //         'allow-file-access',
+        //         'disable-infobars',
+        //         'ignore-certificate-errors',
+        //         'disable-gpu',
+        //         'window-size=1024x768',
+        //         `user-data-dir=${mkdtempSync(path.join(tmpdir(), 'chrome-'))}`
+        //     ].concat(headless ? ['headless'] : []),
+        // },
+
         browserName: 'chrome',
-
-        // See https://webdriver.io/blog/2023/07/31/driver-management
-        browserVersion: 'stable',
-
-        acceptInsecureCerts: true,
-        // If outputDir is provided WebdriverIO can capture driver session logs
-        // it is possible to configure which logTypes to include/exclude.
-        // excludeDriverLogs: ['*'], // pass '*' to exclude all driver session logs
-        // excludeDriverLogs: ['bugreport', 'server'],
-
         'goog:chromeOptions': {
             args: [
-                'disable-web-security',
-                'allow-file-access-from-files',
-                'allow-file-access',
-                'disable-infobars',
-                'ignore-certificate-errors',
-                'disable-gpu',
-                'window-size=1024x768',
-                `user-data-dir=${mkdtempSync(path.join(tmpdir(), 'chrome-'))}`
-            ].concat(headless ? ['headless'] : []),
+                // https://github.com/webdriverio/webdriverio/issues/14168
+                '--no-sandbox',
+                '--headless',
+            ]
         }
     }],
     //

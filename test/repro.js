@@ -24,7 +24,12 @@ async function main() {
 // Now we need to close the browser window, because it stays open after this
 // program exits
 // This is a different topic.
-    await browser.closeWindow();
+    try {
+        await browser.closeWindow();
+    }
+    catch (e) {
+        console.error("Error closing browser window:", e);
+    }
 }
 
 main()
