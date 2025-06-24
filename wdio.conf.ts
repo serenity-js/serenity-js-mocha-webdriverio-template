@@ -1,4 +1,7 @@
 import type { WebdriverIOConfig } from '@serenity-js/webdriverio';
+import { mkdtempSync } from 'fs';
+import { tmpdir } from 'os';
+import path from 'path';
 
 // Run tests in headless mode on CI and non-headless otherwise
 // Set to true/false to override
@@ -70,7 +73,7 @@ export const config: WebdriverIOConfig = {
     // and 30 processes will get spawned. The property handles how many capabilities
     // from the same test should run tests.
     //
-    maxInstances: 1,
+    maxInstances: 4,
     //
     // If you have trouble getting all important capabilities together, check out the
     // Sauce Labs platform configurator - a great tool to configure your capabilities:
@@ -96,13 +99,14 @@ export const config: WebdriverIOConfig = {
 
         'goog:chromeOptions': {
             args: [
-                // 'disable-web-security',
-                // 'allow-file-access-from-files',
-                // 'allow-file-access',
-                // 'disable-infobars',
-                // 'ignore-certificate-errors',
+                'disable-web-security',
+                'allow-file-access-from-files',
+                'allow-file-access',
+                'disable-infobars',
+                'ignore-certificate-errors',
                 'disable-gpu',
-                // 'window-size=1024x768',
+                'window-size=1024x768',
+                `user-data-dir=${mkdtempSync(path.join(tmpdir(), 'chrome-'))}`
             ].concat(headless ? ['headless'] : []),
         }
     }],
