@@ -111,6 +111,7 @@ export const config: WebdriverIOConfig = {
         // },
 
         browserName: 'chrome',
+        browserVersion: 'stable',
         'goog:chromeOptions': {
             args: [
                 // https://github.com/webdriverio/webdriverio/issues/14168
