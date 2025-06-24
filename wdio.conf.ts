@@ -83,10 +83,10 @@ export const config: WebdriverIOConfig = {
         // 5 instances get started at a time.
         // maxInstances: 5,
         //
-        browserName: 'chrome',
+        // browserName: 'chrome',
 
         // See https://webdriver.io/blog/2023/07/31/driver-management
-        browserVersion: 'stable',
+        // browserVersion: 'stable',
 
         // acceptInsecureCerts: true,
         // If outputDir is provided WebdriverIO can capture driver session logs
@@ -94,27 +94,27 @@ export const config: WebdriverIOConfig = {
         // excludeDriverLogs: ['*'], // pass '*' to exclude all driver session logs
         // excludeDriverLogs: ['bugreport', 'server'],
 
-        'goog:chromeOptions': {
-            args: [
-                'disable-web-security',
-                'allow-file-access-from-files',
-                'allow-file-access',
-                'disable-infobars',
-                'ignore-certificate-errors',
-                'disable-gpu',
-                'window-size=1024x768',
-            ].concat(headless ? ['headless'] : []),
-        },
-
-        // browserName: 'chrome',
-        // browserVersion: 'stable',
         // 'goog:chromeOptions': {
         //     args: [
-        //         // https://github.com/webdriverio/webdriverio/issues/14168
-        //         '--no-sandbox',
-        //         '--headless',
-        //     ]
-        // }
+        //         'disable-web-security',
+        //         'allow-file-access-from-files',
+        //         'allow-file-access',
+        //         'disable-infobars',
+        //         'ignore-certificate-errors',
+        //         'disable-gpu',
+        //         'window-size=1024x768',
+        //     ].concat(headless ? ['headless'] : []),
+        // },
+
+        browserName: 'chrome',
+        browserVersion: 'stable',
+        'goog:chromeOptions': {
+            args: [
+                // https://github.com/webdriverio/webdriverio/issues/14168
+                '--no-sandbox',
+                '--headless',
+            ]
+        }
     }],
     //
     // ===================
