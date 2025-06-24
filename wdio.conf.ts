@@ -96,13 +96,13 @@ export const config: WebdriverIOConfig = {
 
         'goog:chromeOptions': {
             args: [
-                'disable-web-security',
-                'allow-file-access-from-files',
-                'allow-file-access',
-                'disable-infobars',
-                'ignore-certificate-errors',
+                // 'disable-web-security',
+                // 'allow-file-access-from-files',
+                // 'allow-file-access',
+                // 'disable-infobars',
+                // 'ignore-certificate-errors',
                 'disable-gpu',
-                'window-size=1024x768',
+                // 'window-size=1024x768',
             ].concat(headless ? ['headless'] : []),
         }
     }],
