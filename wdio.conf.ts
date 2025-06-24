@@ -104,7 +104,7 @@ export const config: WebdriverIOConfig = {
                 'allow-file-access-from-files',
                 'allow-file-access',
                 // https://github.com/webdriverio/webdriverio/issues/14168
-                'no-sandbox',
+                // 'no-sandbox',
                 'headless',
                 'disable-infobars',
                 'ignore-certificate-errors',
