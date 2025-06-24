@@ -88,7 +88,7 @@ export const config: WebdriverIOConfig = {
         // See https://webdriver.io/blog/2023/07/31/driver-management
         browserVersion: 'stable',
 
-        acceptInsecureCerts: true,
+        // acceptInsecureCerts: true,
         // If outputDir is provided WebdriverIO can capture driver session logs
         // it is possible to configure which logTypes to include/exclude.
         // excludeDriverLogs: ['*'], // pass '*' to exclude all driver session logs
