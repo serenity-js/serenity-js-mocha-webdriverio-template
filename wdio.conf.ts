@@ -101,8 +101,8 @@ export const config: WebdriverIOConfig = {
         'goog:chromeOptions': {
             args: [
                 // https://github.com/webdriverio/webdriverio/issues/14168
-                '--no-sandbox',
-                '--headless',
+                'no-sandbox',
+                'headless',
             ]
         }
     }],
