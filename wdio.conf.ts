@@ -100,6 +100,7 @@ export const config: WebdriverIOConfig = {
         acceptInsecureCerts: true,
         'goog:chromeOptions': {
             args: [
+                'disable-web-security',
                 // https://github.com/webdriverio/webdriverio/issues/14168
                 'no-sandbox',
                 'headless',
