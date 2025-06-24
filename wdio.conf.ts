@@ -1,11 +1,8 @@
 import type { WebdriverIOConfig } from '@serenity-js/webdriverio';
-// import { mkdtempSync } from 'fs';
-// import { tmpdir } from 'os';
-// import path from 'path';
 
 // Run tests in headless mode on CI and non-headless otherwise
 // Set to true/false to override
-// const headless = Boolean(process.env.CI);
+const headless = Boolean(process.env.CI);
 
 export const config: WebdriverIOConfig = {
 
@@ -81,44 +78,43 @@ export const config: WebdriverIOConfig = {
     //
     capabilities: [{
 
-        // // maxInstances can get overwritten per capability. So if you have an in-house Selenium
-        // // grid with only 5 firefox instances available you can make sure that not more than
-        // // 5 instances get started at a time.
-        // // maxInstances: 5,
-        // //
-        // browserName: 'chrome',
+        // maxInstances can get overwritten per capability. So if you have an in-house Selenium
+        // grid with only 5 firefox instances available you can make sure that not more than
+        // 5 instances get started at a time.
+        // maxInstances: 5,
         //
-        // // See https://webdriver.io/blog/2023/07/31/driver-management
-        // browserVersion: 'stable',
-        //
-        // acceptInsecureCerts: true,
-        // // If outputDir is provided WebdriverIO can capture driver session logs
-        // // it is possible to configure which logTypes to include/exclude.
-        // // excludeDriverLogs: ['*'], // pass '*' to exclude all driver session logs
-        // // excludeDriverLogs: ['bugreport', 'server'],
-        //
-        // 'goog:chromeOptions': {
-        //     args: [
-        //         'disable-web-security',
-        //         'allow-file-access-from-files',
-        //         'allow-file-access',
-        //         'disable-infobars',
-        //         'ignore-certificate-errors',
-        //         'disable-gpu',
-        //         'window-size=1024x768',
-        //         `user-data-dir=${mkdtempSync(path.join(tmpdir(), 'chrome-'))}`
-        //     ].concat(headless ? ['headless'] : []),
-        // },
-
         browserName: 'chrome',
+
+        // See https://webdriver.io/blog/2023/07/31/driver-management
         browserVersion: 'stable',
+
+        acceptInsecureCerts: true,
+        // If outputDir is provided WebdriverIO can capture driver session logs
+        // it is possible to configure which logTypes to include/exclude.
+        // excludeDriverLogs: ['*'], // pass '*' to exclude all driver session logs
+        // excludeDriverLogs: ['bugreport', 'server'],
+
         'goog:chromeOptions': {
             args: [
-                // https://github.com/webdriverio/webdriverio/issues/14168
-                '--no-sandbox',
-                '--headless',
-            ]
-        }
+                'disable-web-security',
+                'allow-file-access-from-files',
+                'allow-file-access',
+                'disable-infobars',
+                'ignore-certificate-errors',
+                'disable-gpu',
+                'window-size=1024x768',
+            ].concat(headless ? ['headless'] : []),
+        },
+
+        // browserName: 'chrome',
+        // browserVersion: 'stable',
+        // 'goog:chromeOptions': {
+        //     args: [
+        //         // https://github.com/webdriverio/webdriverio/issues/14168
+        //         '--no-sandbox',
+        //         '--headless',
+        //     ]
+        // }
     }],
     //
     // ===================

@@ -27,10 +27,6 @@ jobs:
       - name: Setup Node Modules
         uses: bahmutov/npm-install@v1
       - run: npm run lint
-      - name: MRE
-        run:
-          node test/repro.js
-
       - run: npm test
         env:
           CI: true
