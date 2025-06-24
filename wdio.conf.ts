@@ -78,22 +78,10 @@ export const config: WebdriverIOConfig = {
     //
     capabilities: [{
 
-        // maxInstances can get overwritten per capability. So if you have an in-house Selenium
-        // grid with only 5 firefox instances available you can make sure that not more than
-        // 5 instances get started at a time.
-        // maxInstances: 5,
-        //
+        // Doesn't work
         // browserName: 'chrome',
-
-        // See https://webdriver.io/blog/2023/07/31/driver-management
         // browserVersion: 'stable',
-
         // acceptInsecureCerts: true,
-        // If outputDir is provided WebdriverIO can capture driver session logs
-        // it is possible to configure which logTypes to include/exclude.
-        // excludeDriverLogs: ['*'], // pass '*' to exclude all driver session logs
-        // excludeDriverLogs: ['bugreport', 'server'],
-
         // 'goog:chromeOptions': {
         //     args: [
         //         'disable-web-security',
@@ -106,8 +94,10 @@ export const config: WebdriverIOConfig = {
         //     ].concat(headless ? ['headless'] : []),
         // },
 
+        // Works
         browserName: 'chrome',
         browserVersion: 'stable',
+        acceptInsecureCerts: true,
         'goog:chromeOptions': {
             args: [
                 // https://github.com/webdriverio/webdriverio/issues/14168
