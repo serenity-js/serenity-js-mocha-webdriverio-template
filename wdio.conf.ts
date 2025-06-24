@@ -1,11 +1,11 @@
 import type { WebdriverIOConfig } from '@serenity-js/webdriverio';
-import { mkdtempSync } from 'fs';
-import { tmpdir } from 'os';
-import path from 'path';
+// import { mkdtempSync } from 'fs';
+// import { tmpdir } from 'os';
+// import path from 'path';
 
 // Run tests in headless mode on CI and non-headless otherwise
 // Set to true/false to override
-const headless = Boolean(process.env.CI);
+// const headless = Boolean(process.env.CI);
 
 export const config: WebdriverIOConfig = {
 
