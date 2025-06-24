@@ -106,6 +106,10 @@ export const config: WebdriverIOConfig = {
                 // https://github.com/webdriverio/webdriverio/issues/14168
                 'no-sandbox',
                 'headless',
+                'disable-infobars',
+                'ignore-certificate-errors',
+                'disable-gpu',
+                'window-size=1024x768',
             ]
         }
     }],
