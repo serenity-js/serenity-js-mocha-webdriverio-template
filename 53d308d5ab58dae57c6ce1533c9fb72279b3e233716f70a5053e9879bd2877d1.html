@@ -69,8 +69,8 @@
     Chart.register(ChartDataLabels);
 </script>
 <!-- JQuery-UI -->
-<link type="text/css" href="jquery-ui/1.14.1/jquery-ui.css" rel="Stylesheet" />
-<script type="text/javascript" src="jquery-ui/1.14.1/jquery-ui.js"></script><!-- DataTables -->
+<link type="text/css" href="jquery-ui-1.14.1/jquery-ui.css" rel="Stylesheet" />
+<script type="text/javascript" src="jquery-ui-1.14.1/jquery-ui.js"></script><!-- DataTables -->
 <link type="text/css" href="datatables/2.3.1/datatables.min.css" rel="stylesheet" />
 <script type="text/javascript" src="datatables/2.3.1/datatables.min.js"></script>
 <script type="text/javascript" src="datatables/2.3.1/time-elapsed-dhms.js"></script>
@@ -107,14 +107,47 @@
 
         $(document).ready(function () {
 
+            $.fn.dataTable.ext.type.order['test-result-pre'] = function(data) {
+                // Extract the text from the hidden span (SUCCESS, FAILURE, etc.)
+                var match = data.match(/<span[^>]*style="display:none"[^>]*>(.*?)<\/span>/);
+                var result = match ? match[1].trim() : '';
+
+                // Define sort priority (failures first when ascending)
+                var order = {
+                    'FAILURE': 1,
+                    'ERROR': 2,
+                    'BROKEN': 3,
+                    'COMPROMISED': 4,
+                    'PENDING': 5,
+                    'IGNORED': 6,
+                    'SKIPPED': 7,
+                    'ABORTED': 8,
+                    'SUCCESS': 9
+                };
+
+                return order[result] || 99;
+            };
+
+            // Then modify your DataTable initialization
             $("#scenario-results").DataTable({
-                "order": [[0, "asc",], [3, "asc",]],
+                "order": [[0, "asc"], [1, "asc"], [2, "asc"]], // Keep your default sort order
                 "language": {
                     searchPlaceholder: "Filter",
                     search: ""
                 },
                 columnDefs: [
-                    {type: 'time-elapsed-dhms', targets: 4}
+                    {
+                        targets: 4, // Started column
+                        visible: false
+                    },
+                    {
+                        type: 'time-elapsed-dhms',
+                        targets: 5 // Total Duration column (adjusted from 6 to 5)
+                    },
+                    {
+                        type: 'test-result',
+                        targets: 6 // Result column (changed from 7 to 6)
+                    }
                 ]
             })
             $("#manual-scenario-results").DataTable({
@@ -225,7 +258,7 @@
             <a href="#"><i class="bi bi-chat-text"></i> Features</a>
         </li>
     </ul>
-    <span class="date-and-time"><a href="build-info.html"><i class="bi bi-info-circle"></i></a> Report generated 18-08-2026 21:07</span>
+    <span class="date-and-time"><a href="build-info.html"><i class="bi bi-info-circle"></i></a> Report generated 20-08-2026 02:18</span>
     <br style="clear:left"/>
 </div>
 
@@ -306,14 +339,14 @@
                                                                                 <tr>
                                                                                     <td class="icons-bar">
                                                                                         <a style="margin-left:0.5em;padding-right: 1.5em;"
-                                                                                           href="bdd6808768959eb50ed05381c81d47706b9ce6e24074256b848e9ff52cc71fcb.html"
+                                                                                           href="c9d69a2fa1b1c275103b39547f9916e2c086223b420c8b908fdbbd184c26bf68.html"
                                                                                            title="View test results">
                                                                                             <a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a>
                                                                                             </a>
 
 
                                                                                             <a style="margin-left:0.5em;padding-right: 1.5em;"
-                                                                                               href="bdd6808768959eb50ed05381c81d47706b9ce6e24074256b848e9ff52cc71fcb.html"
+                                                                                               href="c9d69a2fa1b1c275103b39547f9916e2c086223b420c8b908fdbbd184c26bf68.html"
                                                                                                title="View test results">
                                                                                                 <i class="bi bi-eyeglasses"></i>
                                                                                             </a>
@@ -339,14 +372,14 @@
                                                                                 <tr>
                                                                                     <td class="icons-bar">
                                                                                         <a style="margin-left:0.5em;padding-right: 1.5em;"
-                                                                                           href="a9dd76d2454693856d333b6db7d32e1e5a7e9621baea7bde6a7bd977cc711b41.html"
+                                                                                           href="8c6bc7d64fe31f61f689bba6076d4c0ee832fda8647b43f87ac4b0980384e048.html"
                                                                                            title="View test results">
                                                                                             <a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a>
                                                                                             </a>
 
 
                                                                                             <a style="margin-left:0.5em;padding-right: 1.5em;"
-                                                                                               href="a9dd76d2454693856d333b6db7d32e1e5a7e9621baea7bde6a7bd977cc711b41.html"
+                                                                                               href="8c6bc7d64fe31f61f689bba6076d4c0ee832fda8647b43f87ac4b0980384e048.html"
                                                                                                title="View test results">
                                                                                                 <i class="bi bi-eyeglasses"></i>
                                                                                             </a>
@@ -364,7 +397,7 @@
                                             <div class="col-sm-12">
                                                 <h3>Scenarios</h3>
 
-                                                    <a name="174c8590-a6e1-42cc-ba3e-5f85e54f6541"></a>
+                                                    <a name="7bbb510a-7a0a-4f2e-bfdb-3fa666e3914d"></a>
                                                     <p class="rule-tags inline-tag">
                                                     </p>
 
@@ -374,7 +407,7 @@
                                                                  style="min-height:1.5em;">
                                                                 <div>
                                                                         <span class="scenario-heading">
-                                                                            <a href="bdd6808768959eb50ed05381c81d47706b9ce6e24074256b848e9ff52cc71fcb.html"
+                                                                            <a href="c9d69a2fa1b1c275103b39547f9916e2c086223b420c8b908fdbbd184c26bf68.html"
                                                                                title="View test results">Scenario: offers a web testing tutorial</a>
                                                                         </span>
 
@@ -390,8 +423,8 @@
 
                                                             </div>
                                                             <div class="scenario-docs card-body">
-                                                                    <p>Alice navigates to &quot;https://serenity-js.org&quot;</p>
-                                                                    <p>Alice ensures that the text of page element located by id ('cta-start-automating') does equal &quot;Start automating 🚀&quot;</p>
+                                                                        <p>Alice navigates to &quot;https://serenity-js.org&quot;</p>
+                                                                        <p>Alice ensures that the text of page element located by id ('cta-start-automating') does equal &quot;Start automating 🚀&quot;</p>
                                                                 <div class="examples">
                                                                 </div>
                                                             </div>
@@ -402,7 +435,7 @@
                                                                  style="min-height:1.5em;">
                                                                 <div>
                                                                         <span class="scenario-heading">
-                                                                            <a href="a9dd76d2454693856d333b6db7d32e1e5a7e9621baea7bde6a7bd977cc711b41.html"
+                                                                            <a href="8c6bc7d64fe31f61f689bba6076d4c0ee832fda8647b43f87ac4b0980384e048.html"
                                                                                title="View test results">Scenario: offers examples to help you practice test automation</a>
                                                                         </span>
 
@@ -418,10 +451,10 @@
 
                                                             </div>
                                                             <div class="scenario-docs card-body">
-                                                                    <p>Apisitt ensures all GitHub systems are operational</p>
-                                                                    <p>Wendy starts with a list containing 3 items</p>
-                                                                    <p>Wendy marks the following items as completed: [ 'Buy dog food', 'Feed the dog' ]</p>
-                                                                    <p>Wendy ensures that number of items left does equal 1</p>
+                                                                        <p>Apisitt ensures all GitHub systems are operational</p>
+                                                                        <p>Wendy starts with a list containing 3 items</p>
+                                                                        <p>Wendy marks the following items as completed: [ 'Buy dog food', 'Feed the dog' ]</p>
+                                                                        <p>Wendy ensures that number of items left does equal 1</p>
                                                                 <div class="examples">
                                                                 </div>
                                                             </div>
@@ -503,7 +536,7 @@
                     <td>
                         <i class="bi bi-flag-fill"></i> Tests Started
                     </td>
-                    <td>Aug 18, 2026 21:07:00</td>
+                    <td>Aug 20, 2026 02:18:38</td>
                     <td>
                         <i class="bi bi-stopwatch"></i> Average
                         Execution Time
@@ -517,8 +550,8 @@
                     </td>
                     <td></td>
                     <td>
-                        <i class="bi bi-stopwatch-fill"></i> Total
-                        Execution Time
+                        <i class="bi bi-stopwatch-fill"></i> Cumulative Test Time
+                        <br/><small class="text-muted">(sum of all individual test durations)</small>
                     </td>
                     <td>2s</td>
                 </tr>
@@ -547,14 +580,14 @@
                                                                             <a href="#">serenity-js website</a>
                                                                     </td>
                                                                     <td>
-                                                                            <a href="bdd6808768959eb50ed05381c81d47706b9ce6e24074256b848e9ff52cc71fcb.html">offers a web testing tutorial</a>
+                                                                            <a href="c9d69a2fa1b1c275103b39547f9916e2c086223b420c8b908fdbbd184c26bf68.html">offers a web testing tutorial</a>
                                                                     </td>
                                                                     <td><span class='context-icon'><i class='bi bi-browser-chrome' title='Chrome'></i> <i class='bi bi-ubuntu' title='Linux'></i></span><span style="display:none">Chrome,linux</span>
                                                                     </td>
                                                                     <td>2</td>
-                                                                    <td>21:07:00</td>
-                                                                    <td>1s 078ms</td>
-                                                                    <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span style="display:none">SUCCESS</span>
+                                                                    <td>02:18:38</td>
+                                                                    <td>1s 060ms</td>
+                                                                    <td class="test-result-cell"><span style="display:none">SUCCESS</span> <a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a>
                                                                     </td>
                                                                 </tr>
                                                                 <tr class="scenario-result SUCCESS">
@@ -562,14 +595,14 @@
                                                                             <a href="#">serenity-js website</a>
                                                                     </td>
                                                                     <td>
-                                                                            <a href="a9dd76d2454693856d333b6db7d32e1e5a7e9621baea7bde6a7bd977cc711b41.html">offers examples to help you practice test automation</a>
+                                                                            <a href="8c6bc7d64fe31f61f689bba6076d4c0ee832fda8647b43f87ac4b0980384e048.html">offers examples to help you practice test automation</a>
                                                                     </td>
                                                                     <td><span class='context-icon'><i class='bi bi-browser-chrome' title='Chrome'></i> <i class='bi bi-ubuntu' title='Linux'></i></span><span style="display:none">Chrome,linux</span>
                                                                     </td>
                                                                     <td>4</td>
-                                                                    <td>21:07:01</td>
-                                                                    <td>1s 717ms</td>
-                                                                    <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span style="display:none">SUCCESS</span>
+                                                                    <td>02:18:39</td>
+                                                                    <td>1s 832ms</td>
+                                                                    <td class="test-result-cell"><span style="display:none">SUCCESS</span> <a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a>
                                                                     </td>
                                                                 </tr>
                                                         </tbody>
@@ -594,9 +627,9 @@
                         <div class="card-body">
                                 <h5 class="card-title">Browser</h5>
                             <div>
-                                    <a href="a470703f1e46ed9aca6e2b11290f227bd2ebe79d999a8475408b0fa569cda745.html">
+                                    <a href="76c359c0a6e7b25d50b13872388cf679a5b9cd0e4810bc3e5b504b21cbd8ad21.html">
                                     <span class="tag-badge badge" style="background-color:#b0cf73; margin:1em;padding:4px;">
-                                        <i class="bi bi-tag-fill"></i> Chrome 152.0.7977.42&nbsp;&nbsp;&nbsp;2
+                                        <i class="bi bi-tag-fill"></i> Chrome 152.0.7977.54&nbsp;&nbsp;&nbsp;2
                                     </span>
                                     </a>
                             </div>
@@ -639,7 +672,7 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col-sm-12">
-                    <span class="version">Serenity BDD version 4.2.34</span>
+                    <span class="version">Serenity BDD version 5.3.11</span>
                 </div>
             </div>
         </div>
