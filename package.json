@@ -38,12 +38,12 @@
     "@serenity-js/rest": "^3.45.9",
     "@serenity-js/web": "^3.45.9",
     "@serenity-js/webdriverio": "^3.45.9",
-    "@wdio/cli": "^9.31.1",
+    "@wdio/cli": "^9.31.2",
     "@wdio/globals": "^9.31.1",
-    "@wdio/local-runner": "^9.31.1",
-    "@wdio/spec-reporter": "^9.31.1",
+    "@wdio/local-runner": "^9.31.2",
+    "@wdio/spec-reporter": "^9.31.2",
     "mocha": "^11.8.0",
-    "webdriverio": "^9.31.1"
+    "webdriverio": "^9.31.2"
   },
   "devDependencies": {
     "@types/mocha": "^10.0.10",
