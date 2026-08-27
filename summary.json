@@ -1,29 +1,43 @@
 {
   "$schema": "https://serenity-js.org/schemas/report-summary.json",
-  "generated": "2026-08-25T23:12:04.827Z",
+  "generated": "2026-08-27T11:40:49.413Z",
   "title": "serenity-js-mocha-webdriverio-template",
   "schemaVersion": 1,
   "reportUrl": "./index.html",
   "ci": {
-    "commit": "d10f4af402e7529374d00c13d2d06bf4f761fff9",
+    "commit": "b9fb54e183173aaf7456fe5f5349e31d46172b30",
     "branch": "main",
-    "jobUrl": "https://github.com/serenity-js/serenity-js-mocha-webdriverio-template/actions/runs/32909587369"
+    "jobUrl": "https://github.com/serenity-js/serenity-js-mocha-webdriverio-template/actions/runs/33068343516"
   },
   "latestRun": {
-    "timestamp": "2026-08-25T23:12:01.953Z",
-    "label": "2846",
+    "timestamp": "2026-08-27T11:40:48.454Z",
+    "label": "2850",
     "totals": {
-      "passed": 2,
-      "failed": 0,
+      "passed": 1,
+      "failed": 1,
       "pending": 0,
       "skipped": 0,
       "compromised": 0,
       "error": 0
     },
-    "duration": 2860
+    "duration": 944
   },
   "runs": 1,
-  "failureClusters": [],
+  "failureClusters": [
+    {
+      "fingerprint": "AssertionError:Expected-GitHub-Status-to-equal-\"All-Systems-Operational\"-Expectation:-equals('All-Systems-Operational')-Expected-string:-All-Systems-Operational-Received-string:-Partial-System-Outage-at-seren",
+      "errorType": "AssertionError",
+      "message": "Expected GitHub Status to equal \"All Systems Operational\"\n\nExpectation: equals('All Systems Operational')\n\nExpected string: All Systems Operational\nReceived string: Partial System Outage\n\n    at seren",
+      "scenarios": [
+        {
+          "name": "offers examples to help you practice test automation",
+          "source": "serenity-js_website.spec.ts",
+          "browser": "chrome 152.0.7977.64",
+          "failingStep": "Apisitt ensures that GitHub Status does equal \"All Systems Operational\""
+        }
+      ]
+    }
+  ],
   "consistency": {
     "flaky": [],
     "inconsistent": [],
@@ -31,21 +45,21 @@
     "recovered": []
   },
   "scores": {
-    "passRate": 100,
+    "passRate": 50,
     "completeness": 100,
     "consistency": 100,
-    "confidence": 100
+    "confidence": 80
   },
   "slowest": [
     {
-      "name": "offers examples to help you practice test automation",
-      "source": "serenity-js_website.spec.ts",
-      "duration": 1889
-    },
-    {
       "name": "offers a web testing tutorial",
       "source": "serenity-js_website.spec.ts",
-      "duration": 968
+      "duration": 804
+    },
+    {
+      "name": "offers examples to help you practice test automation",
+      "source": "serenity-js_website.spec.ts",
+      "duration": 137
     }
   ]
 }
