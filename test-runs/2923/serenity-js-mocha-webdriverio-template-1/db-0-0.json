@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "startedAt": "2026-09-21T01:13:04.172Z",
-  "finishedAt": "2026-09-21T01:13:07.367Z",
+  "startedAt": "2026-09-26T04:50:18.524Z",
+  "finishedAt": "2026-09-26T04:50:21.858Z",
   "outcomes": {
     "passed": 2,
     "failed": 0,
@@ -17,15 +17,15 @@
       "outcome": {
         "code": 64
       },
-      "duration": 1258,
-      "startedAt": "2026-09-21T01:13:04.172Z",
+      "duration": 1311,
+      "startedAt": "2026-09-26T04:50:18.524Z",
       "source": {
         "path": "/__w/serenity-js-mocha-webdriverio-template/serenity-js-mocha-webdriverio-template/test/specs/serenity-js_website.spec.ts"
       },
       "tags": [
         {
           "type": "browser",
-          "name": "chrome 153.0.8010.52"
+          "name": "chrome 154.0.8037.57"
         },
         {
           "type": "platform",
@@ -47,8 +47,8 @@
           "outcome": {
             "code": 64
           },
-          "duration": 1172,
-          "startedAt": "2026-09-21T01:13:04.189Z",
+          "duration": 1214,
+          "startedAt": "2026-09-26T04:50:18.544Z",
           "children": [],
           "location": {
             "path": "/__w/serenity-js-mocha-webdriverio-template/serenity-js-mocha-webdriverio-template/test/specs/serenity-js_website.spec.ts",
@@ -62,8 +62,8 @@
           "outcome": {
             "code": 64
           },
-          "duration": 24,
-          "startedAt": "2026-09-21T01:13:05.372Z",
+          "duration": 30,
+          "startedAt": "2026-09-26T04:50:19.769Z",
           "children": [],
           "location": {
             "path": "/__w/serenity-js-mocha-webdriverio-template/serenity-js-mocha-webdriverio-template/test/specs/serenity-js_website.spec.ts",
@@ -110,15 +110,15 @@
       "outcome": {
         "code": 64
       },
-      "duration": 1935,
-      "startedAt": "2026-09-21T01:13:05.432Z",
+      "duration": 2021,
+      "startedAt": "2026-09-26T04:50:19.837Z",
       "source": {
         "path": "/__w/serenity-js-mocha-webdriverio-template/serenity-js-mocha-webdriverio-template/test/specs/serenity-js_website.spec.ts"
       },
       "tags": [
         {
           "type": "browser",
-          "name": "chrome 153.0.8010.52"
+          "name": "chrome 154.0.8037.57"
         },
         {
           "type": "platform",
@@ -140,8 +140,8 @@
           "outcome": {
             "code": 64
           },
-          "duration": 152,
-          "startedAt": "2026-09-21T01:13:05.439Z",
+          "duration": 118,
+          "startedAt": "2026-09-26T04:50:19.844Z",
           "children": [
             {
               "type": "Task",
@@ -149,8 +149,8 @@
               "outcome": {
                 "code": 64
               },
-              "duration": 121,
-              "startedAt": "2026-09-21T01:13:05.439Z",
+              "duration": 85,
+              "startedAt": "2026-09-26T04:50:19.844Z",
               "children": [],
               "location": {
                 "path": "/__w/serenity-js-mocha-webdriverio-template/serenity-js-mocha-webdriverio-template/test/specs/serenity-js_website.spec.ts",
@@ -162,12 +162,12 @@
                 "url": "https://www.githubstatus.com/api/v2/status.json",
                 "requestHeaders": "Accept: application/json, text/plain, */*\nUser-Agent: axios/1.20.0\nAccept-Encoding: gzip, compress, deflate, br",
                 "statusCode": 200,
-                "responseHeaders": "content-type: application/json; charset=utf-8\ncontent-length: 215\nconnection: close\ndate: Mon, 21 Sep 2026 01:13:00 GMT\nx-download-options: noopen\nx-permitted-cross-domain-policies: none\nreferrer-policy: strict-origin-when-cross-origin\nx-statuspage-version: 277fe98422050a9e3997618f271637591ac08d94\nstrict-transport-security: max-age=259200\nx-statuspage-skip-logging: true\naccess-control-allow-origin: *\ncache-control: max-age=10, public, s-maxage=10, stale-while-revalidate=20, stale-if-error=3600\nx-pollinator-metadata-service: status-page-web-pages\nx-runtime: 0.055771\nserver: AtlassianEdge\naccept-ranges: bytes\nx-content-type-options: nosniff\nx-xss-protection: 1; mode=block\natl-traceid: 1fdfcdbf78d4440a8153e3e4ae21ea3e\natl-request-id: 1fdfcdbf-78d4-440a-8153-e3e4ae21ea3e\nreport-to: {\"endpoints\": [{\"url\": \"https://dz8aopenkvv6s.cloudfront.net\"}], \"group\": \"endpoint-1\", \"include_subdomains\": true, \"max_age\": 600}\nnel: {\"failure_fraction\": 0.01, \"include_subdomains\": true, \"max_age\": 600, \"report_to\": \"endpoint-1\"}\netag: W/\"60bc09140cb3443dbd689d97345f30a0\"\nvary: Accept,Accept-Encoding\nx-cache: Hit from cloudfront\nvia: 1.1 f980a3c7b60f30ed2a5a86b44fa742fa.cloudfront.net (CloudFront)\nx-amz-cf-pop: ORD56-P12\nx-amz-cf-id: -of50IQrNz30CEf0Zl5vSCwEma40IiUzevloAnP8KuK4zp7s6xy87g==\nage: 5",
-                "responseBody": "{\n    \"page\": {\n        \"id\": \"kctbh9vrtdwd\",\n        \"name\": \"GitHub\",\n        \"url\": \"https://www.githubstatus.com\",\n        \"time_zone\": \"Etc/UTC\",\n        \"updated_at\": \"2026-09-21T00:53:55.480Z\"\n    },\n    \"status\": {\n        \"indicator\": \"none\",\n        \"description\": \"All Systems Operational\"\n    }\n}"
+                "responseHeaders": "content-type: application/json; charset=utf-8\ncontent-length: 215\nconnection: close\ndate: Sat, 26 Sep 2026 04:49:52 GMT\nx-download-options: noopen\nx-permitted-cross-domain-policies: none\nreferrer-policy: strict-origin-when-cross-origin\nx-statuspage-version: 5a16926c8780c9bc887f7937bea3cb5b7eb53e76\nstrict-transport-security: max-age=259200\nx-statuspage-skip-logging: true\naccess-control-allow-origin: *\ncache-control: max-age=10, public, s-maxage=10, stale-while-revalidate=20, stale-if-error=3600\nx-pollinator-metadata-service: status-page-web-pages\nx-runtime: 0.064770\nserver: AtlassianEdge\naccept-ranges: bytes\nx-content-type-options: nosniff\nx-xss-protection: 1; mode=block\natl-traceid: c66eb7f1bb8445ad9596037354e3b095\natl-request-id: c66eb7f1-bb84-45ad-9596-037354e3b095\nreport-to: {\"endpoints\": [{\"url\": \"https://dz8aopenkvv6s.cloudfront.net\"}], \"group\": \"endpoint-1\", \"include_subdomains\": true, \"max_age\": 600}\nnel: {\"failure_fraction\": 0.01, \"include_subdomains\": true, \"max_age\": 600, \"report_to\": \"endpoint-1\"}\netag: W/\"8481f08acd0850e58c6cea026d5f0f77\"\nvary: Accept,Accept-Encoding\nx-cache: Hit from cloudfront\nvia: 1.1 87261be5be50ea4e0f51ed7963914c48.cloudfront.net (CloudFront)\nx-amz-cf-pop: ORD56-P12\nalt-svc: h3=\":443\"; ma=86400\nx-amz-cf-id: 1CbzBS9lKpUgwk3HWk3501EBNaL6CAzm_W99-s4HXQVZ8aP3ExQDwA==\nage: 27",
+                "responseBody": "{\n    \"page\": {\n        \"id\": \"kctbh9vrtdwd\",\n        \"name\": \"GitHub\",\n        \"url\": \"https://www.githubstatus.com\",\n        \"time_zone\": \"Etc/UTC\",\n        \"updated_at\": \"2026-09-26T04:04:00.003Z\"\n    },\n    \"status\": {\n        \"indicator\": \"none\",\n        \"description\": \"All Systems Operational\"\n    }\n}"
               },
               "artifacts": [
                 {
-                  "path": "test-runs/2916/serenity-js-mocha-webdriverio-template-1/artifact-get-https---www-githubstatus-com-api-v2-status-json-073b96e7a8.json",
+                  "path": "test-runs/2923/serenity-js-mocha-webdriverio-template-1/artifact-get-https---www-githubstatus-com-api-v2-status-json-37b3f76dec.json",
                   "type": "screenshot"
                 }
               ]
@@ -179,7 +179,7 @@
                 "code": 64
               },
               "duration": 1,
-              "startedAt": "2026-09-21T01:13:05.569Z",
+              "startedAt": "2026-09-26T04:50:19.939Z",
               "children": [],
               "location": {
                 "path": "/__w/serenity-js-mocha-webdriverio-template/serenity-js-mocha-webdriverio-template/test/specs/serenity-js_website.spec.ts",
@@ -193,8 +193,8 @@
               "outcome": {
                 "code": 64
               },
-              "duration": 1,
-              "startedAt": "2026-09-21T01:13:05.580Z",
+              "duration": 0,
+              "startedAt": "2026-09-26T04:50:19.951Z",
               "children": [],
               "location": {
                 "path": "/__w/serenity-js-mocha-webdriverio-template/serenity-js-mocha-webdriverio-template/test/specs/serenity-js_website.spec.ts",
@@ -215,8 +215,8 @@
           "outcome": {
             "code": 64
           },
-          "duration": 1259,
-          "startedAt": "2026-09-21T01:13:05.625Z",
+          "duration": 1265,
+          "startedAt": "2026-09-26T04:50:20.006Z",
           "children": [
             {
               "type": "Task",
@@ -224,8 +224,8 @@
               "outcome": {
                 "code": 64
               },
-              "duration": 784,
-              "startedAt": "2026-09-21T01:13:05.626Z",
+              "duration": 740,
+              "startedAt": "2026-09-26T04:50:20.007Z",
               "children": [
                 {
                   "type": "Task",
@@ -233,8 +233,8 @@
                   "outcome": {
                     "code": 64
                   },
-                  "duration": 647,
-                  "startedAt": "2026-09-21T01:13:05.626Z",
+                  "duration": 591,
+                  "startedAt": "2026-09-26T04:50:20.007Z",
                   "children": [],
                   "location": {
                     "path": "/__w/serenity-js-mocha-webdriverio-template/serenity-js-mocha-webdriverio-template/test/serenity/todo-list-app/TodoList.ts",
@@ -248,8 +248,8 @@
                   "outcome": {
                     "code": 64
                   },
-                  "duration": 13,
-                  "startedAt": "2026-09-21T01:13:06.283Z",
+                  "duration": 14,
+                  "startedAt": "2026-09-26T04:50:20.609Z",
                   "children": [],
                   "location": {
                     "path": "/__w/serenity-js-mocha-webdriverio-template/serenity-js-mocha-webdriverio-template/test/specs/serenity-js_website.spec.ts",
@@ -263,8 +263,8 @@
                   "outcome": {
                     "code": 64
                   },
-                  "duration": 54,
-                  "startedAt": "2026-09-21T01:13:06.307Z",
+                  "duration": 63,
+                  "startedAt": "2026-09-26T04:50:20.634Z",
                   "children": [],
                   "location": {
                     "path": "/__w/serenity-js-mocha-webdriverio-template/serenity-js-mocha-webdriverio-template/test/serenity/todo-list-app/TodoList.ts",
@@ -278,8 +278,8 @@
                   "outcome": {
                     "code": 64
                   },
-                  "duration": 27,
-                  "startedAt": "2026-09-21T01:13:06.372Z",
+                  "duration": 30,
+                  "startedAt": "2026-09-26T04:50:20.707Z",
                   "children": [
                     {
                       "type": "Task",
@@ -287,8 +287,8 @@
                       "outcome": {
                         "code": 64
                       },
-                      "duration": 17,
-                      "startedAt": "2026-09-21T01:13:06.372Z",
+                      "duration": 20,
+                      "startedAt": "2026-09-26T04:50:20.707Z",
                       "children": [],
                       "location": {
                         "path": "/__w/serenity-js-mocha-webdriverio-template/serenity-js-mocha-webdriverio-template/test/serenity/todo-list-app/TodoList.ts",
@@ -316,8 +316,8 @@
               "outcome": {
                 "code": 64
               },
-              "duration": 143,
-              "startedAt": "2026-09-21T01:13:06.420Z",
+              "duration": 168,
+              "startedAt": "2026-09-26T04:50:20.758Z",
               "children": [
                 {
                   "type": "Task",
@@ -325,8 +325,8 @@
                   "outcome": {
                     "code": 64
                   },
-                  "duration": 31,
-                  "startedAt": "2026-09-21T01:13:06.420Z",
+                  "duration": 39,
+                  "startedAt": "2026-09-26T04:50:20.758Z",
                   "children": [],
                   "location": {
                     "path": "/__w/serenity-js-mocha-webdriverio-template/serenity-js-mocha-webdriverio-template/test/serenity/todo-list-app/TodoList.ts",
@@ -340,8 +340,8 @@
                   "outcome": {
                     "code": 64
                   },
-                  "duration": 56,
-                  "startedAt": "2026-09-21T01:13:06.462Z",
+                  "duration": 71,
+                  "startedAt": "2026-09-26T04:50:20.807Z",
                   "children": [],
                   "location": {
                     "path": "/__w/serenity-js-mocha-webdriverio-template/serenity-js-mocha-webdriverio-template/test/serenity/todo-list-app/TodoList.ts",
@@ -355,8 +355,8 @@
                   "outcome": {
                     "code": 64
                   },
-                  "duration": 25,
-                  "startedAt": "2026-09-21T01:13:06.528Z",
+                  "duration": 27,
+                  "startedAt": "2026-09-26T04:50:20.889Z",
                   "children": [],
                   "location": {
                     "path": "/__w/serenity-js-mocha-webdriverio-template/serenity-js-mocha-webdriverio-template/test/serenity/todo-list-app/TodoList.ts",
@@ -377,8 +377,8 @@
               "outcome": {
                 "code": 64
               },
-              "duration": 130,
-              "startedAt": "2026-09-21T01:13:06.574Z",
+              "duration": 150,
+              "startedAt": "2026-09-26T04:50:20.936Z",
               "children": [
                 {
                   "type": "Task",
@@ -386,8 +386,8 @@
                   "outcome": {
                     "code": 64
                   },
-                  "duration": 27,
-                  "startedAt": "2026-09-21T01:13:06.574Z",
+                  "duration": 34,
+                  "startedAt": "2026-09-26T04:50:20.937Z",
                   "children": [],
                   "location": {
                     "path": "/__w/serenity-js-mocha-webdriverio-template/serenity-js-mocha-webdriverio-template/test/serenity/todo-list-app/TodoList.ts",
@@ -401,8 +401,8 @@
                   "outcome": {
                     "code": 64
                   },
-                  "duration": 45,
-                  "startedAt": "2026-09-21T01:13:06.611Z",
+                  "duration": 48,
+                  "startedAt": "2026-09-26T04:50:20.980Z",
                   "children": [],
                   "location": {
                     "path": "/__w/serenity-js-mocha-webdriverio-template/serenity-js-mocha-webdriverio-template/test/serenity/todo-list-app/TodoList.ts",
@@ -416,8 +416,8 @@
                   "outcome": {
                     "code": 64
                   },
-                  "duration": 29,
-                  "startedAt": "2026-09-21T01:13:06.665Z",
+                  "duration": 37,
+                  "startedAt": "2026-09-26T04:50:21.038Z",
                   "children": [],
                   "location": {
                     "path": "/__w/serenity-js-mocha-webdriverio-template/serenity-js-mocha-webdriverio-template/test/serenity/todo-list-app/TodoList.ts",
@@ -438,8 +438,8 @@
               "outcome": {
                 "code": 64
               },
-              "duration": 159,
-              "startedAt": "2026-09-21T01:13:06.714Z",
+              "duration": 166,
+              "startedAt": "2026-09-26T04:50:21.095Z",
               "children": [
                 {
                   "type": "Task",
@@ -447,8 +447,8 @@
                   "outcome": {
                     "code": 64
                   },
-                  "duration": 33,
-                  "startedAt": "2026-09-21T01:13:06.714Z",
+                  "duration": 41,
+                  "startedAt": "2026-09-26T04:50:21.096Z",
                   "children": [],
                   "location": {
                     "path": "/__w/serenity-js-mocha-webdriverio-template/serenity-js-mocha-webdriverio-template/test/serenity/todo-list-app/TodoList.ts",
@@ -462,8 +462,8 @@
                   "outcome": {
                     "code": 64
                   },
-                  "duration": 58,
-                  "startedAt": "2026-09-21T01:13:06.758Z",
+                  "duration": 47,
+                  "startedAt": "2026-09-26T04:50:21.148Z",
                   "children": [],
                   "location": {
                     "path": "/__w/serenity-js-mocha-webdriverio-template/serenity-js-mocha-webdriverio-template/test/serenity/todo-list-app/TodoList.ts",
@@ -477,8 +477,8 @@
                   "outcome": {
                     "code": 64
                   },
-                  "duration": 36,
-                  "startedAt": "2026-09-21T01:13:06.827Z",
+                  "duration": 44,
+                  "startedAt": "2026-09-26T04:50:21.206Z",
                   "children": [],
                   "location": {
                     "path": "/__w/serenity-js-mocha-webdriverio-template/serenity-js-mocha-webdriverio-template/test/serenity/todo-list-app/TodoList.ts",
@@ -506,8 +506,8 @@
           "outcome": {
             "code": 64
           },
-          "duration": 411,
-          "startedAt": "2026-09-21T01:13:06.894Z",
+          "duration": 510,
+          "startedAt": "2026-09-26T04:50:21.281Z",
           "children": [
             {
               "type": "Task",
@@ -515,8 +515,8 @@
               "outcome": {
                 "code": 64
               },
-              "duration": 212,
-              "startedAt": "2026-09-21T01:13:06.894Z",
+              "duration": 246,
+              "startedAt": "2026-09-26T04:50:21.282Z",
               "children": [
                 {
                   "type": "Task",
@@ -524,8 +524,8 @@
                   "outcome": {
                     "code": 64
                   },
-                  "duration": 202,
-                  "startedAt": "2026-09-21T01:13:06.894Z",
+                  "duration": 236,
+                  "startedAt": "2026-09-26T04:50:21.282Z",
                   "children": [
                     {
                       "type": "Task",
@@ -533,8 +533,8 @@
                       "outcome": {
                         "code": 64
                       },
-                      "duration": 157,
-                      "startedAt": "2026-09-21T01:13:06.929Z",
+                      "duration": 181,
+                      "startedAt": "2026-09-26T04:50:21.326Z",
                       "children": [
                         {
                           "type": "Task",
@@ -542,8 +542,8 @@
                           "outcome": {
                             "code": 64
                           },
-                          "duration": 146,
-                          "startedAt": "2026-09-21T01:13:06.929Z",
+                          "duration": 169,
+                          "startedAt": "2026-09-26T04:50:21.327Z",
                           "children": [],
                           "location": {
                             "path": "/__w/serenity-js-mocha-webdriverio-template/serenity-js-mocha-webdriverio-template/test/serenity/todo-list-app/TodoListItem.ts",
@@ -578,8 +578,8 @@
               "outcome": {
                 "code": 64
               },
-              "duration": 178,
-              "startedAt": "2026-09-21T01:13:07.117Z",
+              "duration": 243,
+              "startedAt": "2026-09-26T04:50:21.538Z",
               "children": [
                 {
                   "type": "Task",
@@ -587,8 +587,8 @@
                   "outcome": {
                     "code": 64
                   },
-                  "duration": 168,
-                  "startedAt": "2026-09-21T01:13:07.117Z",
+                  "duration": 232,
+                  "startedAt": "2026-09-26T04:50:21.539Z",
                   "children": [
                     {
                       "type": "Task",
@@ -596,8 +596,8 @@
                       "outcome": {
                         "code": 64
                       },
-                      "duration": 123,
-                      "startedAt": "2026-09-21T01:13:07.152Z",
+                      "duration": 158,
+                      "startedAt": "2026-09-26T04:50:21.603Z",
                       "children": [
                         {
                           "type": "Task",
@@ -605,8 +605,8 @@
                           "outcome": {
                             "code": 64
                           },
-                          "duration": 113,
-                          "startedAt": "2026-09-21T01:13:07.152Z",
+                          "duration": 146,
+                          "startedAt": "2026-09-26T04:50:21.604Z",
                           "children": [],
                           "location": {
                             "path": "/__w/serenity-js-mocha-webdriverio-template/serenity-js-mocha-webdriverio-template/test/serenity/todo-list-app/TodoListItem.ts",
@@ -648,8 +648,8 @@
           "outcome": {
             "code": 64
           },
-          "duration": 19,
-          "startedAt": "2026-09-21T01:13:07.316Z",
+          "duration": 23,
+          "startedAt": "2026-09-26T04:50:21.802Z",
           "children": [],
           "location": {
             "path": "/__w/serenity-js-mocha-webdriverio-template/serenity-js-mocha-webdriverio-template/test/specs/serenity-js_website.spec.ts",
@@ -660,9 +660,9 @@
       ],
       "artifacts": [
         {
-          "path": "test-runs/2916/serenity-js-mocha-webdriverio-template-1/artifact-get-https---www-githubstatus-com-api-v2-status-json-073b96e7a8.json",
+          "path": "test-runs/2923/serenity-js-mocha-webdriverio-template-1/artifact-get-https---www-githubstatus-com-api-v2-status-json-37b3f76dec.json",
           "type": "screenshot",
-          "activityId": "sisdjpspetz71pir9uuvgat5"
+          "activityId": "tmh33m89r5rma7txokvnkfdh"
         }
       ],
       "cast": [
@@ -730,7 +730,7 @@
   "tags": [
     {
       "type": "browser",
-      "name": "chrome 153.0.8010.52"
+      "name": "chrome 154.0.8037.57"
     },
     {
       "type": "platform",
@@ -759,12 +759,12 @@
     "serenityVersion": "3.48.0",
     "runtime": {
       "provider": "GitHub Actions",
-      "buildNumber": "2916",
+      "buildNumber": "2923",
       "branch": "main",
-      "commit": "a18209114f407ce77b367252758d9e25f381bf06",
-      "commitMessage": "fix(deps): update webdriverio monorepo to ^9.32.0 (#1139)",
+      "commit": "f83fa554fd259a012964a763a6c75f25e217ab76",
+      "commitMessage": "chore(deps): update dependency @types/node to ^24.19.0 (#1140)",
       "commitAuthor": "renovate[bot]",
-      "jobUrl": "https://github.com/serenity-js/serenity-js-mocha-webdriverio-template/actions/runs/35550088070",
+      "jobUrl": "https://github.com/serenity-js/serenity-js-mocha-webdriverio-template/actions/runs/36218944478",
       "workflow": "build",
       "repositoryUrl": "https://github.com/serenity-js/serenity-js-mocha-webdriverio-template",
       "triggeredBy": "renovate[bot]"
@@ -772,7 +772,7 @@
     "projectName": "serenity-js-mocha-webdriverio-template",
     "packageManager": "npm"
   },
-  "testRunId": "2916",
+  "testRunId": "2923",
   "moduleId": "serenity-js-mocha-webdriverio-template",
   "attempt": 1
 }
