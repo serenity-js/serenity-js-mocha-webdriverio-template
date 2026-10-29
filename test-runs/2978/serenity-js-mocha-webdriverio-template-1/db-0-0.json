@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "startedAt": "2026-10-21T22:41:14.381Z",
-  "finishedAt": "2026-10-21T22:41:18.111Z",
+  "startedAt": "2026-10-29T09:11:03.569Z",
+  "finishedAt": "2026-10-29T09:11:07.759Z",
   "outcomes": {
     "passed": 2,
     "failed": 0,
@@ -17,15 +17,15 @@
       "outcome": {
         "code": 64
       },
-      "duration": 1415,
-      "startedAt": "2026-10-21T22:41:14.381Z",
+      "duration": 1318,
+      "startedAt": "2026-10-29T09:11:03.569Z",
       "source": {
         "path": "/__w/serenity-js-mocha-webdriverio-template/serenity-js-mocha-webdriverio-template/test/specs/serenity-js_website.spec.ts"
       },
       "tags": [
         {
           "type": "browser",
-          "name": "chrome 156.0.8078.47"
+          "name": "chrome 156.0.8078.73"
         },
         {
           "type": "platform",
@@ -47,8 +47,8 @@
           "outcome": {
             "code": 64
           },
-          "duration": 1225,
-          "startedAt": "2026-10-21T22:41:14.406Z",
+          "duration": 1094,
+          "startedAt": "2026-10-29T09:11:03.601Z",
           "children": [],
           "location": {
             "path": "/__w/serenity-js-mocha-webdriverio-template/serenity-js-mocha-webdriverio-template/test/specs/serenity-js_website.spec.ts",
@@ -57,7 +57,7 @@
           },
           "artifacts": [
             {
-              "path": "test-runs/2967/serenity-js-mocha-webdriverio-template-1/screenshot-linux-chrome-156-0-8078-47-alice-navigates-to--https---serenity--3b7d2e5127.png",
+              "path": "test-runs/2978/serenity-js-mocha-webdriverio-template-1/screenshot-linux-chrome-156-0-8078-73-alice-navigates-to--https---serenity--3b7d2e5127.png",
               "type": "screenshot"
             }
           ]
@@ -68,8 +68,8 @@
           "outcome": {
             "code": 64
           },
-          "duration": 27,
-          "startedAt": "2026-10-21T22:41:15.692Z",
+          "duration": 42,
+          "startedAt": "2026-10-29T09:11:04.757Z",
           "children": [],
           "location": {
             "path": "/__w/serenity-js-mocha-webdriverio-template/serenity-js-mocha-webdriverio-template/test/specs/serenity-js_website.spec.ts",
@@ -78,7 +78,7 @@
           },
           "artifacts": [
             {
-              "path": "test-runs/2967/serenity-js-mocha-webdriverio-template-1/screenshot-linux-chrome-156-0-8078-47-alice-ensures-that-the-text-of-page-e-3b7d2e5127.png",
+              "path": "test-runs/2978/serenity-js-mocha-webdriverio-template-1/screenshot-linux-chrome-156-0-8078-73-alice-ensures-that-the-text-of-page-e-3b7d2e5127.png",
               "type": "screenshot"
             }
           ]
@@ -86,14 +86,14 @@
       ],
       "artifacts": [
         {
-          "path": "test-runs/2967/serenity-js-mocha-webdriverio-template-1/screenshot-linux-chrome-156-0-8078-47-alice-navigates-to--https---serenity--3b7d2e5127.png",
+          "path": "test-runs/2978/serenity-js-mocha-webdriverio-template-1/screenshot-linux-chrome-156-0-8078-73-alice-navigates-to--https---serenity--3b7d2e5127.png",
           "type": "screenshot",
-          "activityId": "j5hv05fhtg48tcb4dvthmbmb"
+          "activityId": "vzv20zowrggzjvitciugvw5b"
         },
         {
-          "path": "test-runs/2967/serenity-js-mocha-webdriverio-template-1/screenshot-linux-chrome-156-0-8078-47-alice-ensures-that-the-text-of-page-e-3b7d2e5127.png",
+          "path": "test-runs/2978/serenity-js-mocha-webdriverio-template-1/screenshot-linux-chrome-156-0-8078-73-alice-ensures-that-the-text-of-page-e-3b7d2e5127.png",
           "type": "screenshot",
-          "activityId": "xnxr2a9yqyv2659l7dwb6odj"
+          "activityId": "w7wmdb46wo5oo2ktuxpyvldd"
         }
       ],
       "cast": [
@@ -134,15 +134,15 @@
       "outcome": {
         "code": 64
       },
-      "duration": 2313,
-      "startedAt": "2026-10-21T22:41:15.798Z",
+      "duration": 2869,
+      "startedAt": "2026-10-29T09:11:04.890Z",
       "source": {
         "path": "/__w/serenity-js-mocha-webdriverio-template/serenity-js-mocha-webdriverio-template/test/specs/serenity-js_website.spec.ts"
       },
       "tags": [
         {
           "type": "browser",
-          "name": "chrome 156.0.8078.47"
+          "name": "chrome 156.0.8078.73"
         },
         {
           "type": "platform",
@@ -164,8 +164,8 @@
           "outcome": {
             "code": 64
           },
-          "duration": 240,
-          "startedAt": "2026-10-21T22:41:15.803Z",
+          "duration": 340,
+          "startedAt": "2026-10-29T09:11:04.897Z",
           "children": [
             {
               "type": "Interaction",
@@ -173,8 +173,8 @@
               "outcome": {
                 "code": 64
               },
-              "duration": 94,
-              "startedAt": "2026-10-21T22:41:15.804Z",
+              "duration": 201,
+              "startedAt": "2026-10-29T09:11:04.898Z",
               "children": [],
               "location": {
                 "path": "/__w/serenity-js-mocha-webdriverio-template/serenity-js-mocha-webdriverio-template/test/specs/serenity-js_website.spec.ts",
@@ -186,16 +186,16 @@
                 "url": "https://www.githubstatus.com/api/v2/status.json",
                 "requestHeaders": "Accept: application/json, text/plain, */*\nUser-Agent: axios/1.20.0\nAccept-Encoding: gzip, compress, deflate, br",
                 "statusCode": 200,
-                "responseHeaders": "content-type: application/json; charset=utf-8\ncontent-length: 215\nconnection: close\ndate: Wed, 21 Oct 2026 22:41:00 GMT\nx-download-options: noopen\nx-permitted-cross-domain-policies: none\nreferrer-policy: strict-origin-when-cross-origin\nx-statuspage-version: 90f34c970c3f8f133dc3242a101d85442bccd940\nstrict-transport-security: max-age=259200\nx-statuspage-skip-logging: true\naccess-control-allow-origin: *\ncache-control: max-age=10, public, s-maxage=10, stale-while-revalidate=20, stale-if-error=3600\nx-pollinator-metadata-service: status-page-web-pages\nx-runtime: 0.058925\nserver: AtlassianEdge\naccept-ranges: bytes\nx-content-type-options: nosniff\nx-xss-protection: 1; mode=block\natl-traceid: 62b0c809e242441c9c2fcd2dabeaa7e6\natl-request-id: 62b0c809-e242-441c-9c2f-cd2dabeaa7e6\nreport-to: {\"endpoints\": [{\"url\": \"https://dz8aopenkvv6s.cloudfront.net\"}], \"group\": \"endpoint-1\", \"include_subdomains\": true, \"max_age\": 600}\nnel: {\"failure_fraction\": 0.01, \"include_subdomains\": true, \"max_age\": 600, \"report_to\": \"endpoint-1\"}\netag: W/\"b91ff9a907f00ba8793959a4adf5fd6f\"\nvary: Accept,Accept-Encoding\nx-cache: Hit from cloudfront\nvia: 1.1 fbcfedc2e9be11ab7daeb3c7d2230356.cloudfront.net (CloudFront)\nx-amz-cf-pop: ORD56-P12\nalt-svc: h3=\":443\"; ma=86400\nx-amz-cf-id: 0tox71xedB3SYdwaMz6a1Lv5JsgBOTDMuJ0Zs49pJk3NxqyBlbT5jg==\nage: 15",
-                "responseBody": "{\n    \"page\": {\n        \"id\": \"kctbh9vrtdwd\",\n        \"name\": \"GitHub\",\n        \"url\": \"https://www.githubstatus.com\",\n        \"time_zone\": \"Etc/UTC\",\n        \"updated_at\": \"2026-10-21T21:54:47.171Z\"\n    },\n    \"status\": {\n        \"indicator\": \"none\",\n        \"description\": \"All Systems Operational\"\n    }\n}"
+                "responseHeaders": "content-type: application/json; charset=utf-8\ncontent-length: 215\nconnection: close\ndate: Thu, 29 Oct 2026 09:11:00 GMT\nx-download-options: noopen\nx-permitted-cross-domain-policies: none\nreferrer-policy: strict-origin-when-cross-origin\nx-statuspage-version: 101b0b8bc0ff7270fa546501dc1aaea0f11e5c9f\nx-statuspage-skip-logging: true\naccess-control-allow-origin: *\ncache-control: max-age=10, public, s-maxage=10, stale-while-revalidate=20, stale-if-error=3600\nx-pollinator-metadata-service: status-page-web-pages\nx-runtime: 0.066244\nstrict-transport-security: max-age=259200\nserver: AtlassianEdge\naccept-ranges: bytes\nx-content-type-options: nosniff\nx-xss-protection: 1; mode=block\natl-traceid: fa3273fb3bd3489d9e626533f33e9169\natl-request-id: fa3273fb-3bd3-489d-9e62-6533f33e9169\nreport-to: {\"endpoints\": [{\"url\": \"https://dz8aopenkvv6s.cloudfront.net\"}], \"group\": \"endpoint-1\", \"include_subdomains\": true, \"max_age\": 600}\nnel: {\"failure_fraction\": 0.01, \"include_subdomains\": true, \"max_age\": 600, \"report_to\": \"endpoint-1\"}\netag: W/\"9901e9ee3ed9ecd1275b9ed93e8ce2c6\"\nvary: Accept,Accept-Encoding\nx-cache: Hit from cloudfront\nvia: 1.1 bf9e5565039f7e32c47e53e1895197ba.cloudfront.net (CloudFront)\nx-amz-cf-pop: DFW57-P5\nalt-svc: h3=\":443\"; ma=86400\nx-amz-cf-id: UgnFy7Z6xD94KAbeO84CZ6EEAPyQhxb2yZrBORplftTiUd0AIgv9qg==\nage: 5",
+                "responseBody": "{\n    \"page\": {\n        \"id\": \"kctbh9vrtdwd\",\n        \"name\": \"GitHub\",\n        \"url\": \"https://www.githubstatus.com\",\n        \"time_zone\": \"Etc/UTC\",\n        \"updated_at\": \"2026-10-29T08:47:22.718Z\"\n    },\n    \"status\": {\n        \"indicator\": \"none\",\n        \"description\": \"All Systems Operational\"\n    }\n}"
               },
               "artifacts": [
                 {
-                  "path": "test-runs/2967/serenity-js-mocha-webdriverio-template-1/artifact-get-https---www-githubstatus-com-api-v2-status-json-2556938b25.json",
+                  "path": "test-runs/2978/serenity-js-mocha-webdriverio-template-1/artifact-get-https---www-githubstatus-com-api-v2-status-json-24c98d254d.json",
                   "type": "screenshot"
                 },
                 {
-                  "path": "test-runs/2967/serenity-js-mocha-webdriverio-template-1/screenshot-linux-chrome-156-0-8078-47-apisitt-sends-a-get-request-to--https-3b7d2e5127.png",
+                  "path": "test-runs/2978/serenity-js-mocha-webdriverio-template-1/screenshot-linux-chrome-156-0-8078-73-apisitt-sends-a-get-request-to--https-3b7d2e5127.png",
                   "type": "screenshot"
                 }
               ]
@@ -206,8 +206,8 @@
               "outcome": {
                 "code": 64
               },
-              "duration": 0,
-              "startedAt": "2026-10-21T22:41:15.939Z",
+              "duration": 1,
+              "startedAt": "2026-10-29T09:11:05.140Z",
               "children": [],
               "location": {
                 "path": "/__w/serenity-js-mocha-webdriverio-template/serenity-js-mocha-webdriverio-template/test/specs/serenity-js_website.spec.ts",
@@ -216,7 +216,7 @@
               },
               "artifacts": [
                 {
-                  "path": "test-runs/2967/serenity-js-mocha-webdriverio-template-1/screenshot-linux-chrome-156-0-8078-47-apisitt-ensures-that-the-status-of-th-3b7d2e5127.png",
+                  "path": "test-runs/2978/serenity-js-mocha-webdriverio-template-1/screenshot-linux-chrome-156-0-8078-73-apisitt-ensures-that-the-status-of-th-3b7d2e5127.png",
                   "type": "screenshot"
                 }
               ]
@@ -227,8 +227,8 @@
               "outcome": {
                 "code": 64
               },
-              "duration": 0,
-              "startedAt": "2026-10-21T22:41:15.991Z",
+              "duration": 1,
+              "startedAt": "2026-10-29T09:11:05.193Z",
               "children": [],
               "location": {
                 "path": "/__w/serenity-js-mocha-webdriverio-template/serenity-js-mocha-webdriverio-template/test/specs/serenity-js_website.spec.ts",
@@ -237,7 +237,7 @@
               },
               "artifacts": [
                 {
-                  "path": "test-runs/2967/serenity-js-mocha-webdriverio-template-1/screenshot-linux-chrome-156-0-8078-47-apisitt-ensures-that-github-status-do-3b7d2e5127.png",
+                  "path": "test-runs/2978/serenity-js-mocha-webdriverio-template-1/screenshot-linux-chrome-156-0-8078-73-apisitt-ensures-that-github-status-do-3b7d2e5127.png",
                   "type": "screenshot"
                 }
               ]
@@ -255,8 +255,8 @@
           "outcome": {
             "code": 64
           },
-          "duration": 1531,
-          "startedAt": "2026-10-21T22:41:16.071Z",
+          "duration": 1851,
+          "startedAt": "2026-10-29T09:11:05.273Z",
           "children": [
             {
               "type": "Task",
@@ -264,8 +264,8 @@
               "outcome": {
                 "code": 64
               },
-              "duration": 786,
-              "startedAt": "2026-10-21T22:41:16.072Z",
+              "duration": 1050,
+              "startedAt": "2026-10-29T09:11:05.273Z",
               "children": [
                 {
                   "type": "Interaction",
@@ -273,8 +273,8 @@
                   "outcome": {
                     "code": 64
                   },
-                  "duration": 515,
-                  "startedAt": "2026-10-21T22:41:16.072Z",
+                  "duration": 739,
+                  "startedAt": "2026-10-29T09:11:05.273Z",
                   "children": [],
                   "location": {
                     "path": "/__w/serenity-js-mocha-webdriverio-template/serenity-js-mocha-webdriverio-template/test/serenity/todo-list-app/TodoList.ts",
@@ -283,7 +283,7 @@
                   },
                   "artifacts": [
                     {
-                      "path": "test-runs/2967/serenity-js-mocha-webdriverio-template-1/screenshot-linux-chrome-156-0-8078-47-wendy-navigates-to--https---todo-app--04a270aa93.png",
+                      "path": "test-runs/2978/serenity-js-mocha-webdriverio-template-1/screenshot-linux-chrome-156-0-8078-73-wendy-navigates-to--https---todo-app--7b0b3e7c34.png",
                       "type": "screenshot"
                     }
                   ]
@@ -294,8 +294,8 @@
                   "outcome": {
                     "code": 64
                   },
-                  "duration": 11,
-                  "startedAt": "2026-10-21T22:41:16.679Z",
+                  "duration": 35,
+                  "startedAt": "2026-10-29T09:11:06.074Z",
                   "children": [],
                   "location": {
                     "path": "/__w/serenity-js-mocha-webdriverio-template/serenity-js-mocha-webdriverio-template/test/specs/serenity-js_website.spec.ts",
@@ -304,7 +304,7 @@
                   },
                   "artifacts": [
                     {
-                      "path": "test-runs/2967/serenity-js-mocha-webdriverio-template-1/screenshot-linux-chrome-156-0-8078-47-wendy-ensures-that-website-title-does-7b0b3e7c34.png",
+                      "path": "test-runs/2978/serenity-js-mocha-webdriverio-template-1/screenshot-linux-chrome-156-0-8078-73-wendy-ensures-that-website-title-does-7b0b3e7c34.png",
                       "type": "screenshot"
                     }
                   ]
@@ -315,8 +315,8 @@
                   "outcome": {
                     "code": 64
                   },
-                  "duration": 56,
-                  "startedAt": "2026-10-21T22:41:16.732Z",
+                  "duration": 69,
+                  "startedAt": "2026-10-29T09:11:06.171Z",
                   "children": [],
                   "location": {
                     "path": "/__w/serenity-js-mocha-webdriverio-template/serenity-js-mocha-webdriverio-template/test/serenity/todo-list-app/TodoList.ts",
@@ -325,7 +325,7 @@
                   },
                   "artifacts": [
                     {
-                      "path": "test-runs/2967/serenity-js-mocha-webdriverio-template-1/screenshot-linux-chrome-156-0-8078-47-wendy-waits-until--what-needs-to-be-d-7b0b3e7c34.png",
+                      "path": "test-runs/2978/serenity-js-mocha-webdriverio-template-1/screenshot-linux-chrome-156-0-8078-73-wendy-waits-until--what-needs-to-be-d-7b0b3e7c34.png",
                       "type": "screenshot"
                     }
                   ]
@@ -336,8 +336,8 @@
                   "outcome": {
                     "code": 64
                   },
-                  "duration": 18,
-                  "startedAt": "2026-10-21T22:41:16.840Z",
+                  "duration": 21,
+                  "startedAt": "2026-10-29T09:11:06.302Z",
                   "children": [
                     {
                       "type": "Task",
@@ -345,8 +345,8 @@
                       "outcome": {
                         "code": 64
                       },
-                      "duration": 17,
-                      "startedAt": "2026-10-21T22:41:16.841Z",
+                      "duration": 21,
+                      "startedAt": "2026-10-29T09:11:06.302Z",
                       "children": [],
                       "location": {
                         "path": "/__w/serenity-js-mocha-webdriverio-template/serenity-js-mocha-webdriverio-template/test/serenity/todo-list-app/TodoList.ts",
@@ -374,8 +374,8 @@
               "outcome": {
                 "code": 64
               },
-              "duration": 266,
-              "startedAt": "2026-10-21T22:41:16.858Z",
+              "duration": 277,
+              "startedAt": "2026-10-29T09:11:06.323Z",
               "children": [
                 {
                   "type": "Interaction",
@@ -383,8 +383,8 @@
                   "outcome": {
                     "code": 64
                   },
-                  "duration": 28,
-                  "startedAt": "2026-10-21T22:41:16.858Z",
+                  "duration": 37,
+                  "startedAt": "2026-10-29T09:11:06.323Z",
                   "children": [],
                   "location": {
                     "path": "/__w/serenity-js-mocha-webdriverio-template/serenity-js-mocha-webdriverio-template/test/serenity/todo-list-app/TodoList.ts",
@@ -393,7 +393,7 @@
                   },
                   "artifacts": [
                     {
-                      "path": "test-runs/2967/serenity-js-mocha-webdriverio-template-1/screenshot-linux-chrome-156-0-8078-47-wendy-enters--buy-dog-food--into--wha-f81528b487.png",
+                      "path": "test-runs/2978/serenity-js-mocha-webdriverio-template-1/screenshot-linux-chrome-156-0-8078-73-wendy-enters--buy-dog-food--into--wha-f81528b487.png",
                       "type": "screenshot"
                     }
                   ]
@@ -404,8 +404,8 @@
                   "outcome": {
                     "code": 64
                   },
-                  "duration": 65,
-                  "startedAt": "2026-10-21T22:41:16.941Z",
+                  "duration": 68,
+                  "startedAt": "2026-10-29T09:11:06.420Z",
                   "children": [],
                   "location": {
                     "path": "/__w/serenity-js-mocha-webdriverio-template/serenity-js-mocha-webdriverio-template/test/serenity/todo-list-app/TodoList.ts",
@@ -414,7 +414,7 @@
                   },
                   "artifacts": [
                     {
-                      "path": "test-runs/2967/serenity-js-mocha-webdriverio-template-1/screenshot-linux-chrome-156-0-8078-47-wendy-presses-key-enter-in--what-need-352c3cf374.png",
+                      "path": "test-runs/2978/serenity-js-mocha-webdriverio-template-1/screenshot-linux-chrome-156-0-8078-73-wendy-presses-key-enter-in--what-need-352c3cf374.png",
                       "type": "screenshot"
                     }
                   ]
@@ -425,8 +425,8 @@
                   "outcome": {
                     "code": 64
                   },
-                  "duration": 26,
-                  "startedAt": "2026-10-21T22:41:17.057Z",
+                  "duration": 30,
+                  "startedAt": "2026-10-29T09:11:06.539Z",
                   "children": [],
                   "location": {
                     "path": "/__w/serenity-js-mocha-webdriverio-template/serenity-js-mocha-webdriverio-template/test/serenity/todo-list-app/TodoList.ts",
@@ -435,7 +435,7 @@
                   },
                   "artifacts": [
                     {
-                      "path": "test-runs/2967/serenity-js-mocha-webdriverio-template-1/screenshot-linux-chrome-156-0-8078-47-wendy-waits-until-the-text-of-display-352c3cf374.png",
+                      "path": "test-runs/2978/serenity-js-mocha-webdriverio-template-1/screenshot-linux-chrome-156-0-8078-73-wendy-waits-until-the-text-of-display-352c3cf374.png",
                       "type": "screenshot"
                     }
                   ]
@@ -453,8 +453,8 @@
               "outcome": {
                 "code": 64
               },
-              "duration": 229,
-              "startedAt": "2026-10-21T22:41:17.124Z",
+              "duration": 251,
+              "startedAt": "2026-10-29T09:11:06.600Z",
               "children": [
                 {
                   "type": "Interaction",
@@ -462,8 +462,8 @@
                   "outcome": {
                     "code": 64
                   },
-                  "duration": 27,
-                  "startedAt": "2026-10-21T22:41:17.125Z",
+                  "duration": 34,
+                  "startedAt": "2026-10-29T09:11:06.600Z",
                   "children": [],
                   "location": {
                     "path": "/__w/serenity-js-mocha-webdriverio-template/serenity-js-mocha-webdriverio-template/test/serenity/todo-list-app/TodoList.ts",
@@ -472,7 +472,7 @@
                   },
                   "artifacts": [
                     {
-                      "path": "test-runs/2967/serenity-js-mocha-webdriverio-template-1/screenshot-linux-chrome-156-0-8078-47-wendy-enters--feed-the-dog--into--wha-1e634d11d8.png",
+                      "path": "test-runs/2978/serenity-js-mocha-webdriverio-template-1/screenshot-linux-chrome-156-0-8078-73-wendy-enters--feed-the-dog--into--wha-1e634d11d8.png",
                       "type": "screenshot"
                     }
                   ]
@@ -483,8 +483,8 @@
                   "outcome": {
                     "code": 64
                   },
-                  "duration": 45,
-                  "startedAt": "2026-10-21T22:41:17.183Z",
+                  "duration": 55,
+                  "startedAt": "2026-10-29T09:11:06.688Z",
                   "children": [],
                   "location": {
                     "path": "/__w/serenity-js-mocha-webdriverio-template/serenity-js-mocha-webdriverio-template/test/serenity/todo-list-app/TodoList.ts",
@@ -493,7 +493,7 @@
                   },
                   "artifacts": [
                     {
-                      "path": "test-runs/2967/serenity-js-mocha-webdriverio-template-1/screenshot-linux-chrome-156-0-8078-47-wendy-presses-key-enter-in--what-need-5bcda1ff33.png",
+                      "path": "test-runs/2978/serenity-js-mocha-webdriverio-template-1/screenshot-linux-chrome-156-0-8078-73-wendy-presses-key-enter-in--what-need-5bcda1ff33.png",
                       "type": "screenshot"
                     }
                   ]
@@ -504,8 +504,8 @@
                   "outcome": {
                     "code": 64
                   },
-                  "duration": 44,
-                  "startedAt": "2026-10-21T22:41:17.268Z",
+                  "duration": 35,
+                  "startedAt": "2026-10-29T09:11:06.785Z",
                   "children": [],
                   "location": {
                     "path": "/__w/serenity-js-mocha-webdriverio-template/serenity-js-mocha-webdriverio-template/test/serenity/todo-list-app/TodoList.ts",
@@ -514,7 +514,7 @@
                   },
                   "artifacts": [
                     {
-                      "path": "test-runs/2967/serenity-js-mocha-webdriverio-template-1/screenshot-linux-chrome-156-0-8078-47-wendy-waits-until-the-text-of-display-5bcda1ff33.png",
+                      "path": "test-runs/2978/serenity-js-mocha-webdriverio-template-1/screenshot-linux-chrome-156-0-8078-73-wendy-waits-until-the-text-of-display-5bcda1ff33.png",
                       "type": "screenshot"
                     }
                   ]
@@ -532,8 +532,8 @@
               "outcome": {
                 "code": 64
               },
-              "duration": 248,
-              "startedAt": "2026-10-21T22:41:17.353Z",
+              "duration": 273,
+              "startedAt": "2026-10-29T09:11:06.851Z",
               "children": [
                 {
                   "type": "Interaction",
@@ -541,8 +541,8 @@
                   "outcome": {
                     "code": 64
                   },
-                  "duration": 32,
-                  "startedAt": "2026-10-21T22:41:17.353Z",
+                  "duration": 41,
+                  "startedAt": "2026-10-29T09:11:06.851Z",
                   "children": [],
                   "location": {
                     "path": "/__w/serenity-js-mocha-webdriverio-template/serenity-js-mocha-webdriverio-template/test/serenity/todo-list-app/TodoList.ts",
@@ -551,7 +551,7 @@
                   },
                   "artifacts": [
                     {
-                      "path": "test-runs/2967/serenity-js-mocha-webdriverio-template-1/screenshot-linux-chrome-156-0-8078-47-wendy-enters--book-a-vet-s-appointmen-03f7e70cee.png",
+                      "path": "test-runs/2978/serenity-js-mocha-webdriverio-template-1/screenshot-linux-chrome-156-0-8078-73-wendy-enters--book-a-vet-s-appointmen-03f7e70cee.png",
                       "type": "screenshot"
                     }
                   ]
@@ -562,8 +562,8 @@
                   "outcome": {
                     "code": 64
                   },
-                  "duration": 44,
-                  "startedAt": "2026-10-21T22:41:17.437Z",
+                  "duration": 55,
+                  "startedAt": "2026-10-29T09:11:06.933Z",
                   "children": [],
                   "location": {
                     "path": "/__w/serenity-js-mocha-webdriverio-template/serenity-js-mocha-webdriverio-template/test/serenity/todo-list-app/TodoList.ts",
@@ -572,7 +572,7 @@
                   },
                   "artifacts": [
                     {
-                      "path": "test-runs/2967/serenity-js-mocha-webdriverio-template-1/screenshot-linux-chrome-156-0-8078-47-wendy-presses-key-enter-in--what-need-0a88cf2627.png",
+                      "path": "test-runs/2978/serenity-js-mocha-webdriverio-template-1/screenshot-linux-chrome-156-0-8078-73-wendy-presses-key-enter-in--what-need-0a88cf2627.png",
                       "type": "screenshot"
                     }
                   ]
@@ -583,8 +583,8 @@
                   "outcome": {
                     "code": 64
                   },
-                  "duration": 37,
-                  "startedAt": "2026-10-21T22:41:17.534Z",
+                  "duration": 45,
+                  "startedAt": "2026-10-29T09:11:07.038Z",
                   "children": [],
                   "location": {
                     "path": "/__w/serenity-js-mocha-webdriverio-template/serenity-js-mocha-webdriverio-template/test/serenity/todo-list-app/TodoList.ts",
@@ -593,7 +593,7 @@
                   },
                   "artifacts": [
                     {
-                      "path": "test-runs/2967/serenity-js-mocha-webdriverio-template-1/screenshot-linux-chrome-156-0-8078-47-wendy-waits-until-the-text-of-display-0a88cf2627.png",
+                      "path": "test-runs/2978/serenity-js-mocha-webdriverio-template-1/screenshot-linux-chrome-156-0-8078-73-wendy-waits-until-the-text-of-display-0a88cf2627.png",
                       "type": "screenshot"
                     }
                   ]
@@ -618,8 +618,8 @@
           "outcome": {
             "code": 64
           },
-          "duration": 406,
-          "startedAt": "2026-10-21T22:41:17.602Z",
+          "duration": 510,
+          "startedAt": "2026-10-29T09:11:07.124Z",
           "children": [
             {
               "type": "Task",
@@ -627,8 +627,8 @@
               "outcome": {
                 "code": 64
               },
-              "duration": 206,
-              "startedAt": "2026-10-21T22:41:17.602Z",
+              "duration": 254,
+              "startedAt": "2026-10-29T09:11:07.124Z",
               "children": [
                 {
                   "type": "Task",
@@ -636,8 +636,8 @@
                   "outcome": {
                     "code": 64
                   },
-                  "duration": 206,
-                  "startedAt": "2026-10-21T22:41:17.602Z",
+                  "duration": 254,
+                  "startedAt": "2026-10-29T09:11:07.124Z",
                   "children": [
                     {
                       "type": "Task",
@@ -645,8 +645,8 @@
                       "outcome": {
                         "code": 64
                       },
-                      "duration": 173,
-                      "startedAt": "2026-10-21T22:41:17.635Z",
+                      "duration": 213,
+                      "startedAt": "2026-10-29T09:11:07.165Z",
                       "children": [
                         {
                           "type": "Interaction",
@@ -654,8 +654,8 @@
                           "outcome": {
                             "code": 64
                           },
-                          "duration": 132,
-                          "startedAt": "2026-10-21T22:41:17.636Z",
+                          "duration": 161,
+                          "startedAt": "2026-10-29T09:11:07.165Z",
                           "children": [],
                           "location": {
                             "path": "/__w/serenity-js-mocha-webdriverio-template/serenity-js-mocha-webdriverio-template/test/serenity/todo-list-app/TodoListItem.ts",
@@ -664,7 +664,7 @@
                           },
                           "artifacts": [
                             {
-                              "path": "test-runs/2967/serenity-js-mocha-webdriverio-template-1/screenshot-linux-chrome-156-0-8078-47-wendy-clicks-on-toggle-button-of-an-i-9aecc71117.png",
+                              "path": "test-runs/2978/serenity-js-mocha-webdriverio-template-1/screenshot-linux-chrome-156-0-8078-73-wendy-clicks-on-toggle-button-of-an-i-9aecc71117.png",
                               "type": "screenshot"
                             }
                           ]
@@ -696,8 +696,8 @@
               "outcome": {
                 "code": 64
               },
-              "duration": 200,
-              "startedAt": "2026-10-21T22:41:17.808Z",
+              "duration": 256,
+              "startedAt": "2026-10-29T09:11:07.378Z",
               "children": [
                 {
                   "type": "Task",
@@ -705,8 +705,8 @@
                   "outcome": {
                     "code": 64
                   },
-                  "duration": 199,
-                  "startedAt": "2026-10-21T22:41:17.809Z",
+                  "duration": 256,
+                  "startedAt": "2026-10-29T09:11:07.378Z",
                   "children": [
                     {
                       "type": "Task",
@@ -714,8 +714,8 @@
                       "outcome": {
                         "code": 64
                       },
-                      "duration": 164,
-                      "startedAt": "2026-10-21T22:41:17.844Z",
+                      "duration": 209,
+                      "startedAt": "2026-10-29T09:11:07.424Z",
                       "children": [
                         {
                           "type": "Interaction",
@@ -723,8 +723,8 @@
                           "outcome": {
                             "code": 64
                           },
-                          "duration": 114,
-                          "startedAt": "2026-10-21T22:41:17.844Z",
+                          "duration": 148,
+                          "startedAt": "2026-10-29T09:11:07.424Z",
                           "children": [],
                           "location": {
                             "path": "/__w/serenity-js-mocha-webdriverio-template/serenity-js-mocha-webdriverio-template/test/serenity/todo-list-app/TodoListItem.ts",
@@ -733,7 +733,7 @@
                           },
                           "artifacts": [
                             {
-                              "path": "test-runs/2967/serenity-js-mocha-webdriverio-template-1/screenshot-linux-chrome-156-0-8078-47-wendy-clicks-on-toggle-button-of-an-i-5f4b0ac12f.png",
+                              "path": "test-runs/2978/serenity-js-mocha-webdriverio-template-1/screenshot-linux-chrome-156-0-8078-73-wendy-clicks-on-toggle-button-of-an-i-5f4b0ac12f.png",
                               "type": "screenshot"
                             }
                           ]
@@ -772,8 +772,8 @@
           "outcome": {
             "code": 64
           },
-          "duration": 20,
-          "startedAt": "2026-10-21T22:41:18.009Z",
+          "duration": 61,
+          "startedAt": "2026-10-29T09:11:07.634Z",
           "children": [],
           "location": {
             "path": "/__w/serenity-js-mocha-webdriverio-template/serenity-js-mocha-webdriverio-template/test/specs/serenity-js_website.spec.ts",
@@ -782,7 +782,7 @@
           },
           "artifacts": [
             {
-              "path": "test-runs/2967/serenity-js-mocha-webdriverio-template-1/screenshot-linux-chrome-156-0-8078-47-wendy-ensures-that-number-of-items-le-5f4b0ac12f.png",
+              "path": "test-runs/2978/serenity-js-mocha-webdriverio-template-1/screenshot-linux-chrome-156-0-8078-73-wendy-ensures-that-number-of-items-le-5f4b0ac12f.png",
               "type": "screenshot"
             }
           ]
@@ -790,99 +790,99 @@
       ],
       "artifacts": [
         {
-          "path": "test-runs/2967/serenity-js-mocha-webdriverio-template-1/artifact-get-https---www-githubstatus-com-api-v2-status-json-2556938b25.json",
+          "path": "test-runs/2978/serenity-js-mocha-webdriverio-template-1/artifact-get-https---www-githubstatus-com-api-v2-status-json-24c98d254d.json",
           "type": "screenshot",
-          "activityId": "qwfsg9uzm5nafjl7n9f6gxyj"
+          "activityId": "rrpbvhipe88xtu3lm5y18vug"
         },
         {
-          "path": "test-runs/2967/serenity-js-mocha-webdriverio-template-1/screenshot-linux-chrome-156-0-8078-47-apisitt-sends-a-get-request-to--https-3b7d2e5127.png",
+          "path": "test-runs/2978/serenity-js-mocha-webdriverio-template-1/screenshot-linux-chrome-156-0-8078-73-apisitt-sends-a-get-request-to--https-3b7d2e5127.png",
           "type": "screenshot",
-          "activityId": "qwfsg9uzm5nafjl7n9f6gxyj"
+          "activityId": "rrpbvhipe88xtu3lm5y18vug"
         },
         {
-          "path": "test-runs/2967/serenity-js-mocha-webdriverio-template-1/screenshot-linux-chrome-156-0-8078-47-apisitt-ensures-that-the-status-of-th-3b7d2e5127.png",
+          "path": "test-runs/2978/serenity-js-mocha-webdriverio-template-1/screenshot-linux-chrome-156-0-8078-73-apisitt-ensures-that-the-status-of-th-3b7d2e5127.png",
           "type": "screenshot",
-          "activityId": "i3vcjausbsoq3sno6yxt4bkz"
+          "activityId": "wn89xg7no401w8vmytwdfacq"
         },
         {
-          "path": "test-runs/2967/serenity-js-mocha-webdriverio-template-1/screenshot-linux-chrome-156-0-8078-47-apisitt-ensures-that-github-status-do-3b7d2e5127.png",
+          "path": "test-runs/2978/serenity-js-mocha-webdriverio-template-1/screenshot-linux-chrome-156-0-8078-73-apisitt-ensures-that-github-status-do-3b7d2e5127.png",
           "type": "screenshot",
-          "activityId": "gyppc0vehytza1nv1yg49ney"
+          "activityId": "was0ubx2qlwdfx721wyd6mv5"
         },
         {
-          "path": "test-runs/2967/serenity-js-mocha-webdriverio-template-1/screenshot-linux-chrome-156-0-8078-47-wendy-navigates-to--https---todo-app--04a270aa93.png",
+          "path": "test-runs/2978/serenity-js-mocha-webdriverio-template-1/screenshot-linux-chrome-156-0-8078-73-wendy-navigates-to--https---todo-app--7b0b3e7c34.png",
           "type": "screenshot",
-          "activityId": "zjw6vm3dg1jupcrsjukfmqgq"
+          "activityId": "v6a22ctdb7qu6vcl2kjvdhaa"
         },
         {
-          "path": "test-runs/2967/serenity-js-mocha-webdriverio-template-1/screenshot-linux-chrome-156-0-8078-47-wendy-ensures-that-website-title-does-7b0b3e7c34.png",
+          "path": "test-runs/2978/serenity-js-mocha-webdriverio-template-1/screenshot-linux-chrome-156-0-8078-73-wendy-ensures-that-website-title-does-7b0b3e7c34.png",
           "type": "screenshot",
-          "activityId": "s9ji3igvs4soaa7ooz8358zg"
+          "activityId": "nt09yey6wldbyeombv7k8gby"
         },
         {
-          "path": "test-runs/2967/serenity-js-mocha-webdriverio-template-1/screenshot-linux-chrome-156-0-8078-47-wendy-waits-until--what-needs-to-be-d-7b0b3e7c34.png",
+          "path": "test-runs/2978/serenity-js-mocha-webdriverio-template-1/screenshot-linux-chrome-156-0-8078-73-wendy-waits-until--what-needs-to-be-d-7b0b3e7c34.png",
           "type": "screenshot",
-          "activityId": "r41n87xpinne6m7z0pl5kiev"
+          "activityId": "td3cm7ts2s4e86dkwy9fk30t"
         },
         {
-          "path": "test-runs/2967/serenity-js-mocha-webdriverio-template-1/screenshot-linux-chrome-156-0-8078-47-wendy-enters--buy-dog-food--into--wha-f81528b487.png",
+          "path": "test-runs/2978/serenity-js-mocha-webdriverio-template-1/screenshot-linux-chrome-156-0-8078-73-wendy-enters--buy-dog-food--into--wha-f81528b487.png",
           "type": "screenshot",
-          "activityId": "y5cwfteh0xe1425ilcvobakn"
+          "activityId": "jbgfme5oqrmwt6fow8g4fgaj"
         },
         {
-          "path": "test-runs/2967/serenity-js-mocha-webdriverio-template-1/screenshot-linux-chrome-156-0-8078-47-wendy-presses-key-enter-in--what-need-352c3cf374.png",
+          "path": "test-runs/2978/serenity-js-mocha-webdriverio-template-1/screenshot-linux-chrome-156-0-8078-73-wendy-presses-key-enter-in--what-need-352c3cf374.png",
           "type": "screenshot",
-          "activityId": "t5077niyhqsatjtttpf9hsab"
+          "activityId": "z0iei5n3u7ippy0x6fl1bk02"
         },
         {
-          "path": "test-runs/2967/serenity-js-mocha-webdriverio-template-1/screenshot-linux-chrome-156-0-8078-47-wendy-waits-until-the-text-of-display-352c3cf374.png",
+          "path": "test-runs/2978/serenity-js-mocha-webdriverio-template-1/screenshot-linux-chrome-156-0-8078-73-wendy-waits-until-the-text-of-display-352c3cf374.png",
           "type": "screenshot",
-          "activityId": "d4jul4rcj0g4t5x2b93tgszs"
+          "activityId": "yjlciz6rximd3dmb99f6i14e"
         },
         {
-          "path": "test-runs/2967/serenity-js-mocha-webdriverio-template-1/screenshot-linux-chrome-156-0-8078-47-wendy-enters--feed-the-dog--into--wha-1e634d11d8.png",
+          "path": "test-runs/2978/serenity-js-mocha-webdriverio-template-1/screenshot-linux-chrome-156-0-8078-73-wendy-enters--feed-the-dog--into--wha-1e634d11d8.png",
           "type": "screenshot",
-          "activityId": "b434fyrrl01e8y4guhy7l1iq"
+          "activityId": "qb21ji229k6zbegzt1b0d6dr"
         },
         {
-          "path": "test-runs/2967/serenity-js-mocha-webdriverio-template-1/screenshot-linux-chrome-156-0-8078-47-wendy-presses-key-enter-in--what-need-5bcda1ff33.png",
+          "path": "test-runs/2978/serenity-js-mocha-webdriverio-template-1/screenshot-linux-chrome-156-0-8078-73-wendy-presses-key-enter-in--what-need-5bcda1ff33.png",
           "type": "screenshot",
-          "activityId": "x11kv9xozhfadm3dxembwwnd"
+          "activityId": "w21klyjw7us2vgew1c04gcj6"
         },
         {
-          "path": "test-runs/2967/serenity-js-mocha-webdriverio-template-1/screenshot-linux-chrome-156-0-8078-47-wendy-waits-until-the-text-of-display-5bcda1ff33.png",
+          "path": "test-runs/2978/serenity-js-mocha-webdriverio-template-1/screenshot-linux-chrome-156-0-8078-73-wendy-waits-until-the-text-of-display-5bcda1ff33.png",
           "type": "screenshot",
-          "activityId": "m9eu7q6xjowpnd27yht3hkh4"
+          "activityId": "awyn1hhz4vxkklgmgmvu4is6"
         },
         {
-          "path": "test-runs/2967/serenity-js-mocha-webdriverio-template-1/screenshot-linux-chrome-156-0-8078-47-wendy-enters--book-a-vet-s-appointmen-03f7e70cee.png",
+          "path": "test-runs/2978/serenity-js-mocha-webdriverio-template-1/screenshot-linux-chrome-156-0-8078-73-wendy-enters--book-a-vet-s-appointmen-03f7e70cee.png",
           "type": "screenshot",
-          "activityId": "tkoev3hsvl367sox8tnbu7ik"
+          "activityId": "pww7wv2s3ct41os12gl7m7fz"
         },
         {
-          "path": "test-runs/2967/serenity-js-mocha-webdriverio-template-1/screenshot-linux-chrome-156-0-8078-47-wendy-presses-key-enter-in--what-need-0a88cf2627.png",
+          "path": "test-runs/2978/serenity-js-mocha-webdriverio-template-1/screenshot-linux-chrome-156-0-8078-73-wendy-presses-key-enter-in--what-need-0a88cf2627.png",
           "type": "screenshot",
-          "activityId": "htrhd5cyw4skoj2viofduqq0"
+          "activityId": "lhxldwtlv8mz0kj43v1eycut"
         },
         {
-          "path": "test-runs/2967/serenity-js-mocha-webdriverio-template-1/screenshot-linux-chrome-156-0-8078-47-wendy-waits-until-the-text-of-display-0a88cf2627.png",
+          "path": "test-runs/2978/serenity-js-mocha-webdriverio-template-1/screenshot-linux-chrome-156-0-8078-73-wendy-waits-until-the-text-of-display-0a88cf2627.png",
           "type": "screenshot",
-          "activityId": "ov8vwn80hpo6uak9bbqj6wx7"
+          "activityId": "fgr4n112gi7evmsbntybso5v"
         },
         {
-          "path": "test-runs/2967/serenity-js-mocha-webdriverio-template-1/screenshot-linux-chrome-156-0-8078-47-wendy-clicks-on-toggle-button-of-an-i-9aecc71117.png",
+          "path": "test-runs/2978/serenity-js-mocha-webdriverio-template-1/screenshot-linux-chrome-156-0-8078-73-wendy-clicks-on-toggle-button-of-an-i-9aecc71117.png",
           "type": "screenshot",
-          "activityId": "eu1ts3qh06bjiuos7zugvwql"
+          "activityId": "ac4icjepzp9oho7hzg7nak9q"
         },
         {
-          "path": "test-runs/2967/serenity-js-mocha-webdriverio-template-1/screenshot-linux-chrome-156-0-8078-47-wendy-clicks-on-toggle-button-of-an-i-5f4b0ac12f.png",
+          "path": "test-runs/2978/serenity-js-mocha-webdriverio-template-1/screenshot-linux-chrome-156-0-8078-73-wendy-clicks-on-toggle-button-of-an-i-5f4b0ac12f.png",
           "type": "screenshot",
-          "activityId": "hw7r71hf5pz2tte73iavj590"
+          "activityId": "i4q4lplnyrao38ds5kg1ridw"
         },
         {
-          "path": "test-runs/2967/serenity-js-mocha-webdriverio-template-1/screenshot-linux-chrome-156-0-8078-47-wendy-ensures-that-number-of-items-le-5f4b0ac12f.png",
+          "path": "test-runs/2978/serenity-js-mocha-webdriverio-template-1/screenshot-linux-chrome-156-0-8078-73-wendy-ensures-that-number-of-items-le-5f4b0ac12f.png",
           "type": "screenshot",
-          "activityId": "iklb5ezvkti1zphxm1i3j358"
+          "activityId": "r2qq5p75ep9hgja8ctqkbd9t"
         }
       ],
       "cast": [
@@ -950,7 +950,7 @@
   "tags": [
     {
       "type": "browser",
-      "name": "chrome 156.0.8078.47"
+      "name": "chrome 156.0.8078.73"
     },
     {
       "type": "platform",
@@ -970,21 +970,21 @@
     "version": "12.0.3"
   },
   "systemContext": {
-    "nodeVersion": "v24.22.1",
+    "nodeVersion": "v24.22.2",
     "os": {
       "name": "linux",
-      "version": "6.17.0-1022-azure",
+      "version": "7.0.0-1017-azure",
       "arch": "x64"
     },
     "serenityVersion": "3.49.0",
     "runtime": {
       "provider": "GitHub Actions",
-      "buildNumber": "2967",
+      "buildNumber": "2978",
       "branch": "main",
-      "commit": "670dcb3b7f779330272190bab92a0d321e0915c4",
-      "commitMessage": "chore(deps): update dependency node to v24.22.1 (#1148)",
+      "commit": "42057a65f5e0f12090a8cfd05ef4950f82625b8c",
+      "commitMessage": "chore(deps): update dependency node to v24.22.2 (#1150)",
       "commitAuthor": "renovate[bot]",
-      "jobUrl": "https://github.com/serenity-js/serenity-js-mocha-webdriverio-template/actions/runs/39688028543",
+      "jobUrl": "https://github.com/serenity-js/serenity-js-mocha-webdriverio-template/actions/runs/40847442259",
       "workflow": "build",
       "repositoryUrl": "https://github.com/serenity-js/serenity-js-mocha-webdriverio-template",
       "triggeredBy": "renovate[bot]"
@@ -992,7 +992,7 @@
     "projectName": "serenity-js-mocha-webdriverio-template",
     "packageManager": "npm"
   },
-  "testRunId": "2967",
+  "testRunId": "2978",
   "moduleId": "serenity-js-mocha-webdriverio-template",
   "attempt": 1
 }
