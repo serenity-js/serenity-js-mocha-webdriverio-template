@@ -11,9 +11,9 @@ window.__SERENITY_REPORT_DATA__ = {
       "compromised": 0,
       "error": 0
     },
-    "duration": 3625,
-    "startedAt": "2026-11-03T06:02:37.563Z",
-    "finishedAt": "2026-11-03T06:02:41.188Z",
+    "duration": 3776,
+    "startedAt": "2026-11-10T00:06:18.541Z",
+    "finishedAt": "2026-11-10T00:06:22.317Z",
     "testRunner": "Mocha"
   },
   "scenarios": [
@@ -21,15 +21,15 @@ window.__SERENITY_REPORT_DATA__ = {
       "name": "offers a web testing tutorial",
       "category": "serenity-js website",
       "outcome": "SUCCESS",
-      "duration": 1120,
-      "startedAt": "2026-11-03T06:02:37.563Z",
+      "duration": 1131,
+      "startedAt": "2026-11-10T00:06:18.541Z",
       "source": {
         "path": "/__w/serenity-js-mocha-webdriverio-template/serenity-js-mocha-webdriverio-template/test/specs/serenity-js_website.spec.ts"
       },
       "tags": [
         {
           "type": "browser",
-          "name": "chrome 156.0.8078.80"
+          "name": "chrome 157.0.8103.50"
         },
         {
           "type": "platform",
@@ -48,10 +48,10 @@ window.__SERENITY_REPORT_DATA__ = {
         {
           "name": "Alice navigates to \"https://serenity-js.org\"",
           "outcome": "SUCCESS",
-          "duration": 909,
+          "duration": 912,
           "children": [],
           "type": "Interaction",
-          "startedAt": "2026-11-03T06:02:37.594Z",
+          "startedAt": "2026-11-10T00:06:18.566Z",
           "location": {
             "path": "/__w/serenity-js-mocha-webdriverio-template/serenity-js-mocha-webdriverio-template/test/specs/serenity-js_website.spec.ts",
             "line": 38,
@@ -59,7 +59,7 @@ window.__SERENITY_REPORT_DATA__ = {
           },
           "artifacts": [
             {
-              "path": "test-runs/2983/serenity-js-mocha-webdriverio-template-1/screenshot-linux-chrome-156-0-8078-80-alice-navigates-to--https---serenity--3b7d2e5127.png",
+              "path": "test-runs/2991/serenity-js-mocha-webdriverio-template-1/screenshot-linux-chrome-157-0-8103-50-alice-navigates-to--https---serenity--3b7d2e5127.png",
               "type": "screenshot"
             }
           ]
@@ -67,10 +67,10 @@ window.__SERENITY_REPORT_DATA__ = {
         {
           "name": "Alice ensures that the text of page element located by id ('cta-start-automating') does equal \"Start automating 🚀\"",
           "outcome": "SUCCESS",
-          "duration": 33,
+          "duration": 41,
           "children": [],
           "type": "Interaction",
-          "startedAt": "2026-11-03T06:02:38.565Z",
+          "startedAt": "2026-11-10T00:06:19.542Z",
           "location": {
             "path": "/__w/serenity-js-mocha-webdriverio-template/serenity-js-mocha-webdriverio-template/test/specs/serenity-js_website.spec.ts",
             "line": 39,
@@ -78,7 +78,7 @@ window.__SERENITY_REPORT_DATA__ = {
           },
           "artifacts": [
             {
-              "path": "test-runs/2983/serenity-js-mocha-webdriverio-template-1/screenshot-linux-chrome-156-0-8078-80-alice-ensures-that-the-text-of-page-e-3b7d2e5127.png",
+              "path": "test-runs/2991/serenity-js-mocha-webdriverio-template-1/screenshot-linux-chrome-157-0-8103-50-alice-ensures-that-the-text-of-page-e-3b7d2e5127.png",
               "type": "screenshot"
             }
           ]
@@ -87,17 +87,17 @@ window.__SERENITY_REPORT_DATA__ = {
       "executionHistory": [
         {
           "outcome": "SUCCESS",
-          "run": "2983",
-          "timestamp": "2026-11-03T06:02:37.563Z",
-          "duration": 1120,
+          "run": "2991",
+          "timestamp": "2026-11-10T00:06:18.541Z",
+          "duration": 1131,
           "activities": [
             {
               "name": "Alice navigates to \"https://serenity-js.org\"",
               "outcome": "SUCCESS",
-              "duration": 909,
+              "duration": 912,
               "children": [],
               "type": "Interaction",
-              "startedAt": "2026-11-03T06:02:37.594Z",
+              "startedAt": "2026-11-10T00:06:18.566Z",
               "location": {
                 "path": "/__w/serenity-js-mocha-webdriverio-template/serenity-js-mocha-webdriverio-template/test/specs/serenity-js_website.spec.ts",
                 "line": 38,
@@ -105,7 +105,7 @@ window.__SERENITY_REPORT_DATA__ = {
               },
               "artifacts": [
                 {
-                  "path": "test-runs/2983/serenity-js-mocha-webdriverio-template-1/screenshot-linux-chrome-156-0-8078-80-alice-navigates-to--https---serenity--3b7d2e5127.png",
+                  "path": "test-runs/2991/serenity-js-mocha-webdriverio-template-1/screenshot-linux-chrome-157-0-8103-50-alice-navigates-to--https---serenity--3b7d2e5127.png",
                   "type": "screenshot"
                 }
               ]
@@ -113,10 +113,10 @@ window.__SERENITY_REPORT_DATA__ = {
             {
               "name": "Alice ensures that the text of page element located by id ('cta-start-automating') does equal \"Start automating 🚀\"",
               "outcome": "SUCCESS",
-              "duration": 33,
+              "duration": 41,
               "children": [],
               "type": "Interaction",
-              "startedAt": "2026-11-03T06:02:38.565Z",
+              "startedAt": "2026-11-10T00:06:19.542Z",
               "location": {
                 "path": "/__w/serenity-js-mocha-webdriverio-template/serenity-js-mocha-webdriverio-template/test/specs/serenity-js_website.spec.ts",
                 "line": 39,
@@ -124,7 +124,7 @@ window.__SERENITY_REPORT_DATA__ = {
               },
               "artifacts": [
                 {
-                  "path": "test-runs/2983/serenity-js-mocha-webdriverio-template-1/screenshot-linux-chrome-156-0-8078-80-alice-ensures-that-the-text-of-page-e-3b7d2e5127.png",
+                  "path": "test-runs/2991/serenity-js-mocha-webdriverio-template-1/screenshot-linux-chrome-157-0-8103-50-alice-ensures-that-the-text-of-page-e-3b7d2e5127.png",
                   "type": "screenshot"
                 }
               ]
@@ -163,21 +163,21 @@ window.__SERENITY_REPORT_DATA__ = {
           ]
         }
       ],
-      "id": "/__w/serenity-js-mocha-webdriverio-template/serenity-js-mocha-webdriverio-template/test/specs/serenity-js_website.spec.ts:offers a web testing tutorial@serenity-js-mocha-webdriverio-template@chrome 156.0.8078.80@linux"
+      "id": "/__w/serenity-js-mocha-webdriverio-template/serenity-js-mocha-webdriverio-template/test/specs/serenity-js_website.spec.ts:offers a web testing tutorial@serenity-js-mocha-webdriverio-template@chrome 157.0.8103.50@linux"
     },
     {
       "name": "offers examples to help you practice test automation",
       "category": "serenity-js website",
       "outcome": "SUCCESS",
-      "duration": 2502,
-      "startedAt": "2026-11-03T06:02:38.686Z",
+      "duration": 2642,
+      "startedAt": "2026-11-10T00:06:19.675Z",
       "source": {
         "path": "/__w/serenity-js-mocha-webdriverio-template/serenity-js-mocha-webdriverio-template/test/specs/serenity-js_website.spec.ts"
       },
       "tags": [
         {
           "type": "browser",
-          "name": "chrome 156.0.8078.80"
+          "name": "chrome 157.0.8103.50"
         },
         {
           "type": "platform",
@@ -196,15 +196,15 @@ window.__SERENITY_REPORT_DATA__ = {
         {
           "name": "Apisitt ensures all GitHub systems are operational",
           "outcome": "SUCCESS",
-          "duration": 197,
+          "duration": 344,
           "children": [
             {
               "name": "Apisitt sends a GET request to 'https://www.githubstatus.com/api/v2/status.json'",
               "outcome": "SUCCESS",
-              "duration": 30,
+              "duration": 190,
               "children": [],
               "type": "Interaction",
-              "startedAt": "2026-11-03T06:02:38.693Z",
+              "startedAt": "2026-11-10T00:06:19.682Z",
               "location": {
                 "path": "/__w/serenity-js-mocha-webdriverio-template/serenity-js-mocha-webdriverio-template/test/specs/serenity-js_website.spec.ts",
                 "line": 68,
@@ -212,11 +212,11 @@ window.__SERENITY_REPORT_DATA__ = {
               },
               "artifacts": [
                 {
-                  "path": "test-runs/2983/serenity-js-mocha-webdriverio-template-1/artifact-get-https---www-githubstatus-com-api-v2-status-json-949215570d.json",
+                  "path": "test-runs/2991/serenity-js-mocha-webdriverio-template-1/artifact-get-https---www-githubstatus-com-api-v2-status-json-73458590ed.json",
                   "type": "screenshot"
                 },
                 {
-                  "path": "test-runs/2983/serenity-js-mocha-webdriverio-template-1/screenshot-linux-chrome-156-0-8078-80-apisitt-sends-a-get-request-to--https-3b7d2e5127.png",
+                  "path": "test-runs/2991/serenity-js-mocha-webdriverio-template-1/screenshot-linux-chrome-157-0-8103-50-apisitt-sends-a-get-request-to--https-3b7d2e5127.png",
                   "type": "screenshot"
                 }
               ],
@@ -225,17 +225,17 @@ window.__SERENITY_REPORT_DATA__ = {
                 "url": "https://www.githubstatus.com/api/v2/status.json",
                 "requestHeaders": "Accept: application/json, text/plain, */*\nUser-Agent: axios/1.20.0\nAccept-Encoding: gzip, compress, deflate, br",
                 "statusCode": 200,
-                "responseHeaders": "content-type: application/json; charset=utf-8\ncontent-length: 215\nconnection: close\ndate: Tue, 03 Nov 2026 06:02:17 GMT\nx-download-options: noopen\nx-permitted-cross-domain-policies: none\nreferrer-policy: strict-origin-when-cross-origin\nx-statuspage-version: 98d86feb8972e7daedffc6007850cd45cf2ea3aa\nstrict-transport-security: max-age=259200\nx-statuspage-skip-logging: true\naccess-control-allow-origin: *\ncache-control: max-age=10, public, s-maxage=10, stale-while-revalidate=20, stale-if-error=3600\nx-pollinator-metadata-service: status-page-web-pages\nx-runtime: 0.059790\nserver: AtlassianEdge\naccept-ranges: bytes\nx-content-type-options: nosniff\nx-xss-protection: 1; mode=block\natl-traceid: 54e2c991f8ac4b54909678810b314c58\natl-request-id: 54e2c991-f8ac-4b54-9096-78810b314c58\nreport-to: {\"endpoints\": [{\"url\": \"https://dz8aopenkvv6s.cloudfront.net\"}], \"group\": \"endpoint-1\", \"include_subdomains\": true, \"max_age\": 600}\nnel: {\"failure_fraction\": 0.01, \"include_subdomains\": true, \"max_age\": 600, \"report_to\": \"endpoint-1\"}\netag: W/\"e996bad3066efb2181de4253e2dcc1d5\"\nvary: Accept,Accept-Encoding\nx-cache: Hit from cloudfront\nvia: 1.1 87261be5be50ea4e0f51ed7963914c48.cloudfront.net (CloudFront)\nx-amz-cf-pop: ORD56-P12\nalt-svc: h3=\":443\"; ma=86400\nx-amz-cf-id: 0nZC27RXnpJmDjz-__Fnm7TUC8cqiGPtF6nhgUu-544qD7pFQyXdYA==\nage: 21",
-                "responseBody": "{\n    \"page\": {\n        \"id\": \"kctbh9vrtdwd\",\n        \"name\": \"GitHub\",\n        \"url\": \"https://www.githubstatus.com\",\n        \"time_zone\": \"Etc/UTC\",\n        \"updated_at\": \"2026-11-03T05:59:09.541Z\"\n    },\n    \"status\": {\n        \"indicator\": \"none\",\n        \"description\": \"All Systems Operational\"\n    }\n}"
+                "responseHeaders": "content-type: application/json; charset=utf-8\ncontent-length: 215\nconnection: close\ndate: Tue, 10 Nov 2026 00:05:55 GMT\nx-download-options: noopen\nx-permitted-cross-domain-policies: none\nreferrer-policy: strict-origin-when-cross-origin\nx-statuspage-version: d42f84648e34a1aeefa927e239da9fbf069264f5\nstrict-transport-security: max-age=259200\nx-statuspage-skip-logging: true\naccess-control-allow-origin: *\ncache-control: max-age=10, public, s-maxage=10, stale-while-revalidate=20, stale-if-error=3600\nx-pollinator-metadata-service: status-page-web-pages\nx-runtime: 0.151960\nserver: AtlassianEdge\naccept-ranges: bytes\nx-content-type-options: nosniff\nx-xss-protection: 1; mode=block\natl-traceid: 319484c7762046378bdc0bb32601d98a\natl-request-id: 319484c7-7620-4637-8bdc-0bb32601d98a\nreport-to: {\"endpoints\": [{\"url\": \"https://dz8aopenkvv6s.cloudfront.net\"}], \"group\": \"endpoint-1\", \"include_subdomains\": true, \"max_age\": 600}\nnel: {\"failure_fraction\": 0.01, \"include_subdomains\": true, \"max_age\": 600, \"report_to\": \"endpoint-1\"}\netag: W/\"faf253f7959fd2edcbd8537ae2e38a9d\"\nvary: Accept,Accept-Encoding\nx-cache: Hit from cloudfront\nvia: 1.1 9d0b7a8454021cab4704c1ba4cb6c7c4.cloudfront.net (CloudFront)\nx-amz-cf-pop: DFW57-P5\nalt-svc: h3=\":443\"; ma=86400\nx-amz-cf-id: yt46W88DLnZvcq9-1nI75Win1qgX0LN9If8Rb1m06Y6MJ_vpmg6oTA==\nage: 24",
+                "responseBody": "{\n    \"page\": {\n        \"id\": \"kctbh9vrtdwd\",\n        \"name\": \"GitHub\",\n        \"url\": \"https://www.githubstatus.com\",\n        \"time_zone\": \"Etc/UTC\",\n        \"updated_at\": \"2026-11-09T23:59:44.268Z\"\n    },\n    \"status\": {\n        \"indicator\": \"none\",\n        \"description\": \"All Systems Operational\"\n    }\n}"
               }
             },
             {
               "name": "Apisitt ensures that the status of the last response does equal 200",
               "outcome": "SUCCESS",
-              "duration": 1,
+              "duration": 0,
               "children": [],
               "type": "Interaction",
-              "startedAt": "2026-11-03T06:02:38.795Z",
+              "startedAt": "2026-11-10T00:06:19.923Z",
               "location": {
                 "path": "/__w/serenity-js-mocha-webdriverio-template/serenity-js-mocha-webdriverio-template/test/specs/serenity-js_website.spec.ts",
                 "line": 68,
@@ -243,7 +243,7 @@ window.__SERENITY_REPORT_DATA__ = {
               },
               "artifacts": [
                 {
-                  "path": "test-runs/2983/serenity-js-mocha-webdriverio-template-1/screenshot-linux-chrome-156-0-8078-80-apisitt-ensures-that-the-status-of-th-3b7d2e5127.png",
+                  "path": "test-runs/2991/serenity-js-mocha-webdriverio-template-1/screenshot-linux-chrome-157-0-8103-50-apisitt-ensures-that-the-status-of-th-3b7d2e5127.png",
                   "type": "screenshot"
                 }
               ]
@@ -254,7 +254,7 @@ window.__SERENITY_REPORT_DATA__ = {
               "duration": 1,
               "children": [],
               "type": "Interaction",
-              "startedAt": "2026-11-03T06:02:38.837Z",
+              "startedAt": "2026-11-10T00:06:19.973Z",
               "location": {
                 "path": "/__w/serenity-js-mocha-webdriverio-template/serenity-js-mocha-webdriverio-template/test/specs/serenity-js_website.spec.ts",
                 "line": 68,
@@ -262,14 +262,14 @@ window.__SERENITY_REPORT_DATA__ = {
               },
               "artifacts": [
                 {
-                  "path": "test-runs/2983/serenity-js-mocha-webdriverio-template-1/screenshot-linux-chrome-156-0-8078-80-apisitt-ensures-that-github-status-do-3b7d2e5127.png",
+                  "path": "test-runs/2991/serenity-js-mocha-webdriverio-template-1/screenshot-linux-chrome-157-0-8103-50-apisitt-ensures-that-github-status-do-3b7d2e5127.png",
                   "type": "screenshot"
                 }
               ]
             }
           ],
           "type": "Task",
-          "startedAt": "2026-11-03T06:02:38.692Z",
+          "startedAt": "2026-11-10T00:06:19.681Z",
           "location": {
             "path": "/__w/serenity-js-mocha-webdriverio-template/serenity-js-mocha-webdriverio-template/test/specs/serenity-js_website.spec.ts",
             "line": 68,
@@ -279,20 +279,20 @@ window.__SERENITY_REPORT_DATA__ = {
         {
           "name": "Wendy starts with a list containing 3 items",
           "outcome": "SUCCESS",
-          "duration": 1690,
+          "duration": 1679,
           "children": [
             {
               "name": "Wendy creates an empty todo list",
               "outcome": "SUCCESS",
-              "duration": 872,
+              "duration": 857,
               "children": [
                 {
                   "name": "Wendy navigates to \"https://todo-app.serenity-js.org/\"",
                   "outcome": "SUCCESS",
-                  "duration": 594,
+                  "duration": 602,
                   "children": [],
                   "type": "Interaction",
-                  "startedAt": "2026-11-03T06:02:38.921Z",
+                  "startedAt": "2026-11-10T00:06:20.061Z",
                   "location": {
                     "path": "/__w/serenity-js-mocha-webdriverio-template/serenity-js-mocha-webdriverio-template/test/serenity/todo-list-app/TodoList.ts",
                     "line": 34,
@@ -300,7 +300,7 @@ window.__SERENITY_REPORT_DATA__ = {
                   },
                   "artifacts": [
                     {
-                      "path": "test-runs/2983/serenity-js-mocha-webdriverio-template-1/screenshot-linux-chrome-156-0-8078-80-wendy-navigates-to--https---todo-app--7b0b3e7c34.png",
+                      "path": "test-runs/2991/serenity-js-mocha-webdriverio-template-1/screenshot-linux-chrome-157-0-8103-50-wendy-navigates-to--https---todo-app--7b0b3e7c34.png",
                       "type": "screenshot"
                     }
                   ]
@@ -308,10 +308,10 @@ window.__SERENITY_REPORT_DATA__ = {
                 {
                   "name": "Wendy ensures that website title does equal \"Serenity/JS TodoApp\"",
                   "outcome": "SUCCESS",
-                  "duration": 14,
+                  "duration": 16,
                   "children": [],
                   "type": "Interaction",
-                  "startedAt": "2026-11-03T06:02:39.586Z",
+                  "startedAt": "2026-11-10T00:06:20.724Z",
                   "location": {
                     "path": "/__w/serenity-js-mocha-webdriverio-template/serenity-js-mocha-webdriverio-template/test/specs/serenity-js_website.spec.ts",
                     "line": 73,
@@ -319,7 +319,7 @@ window.__SERENITY_REPORT_DATA__ = {
                   },
                   "artifacts": [
                     {
-                      "path": "test-runs/2983/serenity-js-mocha-webdriverio-template-1/screenshot-linux-chrome-156-0-8078-80-wendy-ensures-that-website-title-does-7b0b3e7c34.png",
+                      "path": "test-runs/2991/serenity-js-mocha-webdriverio-template-1/screenshot-linux-chrome-157-0-8103-50-wendy-ensures-that-website-title-does-7b0b3e7c34.png",
                       "type": "screenshot"
                     }
                   ]
@@ -330,7 +330,7 @@ window.__SERENITY_REPORT_DATA__ = {
                   "duration": 60,
                   "children": [],
                   "type": "Interaction",
-                  "startedAt": "2026-11-03T06:02:39.651Z",
+                  "startedAt": "2026-11-10T00:06:20.791Z",
                   "location": {
                     "path": "/__w/serenity-js-mocha-webdriverio-template/serenity-js-mocha-webdriverio-template/test/serenity/todo-list-app/TodoList.ts",
                     "line": 34,
@@ -338,7 +338,7 @@ window.__SERENITY_REPORT_DATA__ = {
                   },
                   "artifacts": [
                     {
-                      "path": "test-runs/2983/serenity-js-mocha-webdriverio-template-1/screenshot-linux-chrome-156-0-8078-80-wendy-waits-until--what-needs-to-be-d-7b0b3e7c34.png",
+                      "path": "test-runs/2991/serenity-js-mocha-webdriverio-template-1/screenshot-linux-chrome-157-0-8103-50-wendy-waits-until--what-needs-to-be-d-7b0b3e7c34.png",
                       "type": "screenshot"
                     }
                   ]
@@ -346,15 +346,15 @@ window.__SERENITY_REPORT_DATA__ = {
                 {
                   "name": "Wendy empties local storage if needed",
                   "outcome": "SUCCESS",
-                  "duration": 20,
+                  "duration": 16,
                   "children": [
                     {
                       "name": "Wendy checks whether <<persisted items>>.length does have value greater than 0",
                       "outcome": "SUCCESS",
-                      "duration": 20,
+                      "duration": 16,
                       "children": [],
                       "type": "Task",
-                      "startedAt": "2026-11-03T06:02:39.773Z",
+                      "startedAt": "2026-11-10T00:06:20.902Z",
                       "location": {
                         "path": "/__w/serenity-js-mocha-webdriverio-template/serenity-js-mocha-webdriverio-template/test/serenity/todo-list-app/TodoList.ts",
                         "line": 20,
@@ -363,7 +363,7 @@ window.__SERENITY_REPORT_DATA__ = {
                     }
                   ],
                   "type": "Task",
-                  "startedAt": "2026-11-03T06:02:39.773Z",
+                  "startedAt": "2026-11-10T00:06:20.902Z",
                   "location": {
                     "path": "/__w/serenity-js-mocha-webdriverio-template/serenity-js-mocha-webdriverio-template/test/serenity/todo-list-app/TodoList.ts",
                     "line": 20,
@@ -372,7 +372,7 @@ window.__SERENITY_REPORT_DATA__ = {
                 }
               ],
               "type": "Task",
-              "startedAt": "2026-11-03T06:02:38.921Z",
+              "startedAt": "2026-11-10T00:06:20.061Z",
               "location": {
                 "path": "/__w/serenity-js-mocha-webdriverio-template/serenity-js-mocha-webdriverio-template/test/serenity/todo-list-app/TodoList.ts",
                 "line": 34,
@@ -382,15 +382,15 @@ window.__SERENITY_REPORT_DATA__ = {
             {
               "name": "Wendy records an item called 'Buy dog food'",
               "outcome": "SUCCESS",
-              "duration": 267,
+              "duration": 269,
               "children": [
                 {
                   "name": "Wendy enters \"Buy dog food\" into \"What needs to be done?\" input box",
                   "outcome": "SUCCESS",
-                  "duration": 36,
+                  "duration": 39,
                   "children": [],
                   "type": "Interaction",
-                  "startedAt": "2026-11-03T06:02:39.794Z",
+                  "startedAt": "2026-11-10T00:06:20.918Z",
                   "location": {
                     "path": "/__w/serenity-js-mocha-webdriverio-template/serenity-js-mocha-webdriverio-template/test/serenity/todo-list-app/TodoList.ts",
                     "line": 40,
@@ -398,7 +398,7 @@ window.__SERENITY_REPORT_DATA__ = {
                   },
                   "artifacts": [
                     {
-                      "path": "test-runs/2983/serenity-js-mocha-webdriverio-template-1/screenshot-linux-chrome-156-0-8078-80-wendy-enters--buy-dog-food--into--wha-f81528b487.png",
+                      "path": "test-runs/2991/serenity-js-mocha-webdriverio-template-1/screenshot-linux-chrome-157-0-8103-50-wendy-enters--buy-dog-food--into--wha-f81528b487.png",
                       "type": "screenshot"
                     }
                   ]
@@ -406,10 +406,10 @@ window.__SERENITY_REPORT_DATA__ = {
                 {
                   "name": "Wendy presses key Enter in \"What needs to be done?\" input box",
                   "outcome": "SUCCESS",
-                  "duration": 70,
+                  "duration": 66,
                   "children": [],
                   "type": "Interaction",
-                  "startedAt": "2026-11-03T06:02:39.871Z",
+                  "startedAt": "2026-11-10T00:06:21.019Z",
                   "location": {
                     "path": "/__w/serenity-js-mocha-webdriverio-template/serenity-js-mocha-webdriverio-template/test/serenity/todo-list-app/TodoList.ts",
                     "line": 41,
@@ -417,7 +417,7 @@ window.__SERENITY_REPORT_DATA__ = {
                   },
                   "artifacts": [
                     {
-                      "path": "test-runs/2983/serenity-js-mocha-webdriverio-template-1/screenshot-linux-chrome-156-0-8078-80-wendy-presses-key-enter-in--what-need-352c3cf374.png",
+                      "path": "test-runs/2991/serenity-js-mocha-webdriverio-template-1/screenshot-linux-chrome-157-0-8103-50-wendy-presses-key-enter-in--what-need-352c3cf374.png",
                       "type": "screenshot"
                     }
                   ]
@@ -425,10 +425,10 @@ window.__SERENITY_REPORT_DATA__ = {
                 {
                   "name": "Wendy waits until the text of displayed items does contain \"Buy dog food\"",
                   "outcome": "SUCCESS",
-                  "duration": 26,
+                  "duration": 28,
                   "children": [],
                   "type": "Interaction",
-                  "startedAt": "2026-11-03T06:02:39.993Z",
+                  "startedAt": "2026-11-10T00:06:21.127Z",
                   "location": {
                     "path": "/__w/serenity-js-mocha-webdriverio-template/serenity-js-mocha-webdriverio-template/test/serenity/todo-list-app/TodoList.ts",
                     "line": 35,
@@ -436,14 +436,14 @@ window.__SERENITY_REPORT_DATA__ = {
                   },
                   "artifacts": [
                     {
-                      "path": "test-runs/2983/serenity-js-mocha-webdriverio-template-1/screenshot-linux-chrome-156-0-8078-80-wendy-waits-until-the-text-of-display-352c3cf374.png",
+                      "path": "test-runs/2991/serenity-js-mocha-webdriverio-template-1/screenshot-linux-chrome-157-0-8103-50-wendy-waits-until-the-text-of-display-352c3cf374.png",
                       "type": "screenshot"
                     }
                   ]
                 }
               ],
               "type": "Task",
-              "startedAt": "2026-11-03T06:02:39.793Z",
+              "startedAt": "2026-11-10T00:06:20.918Z",
               "location": {
                 "path": "/__w/serenity-js-mocha-webdriverio-template/serenity-js-mocha-webdriverio-template/test/serenity/todo-list-app/TodoList.ts",
                 "line": 35,
@@ -453,15 +453,15 @@ window.__SERENITY_REPORT_DATA__ = {
             {
               "name": "Wendy records an item called 'Feed the dog'",
               "outcome": "SUCCESS",
-              "duration": 247,
+              "duration": 267,
               "children": [
                 {
                   "name": "Wendy enters \"Feed the dog\" into \"What needs to be done?\" input box",
                   "outcome": "SUCCESS",
-                  "duration": 32,
+                  "duration": 35,
                   "children": [],
                   "type": "Interaction",
-                  "startedAt": "2026-11-03T06:02:40.061Z",
+                  "startedAt": "2026-11-10T00:06:21.187Z",
                   "location": {
                     "path": "/__w/serenity-js-mocha-webdriverio-template/serenity-js-mocha-webdriverio-template/test/serenity/todo-list-app/TodoList.ts",
                     "line": 40,
@@ -469,78 +469,7 @@ window.__SERENITY_REPORT_DATA__ = {
                   },
                   "artifacts": [
                     {
-                      "path": "test-runs/2983/serenity-js-mocha-webdriverio-template-1/screenshot-linux-chrome-156-0-8078-80-wendy-enters--feed-the-dog--into--wha-1e634d11d8.png",
-                      "type": "screenshot"
-                    }
-                  ]
-                },
-                {
-                  "name": "Wendy presses key Enter in \"What needs to be done?\" input box",
-                  "outcome": "SUCCESS",
-                  "duration": 49,
-                  "children": [],
-                  "type": "Interaction",
-                  "startedAt": "2026-11-03T06:02:40.135Z",
-                  "location": {
-                    "path": "/__w/serenity-js-mocha-webdriverio-template/serenity-js-mocha-webdriverio-template/test/serenity/todo-list-app/TodoList.ts",
-                    "line": 41,
-                    "column": 34
-                  },
-                  "artifacts": [
-                    {
-                      "path": "test-runs/2983/serenity-js-mocha-webdriverio-template-1/screenshot-linux-chrome-156-0-8078-80-wendy-presses-key-enter-in--what-need-5bcda1ff33.png",
-                      "type": "screenshot"
-                    }
-                  ]
-                },
-                {
-                  "name": "Wendy waits until the text of displayed items does contain \"Feed the dog\"",
-                  "outcome": "SUCCESS",
-                  "duration": 33,
-                  "children": [],
-                  "type": "Interaction",
-                  "startedAt": "2026-11-03T06:02:40.225Z",
-                  "location": {
-                    "path": "/__w/serenity-js-mocha-webdriverio-template/serenity-js-mocha-webdriverio-template/test/serenity/todo-list-app/TodoList.ts",
-                    "line": 35,
-                    "column": 47
-                  },
-                  "artifacts": [
-                    {
-                      "path": "test-runs/2983/serenity-js-mocha-webdriverio-template-1/screenshot-linux-chrome-156-0-8078-80-wendy-waits-until-the-text-of-display-5bcda1ff33.png",
-                      "type": "screenshot"
-                    }
-                  ]
-                }
-              ],
-              "type": "Task",
-              "startedAt": "2026-11-03T06:02:40.061Z",
-              "location": {
-                "path": "/__w/serenity-js-mocha-webdriverio-template/serenity-js-mocha-webdriverio-template/test/serenity/todo-list-app/TodoList.ts",
-                "line": 35,
-                "column": 47
-              }
-            },
-            {
-              "name": "Wendy records an item called \"Book a vet's appointment\"",
-              "outcome": "SUCCESS",
-              "duration": 302,
-              "children": [
-                {
-                  "name": "Wendy enters \"Book a vet's appointment\" into \"What needs to be done?\" input box",
-                  "outcome": "SUCCESS",
-                  "duration": 38,
-                  "children": [],
-                  "type": "Interaction",
-                  "startedAt": "2026-11-03T06:02:40.309Z",
-                  "location": {
-                    "path": "/__w/serenity-js-mocha-webdriverio-template/serenity-js-mocha-webdriverio-template/test/serenity/todo-list-app/TodoList.ts",
-                    "line": 40,
-                    "column": 38
-                  },
-                  "artifacts": [
-                    {
-                      "path": "test-runs/2983/serenity-js-mocha-webdriverio-template-1/screenshot-linux-chrome-156-0-8078-80-wendy-enters--book-a-vet-s-appointmen-03f7e70cee.png",
+                      "path": "test-runs/2991/serenity-js-mocha-webdriverio-template-1/screenshot-linux-chrome-157-0-8103-50-wendy-enters--feed-the-dog--into--wha-1e634d11d8.png",
                       "type": "screenshot"
                     }
                   ]
@@ -551,7 +480,7 @@ window.__SERENITY_REPORT_DATA__ = {
                   "duration": 48,
                   "children": [],
                   "type": "Interaction",
-                  "startedAt": "2026-11-03T06:02:40.409Z",
+                  "startedAt": "2026-11-10T00:06:21.276Z",
                   "location": {
                     "path": "/__w/serenity-js-mocha-webdriverio-template/serenity-js-mocha-webdriverio-template/test/serenity/todo-list-app/TodoList.ts",
                     "line": 41,
@@ -559,18 +488,18 @@ window.__SERENITY_REPORT_DATA__ = {
                   },
                   "artifacts": [
                     {
-                      "path": "test-runs/2983/serenity-js-mocha-webdriverio-template-1/screenshot-linux-chrome-156-0-8078-80-wendy-presses-key-enter-in--what-need-0a88cf2627.png",
+                      "path": "test-runs/2991/serenity-js-mocha-webdriverio-template-1/screenshot-linux-chrome-157-0-8103-50-wendy-presses-key-enter-in--what-need-5bcda1ff33.png",
                       "type": "screenshot"
                     }
                   ]
                 },
                 {
-                  "name": "Wendy waits until the text of displayed items does contain \"Book a vet's appointment\"",
+                  "name": "Wendy waits until the text of displayed items does contain \"Feed the dog\"",
                   "outcome": "SUCCESS",
-                  "duration": 41,
+                  "duration": 38,
                   "children": [],
                   "type": "Interaction",
-                  "startedAt": "2026-11-03T06:02:40.519Z",
+                  "startedAt": "2026-11-10T00:06:21.376Z",
                   "location": {
                     "path": "/__w/serenity-js-mocha-webdriverio-template/serenity-js-mocha-webdriverio-template/test/serenity/todo-list-app/TodoList.ts",
                     "line": 35,
@@ -578,14 +507,85 @@ window.__SERENITY_REPORT_DATA__ = {
                   },
                   "artifacts": [
                     {
-                      "path": "test-runs/2983/serenity-js-mocha-webdriverio-template-1/screenshot-linux-chrome-156-0-8078-80-wendy-waits-until-the-text-of-display-0a88cf2627.png",
+                      "path": "test-runs/2991/serenity-js-mocha-webdriverio-template-1/screenshot-linux-chrome-157-0-8103-50-wendy-waits-until-the-text-of-display-5bcda1ff33.png",
                       "type": "screenshot"
                     }
                   ]
                 }
               ],
               "type": "Task",
-              "startedAt": "2026-11-03T06:02:40.309Z",
+              "startedAt": "2026-11-10T00:06:21.187Z",
+              "location": {
+                "path": "/__w/serenity-js-mocha-webdriverio-template/serenity-js-mocha-webdriverio-template/test/serenity/todo-list-app/TodoList.ts",
+                "line": 35,
+                "column": 47
+              }
+            },
+            {
+              "name": "Wendy records an item called \"Book a vet's appointment\"",
+              "outcome": "SUCCESS",
+              "duration": 286,
+              "children": [
+                {
+                  "name": "Wendy enters \"Book a vet's appointment\" into \"What needs to be done?\" input box",
+                  "outcome": "SUCCESS",
+                  "duration": 41,
+                  "children": [],
+                  "type": "Interaction",
+                  "startedAt": "2026-11-10T00:06:21.455Z",
+                  "location": {
+                    "path": "/__w/serenity-js-mocha-webdriverio-template/serenity-js-mocha-webdriverio-template/test/serenity/todo-list-app/TodoList.ts",
+                    "line": 40,
+                    "column": 38
+                  },
+                  "artifacts": [
+                    {
+                      "path": "test-runs/2991/serenity-js-mocha-webdriverio-template-1/screenshot-linux-chrome-157-0-8103-50-wendy-enters--book-a-vet-s-appointmen-03f7e70cee.png",
+                      "type": "screenshot"
+                    }
+                  ]
+                },
+                {
+                  "name": "Wendy presses key Enter in \"What needs to be done?\" input box",
+                  "outcome": "SUCCESS",
+                  "duration": 45,
+                  "children": [],
+                  "type": "Interaction",
+                  "startedAt": "2026-11-10T00:06:21.558Z",
+                  "location": {
+                    "path": "/__w/serenity-js-mocha-webdriverio-template/serenity-js-mocha-webdriverio-template/test/serenity/todo-list-app/TodoList.ts",
+                    "line": 41,
+                    "column": 34
+                  },
+                  "artifacts": [
+                    {
+                      "path": "test-runs/2991/serenity-js-mocha-webdriverio-template-1/screenshot-linux-chrome-157-0-8103-50-wendy-presses-key-enter-in--what-need-0a88cf2627.png",
+                      "type": "screenshot"
+                    }
+                  ]
+                },
+                {
+                  "name": "Wendy waits until the text of displayed items does contain \"Book a vet's appointment\"",
+                  "outcome": "SUCCESS",
+                  "duration": 44,
+                  "children": [],
+                  "type": "Interaction",
+                  "startedAt": "2026-11-10T00:06:21.655Z",
+                  "location": {
+                    "path": "/__w/serenity-js-mocha-webdriverio-template/serenity-js-mocha-webdriverio-template/test/serenity/todo-list-app/TodoList.ts",
+                    "line": 35,
+                    "column": 47
+                  },
+                  "artifacts": [
+                    {
+                      "path": "test-runs/2991/serenity-js-mocha-webdriverio-template-1/screenshot-linux-chrome-157-0-8103-50-wendy-waits-until-the-text-of-display-0a88cf2627.png",
+                      "type": "screenshot"
+                    }
+                  ]
+                }
+              ],
+              "type": "Task",
+              "startedAt": "2026-11-10T00:06:21.454Z",
               "location": {
                 "path": "/__w/serenity-js-mocha-webdriverio-template/serenity-js-mocha-webdriverio-template/test/serenity/todo-list-app/TodoList.ts",
                 "line": 35,
@@ -594,7 +594,7 @@ window.__SERENITY_REPORT_DATA__ = {
             }
           ],
           "type": "Task",
-          "startedAt": "2026-11-03T06:02:38.921Z",
+          "startedAt": "2026-11-10T00:06:20.061Z",
           "location": {
             "path": "/__w/serenity-js-mocha-webdriverio-template/serenity-js-mocha-webdriverio-template/test/specs/serenity-js_website.spec.ts",
             "line": 73,
@@ -604,30 +604,30 @@ window.__SERENITY_REPORT_DATA__ = {
         {
           "name": "Wendy marks the following items as completed: [ 'Buy dog food', 'Feed the dog' ]",
           "outcome": "SUCCESS",
-          "duration": 480,
+          "duration": 489,
           "children": [
             {
               "name": "Wendy marks an item called 'Buy dog food' as completed",
               "outcome": "SUCCESS",
-              "duration": 250,
+              "duration": 246,
               "children": [
                 {
                   "name": "Wendy checks whether CSS classes of an item called 'Buy dog food' does not contain \"completed\"",
                   "outcome": "SUCCESS",
-                  "duration": 250,
+                  "duration": 246,
                   "children": [
                     {
                       "name": "Wendy toggles the completion status of an item called 'Buy dog food'",
                       "outcome": "SUCCESS",
-                      "duration": 211,
+                      "duration": 202,
                       "children": [
                         {
                           "name": "Wendy clicks on toggle button of an item called 'Buy dog food'",
                           "outcome": "SUCCESS",
-                          "duration": 159,
+                          "duration": 160,
                           "children": [],
                           "type": "Interaction",
-                          "startedAt": "2026-11-03T06:02:40.651Z",
+                          "startedAt": "2026-11-10T00:06:21.785Z",
                           "location": {
                             "path": "/__w/serenity-js-mocha-webdriverio-template/serenity-js-mocha-webdriverio-template/test/serenity/todo-list-app/TodoListItem.ts",
                             "line": 24,
@@ -635,14 +635,14 @@ window.__SERENITY_REPORT_DATA__ = {
                           },
                           "artifacts": [
                             {
-                              "path": "test-runs/2983/serenity-js-mocha-webdriverio-template-1/screenshot-linux-chrome-156-0-8078-80-wendy-clicks-on-toggle-button-of-an-i-9aecc71117.png",
+                              "path": "test-runs/2991/serenity-js-mocha-webdriverio-template-1/screenshot-linux-chrome-157-0-8103-50-wendy-clicks-on-toggle-button-of-an-i-9aecc71117.png",
                               "type": "screenshot"
                             }
                           ]
                         }
                       ],
                       "type": "Task",
-                      "startedAt": "2026-11-03T06:02:40.650Z",
+                      "startedAt": "2026-11-10T00:06:21.785Z",
                       "location": {
                         "path": "/__w/serenity-js-mocha-webdriverio-template/serenity-js-mocha-webdriverio-template/test/serenity/todo-list-app/TodoListItem.ts",
                         "line": 13,
@@ -651,7 +651,7 @@ window.__SERENITY_REPORT_DATA__ = {
                     }
                   ],
                   "type": "Task",
-                  "startedAt": "2026-11-03T06:02:40.611Z",
+                  "startedAt": "2026-11-10T00:06:21.741Z",
                   "location": {
                     "path": "/__w/serenity-js-mocha-webdriverio-template/serenity-js-mocha-webdriverio-template/test/serenity/todo-list-app/TodoList.ts",
                     "line": 47,
@@ -660,7 +660,7 @@ window.__SERENITY_REPORT_DATA__ = {
                 }
               ],
               "type": "Task",
-              "startedAt": "2026-11-03T06:02:40.611Z",
+              "startedAt": "2026-11-10T00:06:21.741Z",
               "location": {
                 "path": "/__w/serenity-js-mocha-webdriverio-template/serenity-js-mocha-webdriverio-template/test/serenity/todo-list-app/TodoList.ts",
                 "line": 47,
@@ -670,25 +670,25 @@ window.__SERENITY_REPORT_DATA__ = {
             {
               "name": "Wendy marks an item called 'Feed the dog' as completed",
               "outcome": "SUCCESS",
-              "duration": 230,
+              "duration": 241,
               "children": [
                 {
                   "name": "Wendy checks whether CSS classes of an item called 'Feed the dog' does not contain \"completed\"",
                   "outcome": "SUCCESS",
-                  "duration": 229,
+                  "duration": 241,
                   "children": [
                     {
                       "name": "Wendy toggles the completion status of an item called 'Feed the dog'",
                       "outcome": "SUCCESS",
-                      "duration": 192,
+                      "duration": 196,
                       "children": [
                         {
                           "name": "Wendy clicks on toggle button of an item called 'Feed the dog'",
                           "outcome": "SUCCESS",
-                          "duration": 130,
+                          "duration": 134,
                           "children": [],
                           "type": "Interaction",
-                          "startedAt": "2026-11-03T06:02:40.899Z",
+                          "startedAt": "2026-11-10T00:06:22.034Z",
                           "location": {
                             "path": "/__w/serenity-js-mocha-webdriverio-template/serenity-js-mocha-webdriverio-template/test/serenity/todo-list-app/TodoListItem.ts",
                             "line": 24,
@@ -696,14 +696,14 @@ window.__SERENITY_REPORT_DATA__ = {
                           },
                           "artifacts": [
                             {
-                              "path": "test-runs/2983/serenity-js-mocha-webdriverio-template-1/screenshot-linux-chrome-156-0-8078-80-wendy-clicks-on-toggle-button-of-an-i-5f4b0ac12f.png",
+                              "path": "test-runs/2991/serenity-js-mocha-webdriverio-template-1/screenshot-linux-chrome-157-0-8103-50-wendy-clicks-on-toggle-button-of-an-i-5f4b0ac12f.png",
                               "type": "screenshot"
                             }
                           ]
                         }
                       ],
                       "type": "Task",
-                      "startedAt": "2026-11-03T06:02:40.899Z",
+                      "startedAt": "2026-11-10T00:06:22.033Z",
                       "location": {
                         "path": "/__w/serenity-js-mocha-webdriverio-template/serenity-js-mocha-webdriverio-template/test/serenity/todo-list-app/TodoListItem.ts",
                         "line": 13,
@@ -712,7 +712,7 @@ window.__SERENITY_REPORT_DATA__ = {
                     }
                   ],
                   "type": "Task",
-                  "startedAt": "2026-11-03T06:02:40.862Z",
+                  "startedAt": "2026-11-10T00:06:21.988Z",
                   "location": {
                     "path": "/__w/serenity-js-mocha-webdriverio-template/serenity-js-mocha-webdriverio-template/test/serenity/todo-list-app/TodoList.ts",
                     "line": 47,
@@ -721,7 +721,7 @@ window.__SERENITY_REPORT_DATA__ = {
                 }
               ],
               "type": "Task",
-              "startedAt": "2026-11-03T06:02:40.861Z",
+              "startedAt": "2026-11-10T00:06:21.988Z",
               "location": {
                 "path": "/__w/serenity-js-mocha-webdriverio-template/serenity-js-mocha-webdriverio-template/test/serenity/todo-list-app/TodoList.ts",
                 "line": 47,
@@ -730,7 +730,7 @@ window.__SERENITY_REPORT_DATA__ = {
             }
           ],
           "type": "Task",
-          "startedAt": "2026-11-03T06:02:40.611Z",
+          "startedAt": "2026-11-10T00:06:21.740Z",
           "location": {
             "path": "/__w/serenity-js-mocha-webdriverio-template/serenity-js-mocha-webdriverio-template/test/specs/serenity-js_website.spec.ts",
             "line": 78,
@@ -740,10 +740,10 @@ window.__SERENITY_REPORT_DATA__ = {
         {
           "name": "Wendy ensures that number of items left does equal 1",
           "outcome": "SUCCESS",
-          "duration": 23,
+          "duration": 25,
           "children": [],
           "type": "Interaction",
-          "startedAt": "2026-11-03T06:02:41.091Z",
+          "startedAt": "2026-11-10T00:06:22.229Z",
           "location": {
             "path": "/__w/serenity-js-mocha-webdriverio-template/serenity-js-mocha-webdriverio-template/test/specs/serenity-js_website.spec.ts",
             "line": 82,
@@ -751,7 +751,7 @@ window.__SERENITY_REPORT_DATA__ = {
           },
           "artifacts": [
             {
-              "path": "test-runs/2983/serenity-js-mocha-webdriverio-template-1/screenshot-linux-chrome-156-0-8078-80-wendy-ensures-that-number-of-items-le-5f4b0ac12f.png",
+              "path": "test-runs/2991/serenity-js-mocha-webdriverio-template-1/screenshot-linux-chrome-157-0-8103-50-wendy-ensures-that-number-of-items-le-5f4b0ac12f.png",
               "type": "screenshot"
             }
           ]
@@ -760,22 +760,22 @@ window.__SERENITY_REPORT_DATA__ = {
       "executionHistory": [
         {
           "outcome": "SUCCESS",
-          "run": "2983",
-          "timestamp": "2026-11-03T06:02:37.563Z",
-          "duration": 2502,
+          "run": "2991",
+          "timestamp": "2026-11-10T00:06:18.541Z",
+          "duration": 2642,
           "activities": [
             {
               "name": "Apisitt ensures all GitHub systems are operational",
               "outcome": "SUCCESS",
-              "duration": 197,
+              "duration": 344,
               "children": [
                 {
                   "name": "Apisitt sends a GET request to 'https://www.githubstatus.com/api/v2/status.json'",
                   "outcome": "SUCCESS",
-                  "duration": 30,
+                  "duration": 190,
                   "children": [],
                   "type": "Interaction",
-                  "startedAt": "2026-11-03T06:02:38.693Z",
+                  "startedAt": "2026-11-10T00:06:19.682Z",
                   "location": {
                     "path": "/__w/serenity-js-mocha-webdriverio-template/serenity-js-mocha-webdriverio-template/test/specs/serenity-js_website.spec.ts",
                     "line": 68,
@@ -783,11 +783,11 @@ window.__SERENITY_REPORT_DATA__ = {
                   },
                   "artifacts": [
                     {
-                      "path": "test-runs/2983/serenity-js-mocha-webdriverio-template-1/artifact-get-https---www-githubstatus-com-api-v2-status-json-949215570d.json",
+                      "path": "test-runs/2991/serenity-js-mocha-webdriverio-template-1/artifact-get-https---www-githubstatus-com-api-v2-status-json-73458590ed.json",
                       "type": "screenshot"
                     },
                     {
-                      "path": "test-runs/2983/serenity-js-mocha-webdriverio-template-1/screenshot-linux-chrome-156-0-8078-80-apisitt-sends-a-get-request-to--https-3b7d2e5127.png",
+                      "path": "test-runs/2991/serenity-js-mocha-webdriverio-template-1/screenshot-linux-chrome-157-0-8103-50-apisitt-sends-a-get-request-to--https-3b7d2e5127.png",
                       "type": "screenshot"
                     }
                   ],
@@ -796,17 +796,17 @@ window.__SERENITY_REPORT_DATA__ = {
                     "url": "https://www.githubstatus.com/api/v2/status.json",
                     "requestHeaders": "Accept: application/json, text/plain, */*\nUser-Agent: axios/1.20.0\nAccept-Encoding: gzip, compress, deflate, br",
                     "statusCode": 200,
-                    "responseHeaders": "content-type: application/json; charset=utf-8\ncontent-length: 215\nconnection: close\ndate: Tue, 03 Nov 2026 06:02:17 GMT\nx-download-options: noopen\nx-permitted-cross-domain-policies: none\nreferrer-policy: strict-origin-when-cross-origin\nx-statuspage-version: 98d86feb8972e7daedffc6007850cd45cf2ea3aa\nstrict-transport-security: max-age=259200\nx-statuspage-skip-logging: true\naccess-control-allow-origin: *\ncache-control: max-age=10, public, s-maxage=10, stale-while-revalidate=20, stale-if-error=3600\nx-pollinator-metadata-service: status-page-web-pages\nx-runtime: 0.059790\nserver: AtlassianEdge\naccept-ranges: bytes\nx-content-type-options: nosniff\nx-xss-protection: 1; mode=block\natl-traceid: 54e2c991f8ac4b54909678810b314c58\natl-request-id: 54e2c991-f8ac-4b54-9096-78810b314c58\nreport-to: {\"endpoints\": [{\"url\": \"https://dz8aopenkvv6s.cloudfront.net\"}], \"group\": \"endpoint-1\", \"include_subdomains\": true, \"max_age\": 600}\nnel: {\"failure_fraction\": 0.01, \"include_subdomains\": true, \"max_age\": 600, \"report_to\": \"endpoint-1\"}\netag: W/\"e996bad3066efb2181de4253e2dcc1d5\"\nvary: Accept,Accept-Encoding\nx-cache: Hit from cloudfront\nvia: 1.1 87261be5be50ea4e0f51ed7963914c48.cloudfront.net (CloudFront)\nx-amz-cf-pop: ORD56-P12\nalt-svc: h3=\":443\"; ma=86400\nx-amz-cf-id: 0nZC27RXnpJmDjz-__Fnm7TUC8cqiGPtF6nhgUu-544qD7pFQyXdYA==\nage: 21",
-                    "responseBody": "{\n    \"page\": {\n        \"id\": \"kctbh9vrtdwd\",\n        \"name\": \"GitHub\",\n        \"url\": \"https://www.githubstatus.com\",\n        \"time_zone\": \"Etc/UTC\",\n        \"updated_at\": \"2026-11-03T05:59:09.541Z\"\n    },\n    \"status\": {\n        \"indicator\": \"none\",\n        \"description\": \"All Systems Operational\"\n    }\n}"
+                    "responseHeaders": "content-type: application/json; charset=utf-8\ncontent-length: 215\nconnection: close\ndate: Tue, 10 Nov 2026 00:05:55 GMT\nx-download-options: noopen\nx-permitted-cross-domain-policies: none\nreferrer-policy: strict-origin-when-cross-origin\nx-statuspage-version: d42f84648e34a1aeefa927e239da9fbf069264f5\nstrict-transport-security: max-age=259200\nx-statuspage-skip-logging: true\naccess-control-allow-origin: *\ncache-control: max-age=10, public, s-maxage=10, stale-while-revalidate=20, stale-if-error=3600\nx-pollinator-metadata-service: status-page-web-pages\nx-runtime: 0.151960\nserver: AtlassianEdge\naccept-ranges: bytes\nx-content-type-options: nosniff\nx-xss-protection: 1; mode=block\natl-traceid: 319484c7762046378bdc0bb32601d98a\natl-request-id: 319484c7-7620-4637-8bdc-0bb32601d98a\nreport-to: {\"endpoints\": [{\"url\": \"https://dz8aopenkvv6s.cloudfront.net\"}], \"group\": \"endpoint-1\", \"include_subdomains\": true, \"max_age\": 600}\nnel: {\"failure_fraction\": 0.01, \"include_subdomains\": true, \"max_age\": 600, \"report_to\": \"endpoint-1\"}\netag: W/\"faf253f7959fd2edcbd8537ae2e38a9d\"\nvary: Accept,Accept-Encoding\nx-cache: Hit from cloudfront\nvia: 1.1 9d0b7a8454021cab4704c1ba4cb6c7c4.cloudfront.net (CloudFront)\nx-amz-cf-pop: DFW57-P5\nalt-svc: h3=\":443\"; ma=86400\nx-amz-cf-id: yt46W88DLnZvcq9-1nI75Win1qgX0LN9If8Rb1m06Y6MJ_vpmg6oTA==\nage: 24",
+                    "responseBody": "{\n    \"page\": {\n        \"id\": \"kctbh9vrtdwd\",\n        \"name\": \"GitHub\",\n        \"url\": \"https://www.githubstatus.com\",\n        \"time_zone\": \"Etc/UTC\",\n        \"updated_at\": \"2026-11-09T23:59:44.268Z\"\n    },\n    \"status\": {\n        \"indicator\": \"none\",\n        \"description\": \"All Systems Operational\"\n    }\n}"
                   }
                 },
                 {
                   "name": "Apisitt ensures that the status of the last response does equal 200",
                   "outcome": "SUCCESS",
-                  "duration": 1,
+                  "duration": 0,
                   "children": [],
                   "type": "Interaction",
-                  "startedAt": "2026-11-03T06:02:38.795Z",
+                  "startedAt": "2026-11-10T00:06:19.923Z",
                   "location": {
                     "path": "/__w/serenity-js-mocha-webdriverio-template/serenity-js-mocha-webdriverio-template/test/specs/serenity-js_website.spec.ts",
                     "line": 68,
@@ -814,7 +814,7 @@ window.__SERENITY_REPORT_DATA__ = {
                   },
                   "artifacts": [
                     {
-                      "path": "test-runs/2983/serenity-js-mocha-webdriverio-template-1/screenshot-linux-chrome-156-0-8078-80-apisitt-ensures-that-the-status-of-th-3b7d2e5127.png",
+                      "path": "test-runs/2991/serenity-js-mocha-webdriverio-template-1/screenshot-linux-chrome-157-0-8103-50-apisitt-ensures-that-the-status-of-th-3b7d2e5127.png",
                       "type": "screenshot"
                     }
                   ]
@@ -825,7 +825,7 @@ window.__SERENITY_REPORT_DATA__ = {
                   "duration": 1,
                   "children": [],
                   "type": "Interaction",
-                  "startedAt": "2026-11-03T06:02:38.837Z",
+                  "startedAt": "2026-11-10T00:06:19.973Z",
                   "location": {
                     "path": "/__w/serenity-js-mocha-webdriverio-template/serenity-js-mocha-webdriverio-template/test/specs/serenity-js_website.spec.ts",
                     "line": 68,
@@ -833,14 +833,14 @@ window.__SERENITY_REPORT_DATA__ = {
                   },
                   "artifacts": [
                     {
-                      "path": "test-runs/2983/serenity-js-mocha-webdriverio-template-1/screenshot-linux-chrome-156-0-8078-80-apisitt-ensures-that-github-status-do-3b7d2e5127.png",
+                      "path": "test-runs/2991/serenity-js-mocha-webdriverio-template-1/screenshot-linux-chrome-157-0-8103-50-apisitt-ensures-that-github-status-do-3b7d2e5127.png",
                       "type": "screenshot"
                     }
                   ]
                 }
               ],
               "type": "Task",
-              "startedAt": "2026-11-03T06:02:38.692Z",
+              "startedAt": "2026-11-10T00:06:19.681Z",
               "location": {
                 "path": "/__w/serenity-js-mocha-webdriverio-template/serenity-js-mocha-webdriverio-template/test/specs/serenity-js_website.spec.ts",
                 "line": 68,
@@ -850,20 +850,20 @@ window.__SERENITY_REPORT_DATA__ = {
             {
               "name": "Wendy starts with a list containing 3 items",
               "outcome": "SUCCESS",
-              "duration": 1690,
+              "duration": 1679,
               "children": [
                 {
                   "name": "Wendy creates an empty todo list",
                   "outcome": "SUCCESS",
-                  "duration": 872,
+                  "duration": 857,
                   "children": [
                     {
                       "name": "Wendy navigates to \"https://todo-app.serenity-js.org/\"",
                       "outcome": "SUCCESS",
-                      "duration": 594,
+                      "duration": 602,
                       "children": [],
                       "type": "Interaction",
-                      "startedAt": "2026-11-03T06:02:38.921Z",
+                      "startedAt": "2026-11-10T00:06:20.061Z",
                       "location": {
                         "path": "/__w/serenity-js-mocha-webdriverio-template/serenity-js-mocha-webdriverio-template/test/serenity/todo-list-app/TodoList.ts",
                         "line": 34,
@@ -871,7 +871,7 @@ window.__SERENITY_REPORT_DATA__ = {
                       },
                       "artifacts": [
                         {
-                          "path": "test-runs/2983/serenity-js-mocha-webdriverio-template-1/screenshot-linux-chrome-156-0-8078-80-wendy-navigates-to--https---todo-app--7b0b3e7c34.png",
+                          "path": "test-runs/2991/serenity-js-mocha-webdriverio-template-1/screenshot-linux-chrome-157-0-8103-50-wendy-navigates-to--https---todo-app--7b0b3e7c34.png",
                           "type": "screenshot"
                         }
                       ]
@@ -879,10 +879,10 @@ window.__SERENITY_REPORT_DATA__ = {
                     {
                       "name": "Wendy ensures that website title does equal \"Serenity/JS TodoApp\"",
                       "outcome": "SUCCESS",
-                      "duration": 14,
+                      "duration": 16,
                       "children": [],
                       "type": "Interaction",
-                      "startedAt": "2026-11-03T06:02:39.586Z",
+                      "startedAt": "2026-11-10T00:06:20.724Z",
                       "location": {
                         "path": "/__w/serenity-js-mocha-webdriverio-template/serenity-js-mocha-webdriverio-template/test/specs/serenity-js_website.spec.ts",
                         "line": 73,
@@ -890,7 +890,7 @@ window.__SERENITY_REPORT_DATA__ = {
                       },
                       "artifacts": [
                         {
-                          "path": "test-runs/2983/serenity-js-mocha-webdriverio-template-1/screenshot-linux-chrome-156-0-8078-80-wendy-ensures-that-website-title-does-7b0b3e7c34.png",
+                          "path": "test-runs/2991/serenity-js-mocha-webdriverio-template-1/screenshot-linux-chrome-157-0-8103-50-wendy-ensures-that-website-title-does-7b0b3e7c34.png",
                           "type": "screenshot"
                         }
                       ]
@@ -901,7 +901,7 @@ window.__SERENITY_REPORT_DATA__ = {
                       "duration": 60,
                       "children": [],
                       "type": "Interaction",
-                      "startedAt": "2026-11-03T06:02:39.651Z",
+                      "startedAt": "2026-11-10T00:06:20.791Z",
                       "location": {
                         "path": "/__w/serenity-js-mocha-webdriverio-template/serenity-js-mocha-webdriverio-template/test/serenity/todo-list-app/TodoList.ts",
                         "line": 34,
@@ -909,7 +909,7 @@ window.__SERENITY_REPORT_DATA__ = {
                       },
                       "artifacts": [
                         {
-                          "path": "test-runs/2983/serenity-js-mocha-webdriverio-template-1/screenshot-linux-chrome-156-0-8078-80-wendy-waits-until--what-needs-to-be-d-7b0b3e7c34.png",
+                          "path": "test-runs/2991/serenity-js-mocha-webdriverio-template-1/screenshot-linux-chrome-157-0-8103-50-wendy-waits-until--what-needs-to-be-d-7b0b3e7c34.png",
                           "type": "screenshot"
                         }
                       ]
@@ -917,15 +917,15 @@ window.__SERENITY_REPORT_DATA__ = {
                     {
                       "name": "Wendy empties local storage if needed",
                       "outcome": "SUCCESS",
-                      "duration": 20,
+                      "duration": 16,
                       "children": [
                         {
                           "name": "Wendy checks whether <<persisted items>>.length does have value greater than 0",
                           "outcome": "SUCCESS",
-                          "duration": 20,
+                          "duration": 16,
                           "children": [],
                           "type": "Task",
-                          "startedAt": "2026-11-03T06:02:39.773Z",
+                          "startedAt": "2026-11-10T00:06:20.902Z",
                           "location": {
                             "path": "/__w/serenity-js-mocha-webdriverio-template/serenity-js-mocha-webdriverio-template/test/serenity/todo-list-app/TodoList.ts",
                             "line": 20,
@@ -934,7 +934,7 @@ window.__SERENITY_REPORT_DATA__ = {
                         }
                       ],
                       "type": "Task",
-                      "startedAt": "2026-11-03T06:02:39.773Z",
+                      "startedAt": "2026-11-10T00:06:20.902Z",
                       "location": {
                         "path": "/__w/serenity-js-mocha-webdriverio-template/serenity-js-mocha-webdriverio-template/test/serenity/todo-list-app/TodoList.ts",
                         "line": 20,
@@ -943,7 +943,7 @@ window.__SERENITY_REPORT_DATA__ = {
                     }
                   ],
                   "type": "Task",
-                  "startedAt": "2026-11-03T06:02:38.921Z",
+                  "startedAt": "2026-11-10T00:06:20.061Z",
                   "location": {
                     "path": "/__w/serenity-js-mocha-webdriverio-template/serenity-js-mocha-webdriverio-template/test/serenity/todo-list-app/TodoList.ts",
                     "line": 34,
@@ -953,15 +953,15 @@ window.__SERENITY_REPORT_DATA__ = {
                 {
                   "name": "Wendy records an item called 'Buy dog food'",
                   "outcome": "SUCCESS",
-                  "duration": 267,
+                  "duration": 269,
                   "children": [
                     {
                       "name": "Wendy enters \"Buy dog food\" into \"What needs to be done?\" input box",
                       "outcome": "SUCCESS",
-                      "duration": 36,
+                      "duration": 39,
                       "children": [],
                       "type": "Interaction",
-                      "startedAt": "2026-11-03T06:02:39.794Z",
+                      "startedAt": "2026-11-10T00:06:20.918Z",
                       "location": {
                         "path": "/__w/serenity-js-mocha-webdriverio-template/serenity-js-mocha-webdriverio-template/test/serenity/todo-list-app/TodoList.ts",
                         "line": 40,
@@ -969,7 +969,7 @@ window.__SERENITY_REPORT_DATA__ = {
                       },
                       "artifacts": [
                         {
-                          "path": "test-runs/2983/serenity-js-mocha-webdriverio-template-1/screenshot-linux-chrome-156-0-8078-80-wendy-enters--buy-dog-food--into--wha-f81528b487.png",
+                          "path": "test-runs/2991/serenity-js-mocha-webdriverio-template-1/screenshot-linux-chrome-157-0-8103-50-wendy-enters--buy-dog-food--into--wha-f81528b487.png",
                           "type": "screenshot"
                         }
                       ]
@@ -977,10 +977,10 @@ window.__SERENITY_REPORT_DATA__ = {
                     {
                       "name": "Wendy presses key Enter in \"What needs to be done?\" input box",
                       "outcome": "SUCCESS",
-                      "duration": 70,
+                      "duration": 66,
                       "children": [],
                       "type": "Interaction",
-                      "startedAt": "2026-11-03T06:02:39.871Z",
+                      "startedAt": "2026-11-10T00:06:21.019Z",
                       "location": {
                         "path": "/__w/serenity-js-mocha-webdriverio-template/serenity-js-mocha-webdriverio-template/test/serenity/todo-list-app/TodoList.ts",
                         "line": 41,
@@ -988,7 +988,7 @@ window.__SERENITY_REPORT_DATA__ = {
                       },
                       "artifacts": [
                         {
-                          "path": "test-runs/2983/serenity-js-mocha-webdriverio-template-1/screenshot-linux-chrome-156-0-8078-80-wendy-presses-key-enter-in--what-need-352c3cf374.png",
+                          "path": "test-runs/2991/serenity-js-mocha-webdriverio-template-1/screenshot-linux-chrome-157-0-8103-50-wendy-presses-key-enter-in--what-need-352c3cf374.png",
                           "type": "screenshot"
                         }
                       ]
@@ -996,10 +996,10 @@ window.__SERENITY_REPORT_DATA__ = {
                     {
                       "name": "Wendy waits until the text of displayed items does contain \"Buy dog food\"",
                       "outcome": "SUCCESS",
-                      "duration": 26,
+                      "duration": 28,
                       "children": [],
                       "type": "Interaction",
-                      "startedAt": "2026-11-03T06:02:39.993Z",
+                      "startedAt": "2026-11-10T00:06:21.127Z",
                       "location": {
                         "path": "/__w/serenity-js-mocha-webdriverio-template/serenity-js-mocha-webdriverio-template/test/serenity/todo-list-app/TodoList.ts",
                         "line": 35,
@@ -1007,14 +1007,14 @@ window.__SERENITY_REPORT_DATA__ = {
                       },
                       "artifacts": [
                         {
-                          "path": "test-runs/2983/serenity-js-mocha-webdriverio-template-1/screenshot-linux-chrome-156-0-8078-80-wendy-waits-until-the-text-of-display-352c3cf374.png",
+                          "path": "test-runs/2991/serenity-js-mocha-webdriverio-template-1/screenshot-linux-chrome-157-0-8103-50-wendy-waits-until-the-text-of-display-352c3cf374.png",
                           "type": "screenshot"
                         }
                       ]
                     }
                   ],
                   "type": "Task",
-                  "startedAt": "2026-11-03T06:02:39.793Z",
+                  "startedAt": "2026-11-10T00:06:20.918Z",
                   "location": {
                     "path": "/__w/serenity-js-mocha-webdriverio-template/serenity-js-mocha-webdriverio-template/test/serenity/todo-list-app/TodoList.ts",
                     "line": 35,
@@ -1024,15 +1024,15 @@ window.__SERENITY_REPORT_DATA__ = {
                 {
                   "name": "Wendy records an item called 'Feed the dog'",
                   "outcome": "SUCCESS",
-                  "duration": 247,
+                  "duration": 267,
                   "children": [
                     {
                       "name": "Wendy enters \"Feed the dog\" into \"What needs to be done?\" input box",
                       "outcome": "SUCCESS",
-                      "duration": 32,
+                      "duration": 35,
                       "children": [],
                       "type": "Interaction",
-                      "startedAt": "2026-11-03T06:02:40.061Z",
+                      "startedAt": "2026-11-10T00:06:21.187Z",
                       "location": {
                         "path": "/__w/serenity-js-mocha-webdriverio-template/serenity-js-mocha-webdriverio-template/test/serenity/todo-list-app/TodoList.ts",
                         "line": 40,
@@ -1040,78 +1040,7 @@ window.__SERENITY_REPORT_DATA__ = {
                       },
                       "artifacts": [
                         {
-                          "path": "test-runs/2983/serenity-js-mocha-webdriverio-template-1/screenshot-linux-chrome-156-0-8078-80-wendy-enters--feed-the-dog--into--wha-1e634d11d8.png",
-                          "type": "screenshot"
-                        }
-                      ]
-                    },
-                    {
-                      "name": "Wendy presses key Enter in \"What needs to be done?\" input box",
-                      "outcome": "SUCCESS",
-                      "duration": 49,
-                      "children": [],
-                      "type": "Interaction",
-                      "startedAt": "2026-11-03T06:02:40.135Z",
-                      "location": {
-                        "path": "/__w/serenity-js-mocha-webdriverio-template/serenity-js-mocha-webdriverio-template/test/serenity/todo-list-app/TodoList.ts",
-                        "line": 41,
-                        "column": 34
-                      },
-                      "artifacts": [
-                        {
-                          "path": "test-runs/2983/serenity-js-mocha-webdriverio-template-1/screenshot-linux-chrome-156-0-8078-80-wendy-presses-key-enter-in--what-need-5bcda1ff33.png",
-                          "type": "screenshot"
-                        }
-                      ]
-                    },
-                    {
-                      "name": "Wendy waits until the text of displayed items does contain \"Feed the dog\"",
-                      "outcome": "SUCCESS",
-                      "duration": 33,
-                      "children": [],
-                      "type": "Interaction",
-                      "startedAt": "2026-11-03T06:02:40.225Z",
-                      "location": {
-                        "path": "/__w/serenity-js-mocha-webdriverio-template/serenity-js-mocha-webdriverio-template/test/serenity/todo-list-app/TodoList.ts",
-                        "line": 35,
-                        "column": 47
-                      },
-                      "artifacts": [
-                        {
-                          "path": "test-runs/2983/serenity-js-mocha-webdriverio-template-1/screenshot-linux-chrome-156-0-8078-80-wendy-waits-until-the-text-of-display-5bcda1ff33.png",
-                          "type": "screenshot"
-                        }
-                      ]
-                    }
-                  ],
-                  "type": "Task",
-                  "startedAt": "2026-11-03T06:02:40.061Z",
-                  "location": {
-                    "path": "/__w/serenity-js-mocha-webdriverio-template/serenity-js-mocha-webdriverio-template/test/serenity/todo-list-app/TodoList.ts",
-                    "line": 35,
-                    "column": 47
-                  }
-                },
-                {
-                  "name": "Wendy records an item called \"Book a vet's appointment\"",
-                  "outcome": "SUCCESS",
-                  "duration": 302,
-                  "children": [
-                    {
-                      "name": "Wendy enters \"Book a vet's appointment\" into \"What needs to be done?\" input box",
-                      "outcome": "SUCCESS",
-                      "duration": 38,
-                      "children": [],
-                      "type": "Interaction",
-                      "startedAt": "2026-11-03T06:02:40.309Z",
-                      "location": {
-                        "path": "/__w/serenity-js-mocha-webdriverio-template/serenity-js-mocha-webdriverio-template/test/serenity/todo-list-app/TodoList.ts",
-                        "line": 40,
-                        "column": 38
-                      },
-                      "artifacts": [
-                        {
-                          "path": "test-runs/2983/serenity-js-mocha-webdriverio-template-1/screenshot-linux-chrome-156-0-8078-80-wendy-enters--book-a-vet-s-appointmen-03f7e70cee.png",
+                          "path": "test-runs/2991/serenity-js-mocha-webdriverio-template-1/screenshot-linux-chrome-157-0-8103-50-wendy-enters--feed-the-dog--into--wha-1e634d11d8.png",
                           "type": "screenshot"
                         }
                       ]
@@ -1122,7 +1051,7 @@ window.__SERENITY_REPORT_DATA__ = {
                       "duration": 48,
                       "children": [],
                       "type": "Interaction",
-                      "startedAt": "2026-11-03T06:02:40.409Z",
+                      "startedAt": "2026-11-10T00:06:21.276Z",
                       "location": {
                         "path": "/__w/serenity-js-mocha-webdriverio-template/serenity-js-mocha-webdriverio-template/test/serenity/todo-list-app/TodoList.ts",
                         "line": 41,
@@ -1130,18 +1059,18 @@ window.__SERENITY_REPORT_DATA__ = {
                       },
                       "artifacts": [
                         {
-                          "path": "test-runs/2983/serenity-js-mocha-webdriverio-template-1/screenshot-linux-chrome-156-0-8078-80-wendy-presses-key-enter-in--what-need-0a88cf2627.png",
+                          "path": "test-runs/2991/serenity-js-mocha-webdriverio-template-1/screenshot-linux-chrome-157-0-8103-50-wendy-presses-key-enter-in--what-need-5bcda1ff33.png",
                           "type": "screenshot"
                         }
                       ]
                     },
                     {
-                      "name": "Wendy waits until the text of displayed items does contain \"Book a vet's appointment\"",
+                      "name": "Wendy waits until the text of displayed items does contain \"Feed the dog\"",
                       "outcome": "SUCCESS",
-                      "duration": 41,
+                      "duration": 38,
                       "children": [],
                       "type": "Interaction",
-                      "startedAt": "2026-11-03T06:02:40.519Z",
+                      "startedAt": "2026-11-10T00:06:21.376Z",
                       "location": {
                         "path": "/__w/serenity-js-mocha-webdriverio-template/serenity-js-mocha-webdriverio-template/test/serenity/todo-list-app/TodoList.ts",
                         "line": 35,
@@ -1149,14 +1078,85 @@ window.__SERENITY_REPORT_DATA__ = {
                       },
                       "artifacts": [
                         {
-                          "path": "test-runs/2983/serenity-js-mocha-webdriverio-template-1/screenshot-linux-chrome-156-0-8078-80-wendy-waits-until-the-text-of-display-0a88cf2627.png",
+                          "path": "test-runs/2991/serenity-js-mocha-webdriverio-template-1/screenshot-linux-chrome-157-0-8103-50-wendy-waits-until-the-text-of-display-5bcda1ff33.png",
                           "type": "screenshot"
                         }
                       ]
                     }
                   ],
                   "type": "Task",
-                  "startedAt": "2026-11-03T06:02:40.309Z",
+                  "startedAt": "2026-11-10T00:06:21.187Z",
+                  "location": {
+                    "path": "/__w/serenity-js-mocha-webdriverio-template/serenity-js-mocha-webdriverio-template/test/serenity/todo-list-app/TodoList.ts",
+                    "line": 35,
+                    "column": 47
+                  }
+                },
+                {
+                  "name": "Wendy records an item called \"Book a vet's appointment\"",
+                  "outcome": "SUCCESS",
+                  "duration": 286,
+                  "children": [
+                    {
+                      "name": "Wendy enters \"Book a vet's appointment\" into \"What needs to be done?\" input box",
+                      "outcome": "SUCCESS",
+                      "duration": 41,
+                      "children": [],
+                      "type": "Interaction",
+                      "startedAt": "2026-11-10T00:06:21.455Z",
+                      "location": {
+                        "path": "/__w/serenity-js-mocha-webdriverio-template/serenity-js-mocha-webdriverio-template/test/serenity/todo-list-app/TodoList.ts",
+                        "line": 40,
+                        "column": 38
+                      },
+                      "artifacts": [
+                        {
+                          "path": "test-runs/2991/serenity-js-mocha-webdriverio-template-1/screenshot-linux-chrome-157-0-8103-50-wendy-enters--book-a-vet-s-appointmen-03f7e70cee.png",
+                          "type": "screenshot"
+                        }
+                      ]
+                    },
+                    {
+                      "name": "Wendy presses key Enter in \"What needs to be done?\" input box",
+                      "outcome": "SUCCESS",
+                      "duration": 45,
+                      "children": [],
+                      "type": "Interaction",
+                      "startedAt": "2026-11-10T00:06:21.558Z",
+                      "location": {
+                        "path": "/__w/serenity-js-mocha-webdriverio-template/serenity-js-mocha-webdriverio-template/test/serenity/todo-list-app/TodoList.ts",
+                        "line": 41,
+                        "column": 34
+                      },
+                      "artifacts": [
+                        {
+                          "path": "test-runs/2991/serenity-js-mocha-webdriverio-template-1/screenshot-linux-chrome-157-0-8103-50-wendy-presses-key-enter-in--what-need-0a88cf2627.png",
+                          "type": "screenshot"
+                        }
+                      ]
+                    },
+                    {
+                      "name": "Wendy waits until the text of displayed items does contain \"Book a vet's appointment\"",
+                      "outcome": "SUCCESS",
+                      "duration": 44,
+                      "children": [],
+                      "type": "Interaction",
+                      "startedAt": "2026-11-10T00:06:21.655Z",
+                      "location": {
+                        "path": "/__w/serenity-js-mocha-webdriverio-template/serenity-js-mocha-webdriverio-template/test/serenity/todo-list-app/TodoList.ts",
+                        "line": 35,
+                        "column": 47
+                      },
+                      "artifacts": [
+                        {
+                          "path": "test-runs/2991/serenity-js-mocha-webdriverio-template-1/screenshot-linux-chrome-157-0-8103-50-wendy-waits-until-the-text-of-display-0a88cf2627.png",
+                          "type": "screenshot"
+                        }
+                      ]
+                    }
+                  ],
+                  "type": "Task",
+                  "startedAt": "2026-11-10T00:06:21.454Z",
                   "location": {
                     "path": "/__w/serenity-js-mocha-webdriverio-template/serenity-js-mocha-webdriverio-template/test/serenity/todo-list-app/TodoList.ts",
                     "line": 35,
@@ -1165,7 +1165,7 @@ window.__SERENITY_REPORT_DATA__ = {
                 }
               ],
               "type": "Task",
-              "startedAt": "2026-11-03T06:02:38.921Z",
+              "startedAt": "2026-11-10T00:06:20.061Z",
               "location": {
                 "path": "/__w/serenity-js-mocha-webdriverio-template/serenity-js-mocha-webdriverio-template/test/specs/serenity-js_website.spec.ts",
                 "line": 73,
@@ -1175,30 +1175,30 @@ window.__SERENITY_REPORT_DATA__ = {
             {
               "name": "Wendy marks the following items as completed: [ 'Buy dog food', 'Feed the dog' ]",
               "outcome": "SUCCESS",
-              "duration": 480,
+              "duration": 489,
               "children": [
                 {
                   "name": "Wendy marks an item called 'Buy dog food' as completed",
                   "outcome": "SUCCESS",
-                  "duration": 250,
+                  "duration": 246,
                   "children": [
                     {
                       "name": "Wendy checks whether CSS classes of an item called 'Buy dog food' does not contain \"completed\"",
                       "outcome": "SUCCESS",
-                      "duration": 250,
+                      "duration": 246,
                       "children": [
                         {
                           "name": "Wendy toggles the completion status of an item called 'Buy dog food'",
                           "outcome": "SUCCESS",
-                          "duration": 211,
+                          "duration": 202,
                           "children": [
                             {
                               "name": "Wendy clicks on toggle button of an item called 'Buy dog food'",
                               "outcome": "SUCCESS",
-                              "duration": 159,
+                              "duration": 160,
                               "children": [],
                               "type": "Interaction",
-                              "startedAt": "2026-11-03T06:02:40.651Z",
+                              "startedAt": "2026-11-10T00:06:21.785Z",
                               "location": {
                                 "path": "/__w/serenity-js-mocha-webdriverio-template/serenity-js-mocha-webdriverio-template/test/serenity/todo-list-app/TodoListItem.ts",
                                 "line": 24,
@@ -1206,14 +1206,14 @@ window.__SERENITY_REPORT_DATA__ = {
                               },
                               "artifacts": [
                                 {
-                                  "path": "test-runs/2983/serenity-js-mocha-webdriverio-template-1/screenshot-linux-chrome-156-0-8078-80-wendy-clicks-on-toggle-button-of-an-i-9aecc71117.png",
+                                  "path": "test-runs/2991/serenity-js-mocha-webdriverio-template-1/screenshot-linux-chrome-157-0-8103-50-wendy-clicks-on-toggle-button-of-an-i-9aecc71117.png",
                                   "type": "screenshot"
                                 }
                               ]
                             }
                           ],
                           "type": "Task",
-                          "startedAt": "2026-11-03T06:02:40.650Z",
+                          "startedAt": "2026-11-10T00:06:21.785Z",
                           "location": {
                             "path": "/__w/serenity-js-mocha-webdriverio-template/serenity-js-mocha-webdriverio-template/test/serenity/todo-list-app/TodoListItem.ts",
                             "line": 13,
@@ -1222,7 +1222,7 @@ window.__SERENITY_REPORT_DATA__ = {
                         }
                       ],
                       "type": "Task",
-                      "startedAt": "2026-11-03T06:02:40.611Z",
+                      "startedAt": "2026-11-10T00:06:21.741Z",
                       "location": {
                         "path": "/__w/serenity-js-mocha-webdriverio-template/serenity-js-mocha-webdriverio-template/test/serenity/todo-list-app/TodoList.ts",
                         "line": 47,
@@ -1231,7 +1231,7 @@ window.__SERENITY_REPORT_DATA__ = {
                     }
                   ],
                   "type": "Task",
-                  "startedAt": "2026-11-03T06:02:40.611Z",
+                  "startedAt": "2026-11-10T00:06:21.741Z",
                   "location": {
                     "path": "/__w/serenity-js-mocha-webdriverio-template/serenity-js-mocha-webdriverio-template/test/serenity/todo-list-app/TodoList.ts",
                     "line": 47,
@@ -1241,25 +1241,25 @@ window.__SERENITY_REPORT_DATA__ = {
                 {
                   "name": "Wendy marks an item called 'Feed the dog' as completed",
                   "outcome": "SUCCESS",
-                  "duration": 230,
+                  "duration": 241,
                   "children": [
                     {
                       "name": "Wendy checks whether CSS classes of an item called 'Feed the dog' does not contain \"completed\"",
                       "outcome": "SUCCESS",
-                      "duration": 229,
+                      "duration": 241,
                       "children": [
                         {
                           "name": "Wendy toggles the completion status of an item called 'Feed the dog'",
                           "outcome": "SUCCESS",
-                          "duration": 192,
+                          "duration": 196,
                           "children": [
                             {
                               "name": "Wendy clicks on toggle button of an item called 'Feed the dog'",
                               "outcome": "SUCCESS",
-                              "duration": 130,
+                              "duration": 134,
                               "children": [],
                               "type": "Interaction",
-                              "startedAt": "2026-11-03T06:02:40.899Z",
+                              "startedAt": "2026-11-10T00:06:22.034Z",
                               "location": {
                                 "path": "/__w/serenity-js-mocha-webdriverio-template/serenity-js-mocha-webdriverio-template/test/serenity/todo-list-app/TodoListItem.ts",
                                 "line": 24,
@@ -1267,14 +1267,14 @@ window.__SERENITY_REPORT_DATA__ = {
                               },
                               "artifacts": [
                                 {
-                                  "path": "test-runs/2983/serenity-js-mocha-webdriverio-template-1/screenshot-linux-chrome-156-0-8078-80-wendy-clicks-on-toggle-button-of-an-i-5f4b0ac12f.png",
+                                  "path": "test-runs/2991/serenity-js-mocha-webdriverio-template-1/screenshot-linux-chrome-157-0-8103-50-wendy-clicks-on-toggle-button-of-an-i-5f4b0ac12f.png",
                                   "type": "screenshot"
                                 }
                               ]
                             }
                           ],
                           "type": "Task",
-                          "startedAt": "2026-11-03T06:02:40.899Z",
+                          "startedAt": "2026-11-10T00:06:22.033Z",
                           "location": {
                             "path": "/__w/serenity-js-mocha-webdriverio-template/serenity-js-mocha-webdriverio-template/test/serenity/todo-list-app/TodoListItem.ts",
                             "line": 13,
@@ -1283,7 +1283,7 @@ window.__SERENITY_REPORT_DATA__ = {
                         }
                       ],
                       "type": "Task",
-                      "startedAt": "2026-11-03T06:02:40.862Z",
+                      "startedAt": "2026-11-10T00:06:21.988Z",
                       "location": {
                         "path": "/__w/serenity-js-mocha-webdriverio-template/serenity-js-mocha-webdriverio-template/test/serenity/todo-list-app/TodoList.ts",
                         "line": 47,
@@ -1292,7 +1292,7 @@ window.__SERENITY_REPORT_DATA__ = {
                     }
                   ],
                   "type": "Task",
-                  "startedAt": "2026-11-03T06:02:40.861Z",
+                  "startedAt": "2026-11-10T00:06:21.988Z",
                   "location": {
                     "path": "/__w/serenity-js-mocha-webdriverio-template/serenity-js-mocha-webdriverio-template/test/serenity/todo-list-app/TodoList.ts",
                     "line": 47,
@@ -1301,7 +1301,7 @@ window.__SERENITY_REPORT_DATA__ = {
                 }
               ],
               "type": "Task",
-              "startedAt": "2026-11-03T06:02:40.611Z",
+              "startedAt": "2026-11-10T00:06:21.740Z",
               "location": {
                 "path": "/__w/serenity-js-mocha-webdriverio-template/serenity-js-mocha-webdriverio-template/test/specs/serenity-js_website.spec.ts",
                 "line": 78,
@@ -1311,10 +1311,10 @@ window.__SERENITY_REPORT_DATA__ = {
             {
               "name": "Wendy ensures that number of items left does equal 1",
               "outcome": "SUCCESS",
-              "duration": 23,
+              "duration": 25,
               "children": [],
               "type": "Interaction",
-              "startedAt": "2026-11-03T06:02:41.091Z",
+              "startedAt": "2026-11-10T00:06:22.229Z",
               "location": {
                 "path": "/__w/serenity-js-mocha-webdriverio-template/serenity-js-mocha-webdriverio-template/test/specs/serenity-js_website.spec.ts",
                 "line": 82,
@@ -1322,7 +1322,7 @@ window.__SERENITY_REPORT_DATA__ = {
               },
               "artifacts": [
                 {
-                  "path": "test-runs/2983/serenity-js-mocha-webdriverio-template-1/screenshot-linux-chrome-156-0-8078-80-wendy-ensures-that-number-of-items-le-5f4b0ac12f.png",
+                  "path": "test-runs/2991/serenity-js-mocha-webdriverio-template-1/screenshot-linux-chrome-157-0-8103-50-wendy-ensures-that-number-of-items-le-5f4b0ac12f.png",
                   "type": "screenshot"
                 }
               ]
@@ -1390,13 +1390,13 @@ window.__SERENITY_REPORT_DATA__ = {
           ]
         }
       ],
-      "id": "/__w/serenity-js-mocha-webdriverio-template/serenity-js-mocha-webdriverio-template/test/specs/serenity-js_website.spec.ts:offers examples to help you practice test automation@serenity-js-mocha-webdriverio-template@chrome 156.0.8078.80@linux"
+      "id": "/__w/serenity-js-mocha-webdriverio-template/serenity-js-mocha-webdriverio-template/test/specs/serenity-js_website.spec.ts:offers examples to help you practice test automation@serenity-js-mocha-webdriverio-template@chrome 157.0.8103.50@linux"
     }
   ],
   "history": [
     {
-      "timestamp": "2026-11-03T06:02:37.563Z",
-      "duration": 3625,
+      "timestamp": "2026-11-10T00:06:18.541Z",
+      "duration": 3776,
       "outcomes": {
         "passed": 2,
         "failed": 0,
@@ -1405,13 +1405,13 @@ window.__SERENITY_REPORT_DATA__ = {
         "compromised": 0,
         "error": 0
       },
-      "label": "2983",
-      "slowest": 2502,
-      "fastest": 1120,
-      "average": 1811,
-      "commit": "7a90edd82e2c42aa0368229ec6bf32867d407d7a",
+      "label": "2991",
+      "slowest": 2642,
+      "fastest": 1131,
+      "average": 1887,
+      "commit": "3c7f0f26c2a3183e8745dd352ef26809f25b5c2e",
       "branch": "main",
-      "ciJobUrl": "https://github.com/serenity-js/serenity-js-mocha-webdriverio-template/actions/runs/41587206203",
+      "ciJobUrl": "https://github.com/serenity-js/serenity-js-mocha-webdriverio-template/actions/runs/42725520450",
       "repositoryUrl": "https://github.com/serenity-js/serenity-js-mocha-webdriverio-template",
       "score": {
         "confidence": 100,
@@ -1424,7 +1424,7 @@ window.__SERENITY_REPORT_DATA__ = {
   "tags": [
     {
       "type": "browser",
-      "name": "chrome 156.0.8078.80",
+      "name": "chrome 157.0.8103.50",
       "scenarioCount": 2,
       "passed": 2,
       "failed": 0,
@@ -1462,7 +1462,7 @@ window.__SERENITY_REPORT_DATA__ = {
     "nodeVersion": "v24.22.2",
     "os": {
       "name": "linux",
-      "version": "7.0.0-1017-azure",
+      "version": "7.0.0-1019-azure",
       "arch": "x64"
     },
     "serenityVersion": "3.49.0",
@@ -1473,17 +1473,17 @@ window.__SERENITY_REPORT_DATA__ = {
     "browsers": [
       {
         "name": "chrome",
-        "version": "156.0.8078.80"
+        "version": "157.0.8103.50"
       }
     ],
     "ci": {
       "provider": "GitHub Actions",
-      "buildNumber": "2983",
+      "buildNumber": "2991",
       "branch": "main",
-      "commit": "7a90edd82e2c42aa0368229ec6bf32867d407d7a",
-      "commitMessage": "fix(deps): update webdriverio monorepo to ^9.33.1 (#1151)",
+      "commit": "3c7f0f26c2a3183e8745dd352ef26809f25b5c2e",
+      "commitMessage": "chore(deps): update ghcr.io/serenity-js/playwright docker tag to v1.65.0 (#1152)",
       "commitAuthor": "renovate[bot]",
-      "jobUrl": "https://github.com/serenity-js/serenity-js-mocha-webdriverio-template/actions/runs/41587206203",
+      "jobUrl": "https://github.com/serenity-js/serenity-js-mocha-webdriverio-template/actions/runs/42725520450",
       "workflow": "build",
       "repositoryUrl": "https://github.com/serenity-js/serenity-js-mocha-webdriverio-template",
       "triggeredBy": "renovate[bot]"
