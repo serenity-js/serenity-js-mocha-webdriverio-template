@@ -1,17 +1,17 @@
 {
   "$schema": "https://serenity-js.org/schemas/report-summary.json",
-  "generated": "2026-11-10T00:06:22.338Z",
+  "generated": "2026-11-12T10:46:36.099Z",
   "title": "serenity-js-mocha-webdriverio-template",
   "schemaVersion": 1,
   "reportUrl": "./index.html",
   "ci": {
-    "commit": "3c7f0f26c2a3183e8745dd352ef26809f25b5c2e",
+    "commit": "1e074f7a6630e9567e8613966e502cb1924159c4",
     "branch": "main",
-    "jobUrl": "https://github.com/serenity-js/serenity-js-mocha-webdriverio-template/actions/runs/42725520450"
+    "jobUrl": "https://github.com/serenity-js/serenity-js-mocha-webdriverio-template/actions/runs/43203128716"
   },
   "latestRun": {
-    "timestamp": "2026-11-10T00:06:18.541Z",
-    "label": "2991",
+    "timestamp": "2026-11-12T10:46:32.656Z",
+    "label": "2998",
     "totals": {
       "passed": 2,
       "failed": 0,
@@ -20,7 +20,7 @@
       "compromised": 0,
       "error": 0
     },
-    "duration": 3776
+    "duration": 3431
   },
   "runs": 1,
   "failureClusters": [],
@@ -40,12 +40,12 @@
     {
       "name": "offers examples to help you practice test automation",
       "source": "serenity-js_website.spec.ts",
-      "duration": 2642
+      "duration": 2131
     },
     {
       "name": "offers a web testing tutorial",
       "source": "serenity-js_website.spec.ts",
-      "duration": 1131
+      "duration": 1298
     }
   ]
 }
