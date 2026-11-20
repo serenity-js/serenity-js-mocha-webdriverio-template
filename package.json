@@ -27,7 +27,7 @@
   },
   "homepage": "https://serenity-js.org",
   "engines": {
-    "node": "^20 || ^22 || ^24"
+    "node": "^20 || ^22 || ^24 || ^26.0.0"
   },
   "dependencies": {
     "@serenity-js/assertions": "^3.49.0",
@@ -47,7 +47,7 @@
   },
   "devDependencies": {
     "@types/mocha": "^10.0.10",
-    "@types/node": "^24.19.2",
+    "@types/node": "^26.6.6",
     "@typescript-eslint/eslint-plugin": "^7.18.0",
     "@typescript-eslint/parser": "^7.18.0",
     "eslint": "^8.57.1",
