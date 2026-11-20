@@ -56,6 +56,6 @@
     "eslint-plugin-unicorn": "^52.0.0",
     "eslint-plugin-unused-imports": "^3.2.0",
     "ts-node": "^10.9.2",
-    "typescript": "^5.9.3"
+    "typescript": "^7.0.2"
   }
 }
